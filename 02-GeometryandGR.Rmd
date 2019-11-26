@@ -1,0 +1,278 @@
+Equations of the Expanding Universe {#ch:eqs_of_expanding}
+===================================
+
+Metric of space-time {#sec:metric}
+--------------------
+
+Consider a flat piece of paper where points can be specified by
+coordinates $x_1$ and $x_2$. The distance between two points is given by
+\begin{equation}
+\Delta s^2 = \Delta x_{1}^{2} + \Delta x_{2}^{2}
+(\#eq:dist01)
+\end{equation}
+where
+$\Delta x_{1}^{2}$ and $\Delta x_{2}^{2}$ are the separations in the
+$x_1$ and $x_2$ coordinates.
+
+What about if we replaced the paper with a rubber sheet that can expand?
+The coordinate system $x_1$--$x_2$ will expand with the sheet, and the
+physical distance between the points will change over time.
+
+Assuming that the expansion is uniform over the whole sheet, we now have
+\begin{equation}
+\Delta s^2 = a^2(t)\left[\Delta x_{1}^{2} + \Delta x_{2}^{2}\right]
+(\#eq:comoving01)
+\end{equation}
+where $a(t)$ measures the rate of expansion. $x_1$ and $x_2$ are
+**comoving coordinates**.
+
+Our current definition of $\Delta s$ only depends on the spatial
+distance between the points. However, in general relativity, we have to
+consider 4-dimensional space time, which may be curved.
+
+In this case, the distance becomes
+\begin{equation}
+ds^2 = \sum_{\mu, \nu} g_{\mu\nu} dx^{\mu} dx^{\nu}
+(\#eq:ds-gr-metric)
+\end{equation}
+where $g_{\mu\nu}$ is the metric and $\mu$ and $\nu$ are indices taking
+the values 0, 1, 2, 3. $x^{0}$ is the time coordinate and
+$x^{1}, x^{2}, x^{3}$ are the spatial coordinates.
+
+The spatial component of
+Equation \@ref(eq:ds-gr-metric) can be simplified by applying the
+**Cosmological Principle** (see Sec. \@ref(sec:cosmoprinciple)) - i.e. the Universe should not have any
+preferred locations. This means that **the spatial component must have
+constant curvature at all positions.**
+
+Changing to spherical polar coordinates, we now get
+\begin{equation}
+ds^2_3 = \dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)
+(\#eq:ds-gr-metric-polar)
+\end{equation}
+where $ds_3^2$ considers only the spatial dimensions, and $k$ is a
+constant which measures the curvature of space.
+
+Incorporating this into the space-time metric gives
+\begin{equation}
+ds^2 = -c^2 dt^2 + a^2(t) \left[\dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right]
+(\#eq:rw-metric)
+\end{equation}
+Which is the **Robertson-Walker metric**. Here $a(t)$ is the **scale
+factor of the Universe** - i.e. $a(t) = r/r_0$, where $r_0$ is $r$ at
+time $t_0$.
+
+The Einstein Equations {#sec:einstein_eqs}
+----------------------
+
+The Robertson-Walker metric evolves according to Einstein's equation:
+\begin{equation}
+R_{\mu\nu} - \dfrac{1}{2}g_{\mu\nu}R = \dfrac{8\pi G}{c^4} T_{\mu\nu}
+(\#eq:einstein)
+\end{equation}
+
+where ${T_{\mu\nu}}$ is the **energy-momentum tensor** of matter
+present, ${R_{\mu\nu}}$ is the **Ricci tensor**, and ${R}$
+is the **Ricci scalar**. The Ricci components give the curvature of
+space-time.
+
+The energy-momentum tensor is assumed to be symmetric, meaning that
+there are potentially 10 Einstein equations. If $T_{\mu\nu}$ has
+additional symmetries, then the number of equations is reduced.
+
+Fluid equation {#sec:fluid_eqns}
+--------------
+
+We consider that any possible components of the Universe (e.g. matter,
+radiation) can be described as perfect fluids. Perfect fluids have no
+viscosity or heat flow, and their equations of state can be described
+using only **density, $\rho$** and **pressure, $P$**.
+
+Perfect fluids have a well known relation between energy, $E$, pressure,
+$P$, and temperature, $T$: 
+\begin{equation}
+dE + PdV = TdS
+(\#eq:de)
+\end{equation}
+where $dV$ is the change in volume, and $dS$ is the
+change in entropy.
+
+If we consider a sphere of radius $a$, using 
+\begin{equation}
+E = mc^2
+(\#eq:emc2)
+\end{equation}
+we can relate
+the total energy contained within the sphere to its density via
+\begin{equation}
+E = \dfrac{4\pi}{3}a^3\rho c^2
+(\#eq:e-rho)
+\end{equation}
+
+Assuming that the sphere is expanding adiabatically, i.e. there is no
+change in entropy ($dS = 0$), differentiating
+Equation \@ref(eq:de)
+with respect to $t$ gives
+
+\begin{equation}
+    \dot{\rho} + 3\dfrac{\dot{a}}{a}\left(\rho + \dfrac{P}{c^2}\right) = 0
+(\#eq:fluid)
+\end{equation}
+where $\dot{x} = \dfrac{dx}{dt}, \ddot{x} = \dfrac{d^2x}{dt^2}$, etc.
+
+As the energy of the perfect fluid depends only on $P$ and $\rho$, the
+energy-momentum tensor for a perfect fluid is therefore
+\begin{equation}
+T_{\mu\nu} = \text{diag}\left(-\rho c^2, P, P, P\right)
+(\#eq:per-fluid)
+\end{equation}
+This results
+in two independent Einstein equations, the time-time solution and the
+space-space solution.
+
+### Ricci tensor and Ricci scalar {#sec:ricci}
+
+Deriving the full Ricci tensor is beyond the scope of this course. The
+following is provided for completeness. The components of the Ricci
+tensor that are not equal to zero are those where $\mu = \nu$, such that
+
+-   $R_{tt} = -3\dfrac{\ddot{a}}{a}$
+
+-   $R_{rr} = \dfrac{a\ddot{a}}{1 - kr^2} + \dfrac{2\dot{a}^2}{1 - kr^2} + \dfrac{2k}{1-kr^2}$
+
+-   $R_{\theta\theta} = r^2a\ddot{a} + 2r^2\dot{a}^2 + 2kr^2$
+
+-   $R_{\phi\phi} = r^2 a\ddot{a}\sin^2\theta + 2r^2\dot{a}^2\sin^2\theta + 2kr^2 \sin^2\theta$
+
+which simplifies to a diagonal tensor with
+$$R_{tt}= -3\dfrac{\ddot{a}}{a}$$ and
+$$R_{ii} = \dfrac{-g_{ii}}{a^2}\left(a\ddot{a} + 2\dot{a}^2 + 2k\right)$$
+
+The Ricci scalar becomes
+$$R = g_{ik}R_{ik} = - 6\dfrac{\ddot{a}}{a} - 6\left(\dfrac{\dot{a}}{a}\right)^2 - 6\dfrac{k}{a^2}$$
+
+Friedman Equation {#sec:friedman}
+-----------------
+
+Using the time-time solution of the Einstein equation gives
+$$\label{eqn:friedman}
+    \left(\dfrac{\dot{a}}{a}\right)^2 + \dfrac{kc^2}{a^2} = \dfrac{8\pi G}{3}\rho$$which
+is the **Friedman equation**.
+
+The space-space solution follows in a similar way:
+
+$$2\dfrac{\ddot{a}}{a} + \left(\dfrac{\dot{a}}{a}\right)^2 + \dfrac{kc^2}{a^2} = -8\pi G \dfrac{P}{c^2}$$
+
+Which looks odd right now, but by subtracting the Friedman equation
+(Eqn. [\[eqn:friedman\]](#eqn:friedman){reference-type="ref"
+reference="eqn:friedman"}) we find: $$\label{eqn:acceleration}
+    \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)$$
+
+which is the known as the **acceleration equation**.
+
+### Natural units a.k.a. where have all the $c^2$'s gone? {#sec:natural_units}
+
+From this point forward, you will see that the factor
+$\left(k c^2/a^2\right)$ in the Friedman equation will magically become
+$\left(k/a^2\right)$. This is because we often like to use **natural
+units** in Cosmology. Mass density $\left(\rho\right)$ and energy
+density $\left(\epsilon\right)$ are often used interchangeably in
+Cosmology, and are related by $\epsilon = \rho c^2$. By converting to
+natural units, i.e. setting $c=1$, mass density and energy density are
+equivalent. As you will see later, many important cosmological
+parameters are expressed in dimensionless units (e.g. the density
+parameter, see
+Section [\[sec:density\_param\]](#sec:density_param){reference-type="ref"
+reference="sec:density_param"}). So don't worry about our missing $c^2$
+factor, it's just another maths trick.
+
+An alternative derivation of the Friedman equation {#sec:alt_friedman}
+--------------------------------------------------
+
+The evolution of the scale factor, $a$, can be derived using mostly
+Newtonian mechanics, in addition to two results from General Relativity:
+
+-   **Birkhoff's theorem** -- for a spherically symmetric system, the
+    force due to gravity at radius $r$ is determined only by the mass
+    *interior* to $r$.
+
+-   **Energy** contributes to the gravitating mass density, such that
+    $E = \rho_m + \dfrac{u}{c^2}$, where $\rho_m$ is the density of
+    matter, and $u$ is the energy density of radiation and relativistic
+    particles.
+
+Consider a test particle on the surface of an expanding sphere of radius
+$r$. From $F= m \ddot{r}$, its equation of motion can be shown to be
+$$\label{eqn:motion}
+    \ddot{r} = -\dfrac{4\pi}{3} G \rho r$$
+
+Density is proportional to $r^{-3}$, so by defining $r_{0} = 1$, we find
+$$\rho = \rho_{0}r^{-3}$$ Which can be substituted into
+Eqn. [\[eqn:motion\]](#eqn:motion){reference-type="ref"
+reference="eqn:motion"} to give: $$\label{eqn:ddot_r_1}
+    \ddot{r} = -\dfrac{4\pi}{3}\dfrac{G\rho_0}{r^2}$$ If $\rho_0$ is
+non-zero, then $\ddot{r}$ must also be non-zero. The Universe must
+either be expanding or contracting.
+
+To get Eqn. [\[eqn:ddot\_r\_1\]](#eqn:ddot_r_1){reference-type="ref"
+reference="eqn:ddot_r_1"} into a useful form, we use some clever maths
+magic. First, multiply both sides by $\dot{r}$ to get:
+$$\dot{r}\ddot{r} + \dfrac{4\pi}{3}\dfrac{G\rho_{0}}{r^2}\dot{r} = 0$$
+We can use our mad differentiation skills to recognise that
+$$\dfrac{d(\dot{r}^2)}{dt} = 2\dot{r}\ddot{r}$$ Which leads to
+$$\dfrac{1}{2}\dfrac{d(\dot{r}^2)}{dt} + \dfrac{4\pi G \rho_0}{3} \dfrac{1}{r^2}\dfrac{dr}{dt} = 0$$
+Once again, we can use our handy $1^{st}$ year maths skills to remind
+ourselves that $$\dfrac{1}{r^2}\dfrac{dr}{dt} = -\dfrac{d(1/r)}{dt}$$ so
+we can simplify it further to $$\label{ddot_r_2}
+    \dfrac{d}{dt}\left[\dot{r}^2 - \dfrac{(8\pi G \rho_0 / 3)}{r}\right] = 0$$
+
+As Eqn [\[ddot\_r\_2\]](#ddot_r_2){reference-type="ref"
+reference="ddot_r_2"} is equal to zero, the expression contained in the
+brackets must be constant:
+$$\dot{r}^2 - \dfrac{(8\pi G \rho_0 / 3)}{r} = k$$
+
+Our final step is to replace $\rho_0$ with $\rho$, and divide by $r^2$:
+
+$$\left(\dfrac{\dot{r}}{r}\right)^2 - \dfrac{8}{3}\pi G \rho = -\dfrac{k}{r^2}$$
+or
+$$\left(\dfrac{\dot{r}}{r}\right)^2 + \dfrac{k}{r^2} = \dfrac{8\pi G}{3}\rho$$
+
+which is the same as the Friedman equation
+(Equation. [\[eqn:friedman\]](#eqn:friedman){reference-type="ref"
+reference="eqn:friedman"}), when $c=1$.
+
+The meaning of $k$ {#sec:curvature}
+------------------
+
+In the previous sections, $k$ has been used to describe the curvature of
+the Universe. $k$ has three possible values:[^2]
+
+-   $k = 0$: no curvature. If $k=0$, then $\dot{a}$ will always be
+    positive. The expansion will continue but will be slowing down, as
+    $\rho$ will be decreasing. This is known as a **flat Universe**, or
+    a critical Universe.
+
+-   $k = 1$: positive curvature. If $k = 1$, then $\dot{a}$ will
+    initially be positive, but will reach a point where it changes sign.
+    The Universe will expand to a certain point then collapse back in on
+    itself (aka the big crunch). This is known as a **closed Universe**.
+
+-   $k = -1$: negative curvature. If $k=-1$ then $\dot{a}$ will always
+    be positive and the expansion will continue forever (aka the big
+    rip). This is known as an **open Universe**.
+
+Exercises {#sec:geometry_ex}
+---------
+
+1.  Confirm for yourself how the behaviour of $k$ affects the evolution
+    of the scale factor ($a$) over time. For $k=1$, at what point does
+    the Universe fall back in on itself?
+
+2.  Sketch how the scale factor evolves with time for the three values
+    of $k$.
+
+3.  How does the inclusion of a cosmological constant, $\Lambda$, change
+    the Friedman equation?
+
+[^2]: In some derivations $k$ can have different values from those
+    listed here. However, they will scale such that $k = -1, 0, 1$.
