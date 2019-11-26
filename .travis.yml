@@ -1,0 +1,10 @@
+deploy:
+  provider: pages
+  skip_cleanup: true
+  repo: vickyscowcroft/PH40112_rmd
+  target-branch: gh-pages
+  local-dir: _book
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
