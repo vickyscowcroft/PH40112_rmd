@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/vs522/Dropbox/PH40112_vs_notes/PH40112_rmd/.texpadtmp/PH40112_notes.aux
+The style file: apalike.bst
+Database file #1: ../book.bib
+Database file #2: ../packages.bib
+Warning--to sort, need author or key in wikipedia_2020
+You've used 2 entries,
+            1935 wiz_defined-function locations,
+            485 strings with 4060 characters,
+and the built_in function-call counts, 556 in all, are:
+= -- 54
+> -- 7
+< -- 1
++ -- 2
+- -- 2
+* -- 42
+:= -- 98
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 11
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 24
+empty$ -- 48
+format.name$ -- 3
+if$ -- 108
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1
+newline$ -- 12
+num.names$ -- 3
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 46
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 3
+width$ -- 0
+write$ -- 24
+(There was 1 warning)

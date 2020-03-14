@@ -1,0 +1,24 @@
+\contentsline {section}{Unit Overview}{3}{Doc-Start}% 
+\contentsline {section}{\numberline {1}Overview of Observational Cosmology}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}A brief history of the Universe}{4}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}The first second}{5}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}After the first second:}{7}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}The Cosmological Principle}{8}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}The Expanding Universe}{8}{subsection.1.5}% 
+\contentsline {section}{\numberline {2}Equations of the Expanding Universe}{10}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Metric of space-time}{10}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}The Einstein Equations}{11}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Fluid equation}{11}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Ricci tensor and Ricci scalar}{12}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Friedman Equation}{12}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Natural units a.k.a. where have all the \(c^2\)'s gone?}{13}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}An alternative derivation of the Friedman equation}{13}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8}The meaning of \(k\)}{14}{subsection.2.8}% 
+\contentsline {subsection}{\numberline {2.9}Exercises}{14}{subsection.2.9}% 
+\contentsline {section}{\numberline {3}Composition of the Universe}{16}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Matter}{16}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Radiation}{17}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Mixing matter and radiation}{19}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Cosmological Constant}{20}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Exercises}{20}{subsection.3.5}% 
+\contentsfinish 

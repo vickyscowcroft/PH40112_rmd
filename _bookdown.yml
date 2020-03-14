@@ -1,5 +1,7 @@
-book_filename: "bookdown-demo"
+book_filename: "PH40112_notes"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Lecture "
 delete_merged_file: true
+bookdown::gitbook:
+  split_bib: no

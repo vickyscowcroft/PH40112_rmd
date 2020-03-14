@@ -1,8 +1,34 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+%\usepackage[includefoot, , top=20mm, left=20mm, right=50mm, bottom=15mm, footskip=15mm]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhead{}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\setcounter{secnumdepth}{2}
+
+
+%\renewcommand{\chaptername}{Section}
+
+\parskip=0.5cm
+\parindent 10pt
+
+\newcommand{\ps}[0]{4mm}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+%\usepackage[fontsize=11]{scrextend}
+

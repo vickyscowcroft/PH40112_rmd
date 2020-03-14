@@ -1,18 +1,18 @@
 bookdown::gitbook:
-  css: style.css
+  css: mystyle.css
   config:
     splib_bib: TRUE
+    split_by: "section"
     toc:
       before: |
         <li><a href="./">PH40112 Relativistic Cosmology</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+        <li><a href="https://vickyscowcroft.github.io/PH40112_rmd/" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
-  latex_engine: xelatex
+  latex_engine: pdflatex
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default

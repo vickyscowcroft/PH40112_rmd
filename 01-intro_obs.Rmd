@@ -1,7 +1,6 @@
-Overview of Observational Cosmology {#ch:intro_obs}
-===================================
+# Overview of Observational Cosmology {#ch:intro_obs}
 
-This part introduces the observational foundation of Cosmology. It
+This section introduces the observational foundation of Cosmology. It
 builds upon the material in PH30111: Introduction to Galaxies and
 Cosmology. Some material may be familiar to you, but the origins and
 derivations of the equations will be discussed in more depth, and will
@@ -27,7 +26,7 @@ of the Solar System and the evolution of Earth comes from geology.
 However, to understand how the Universe as a whole came to be, we must
 look further back in time.
 
-```{r echo=FALSE, cosmic-calendar, out.width='100%', fig.show='hold', fig.cap='The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=18385338](https://commons.wikimedia.org/w/index.php?curid=18385338)'}
+```{r echo=FALSE, cosmic-calendar, out.width='100%', fig.show='hold', fig.cap='The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0 [@wikipedia_2020].'}
 knitr::include_graphics("Images/CosmicCalendar.png")
 ```
 
@@ -45,32 +44,33 @@ knitr::include_graphics("Images/060915_CMB_Timeline150_annotated.jpg")
 ```
 
 
-### The first second {#sec:first_second}
+The first second {#sec:first_second}
+-------------------------------
 
 The first second after the Big Bang was quite dramatic. Highlights of
 this time are given below. Bear in mind that all of the following
 happens in less time than it takes for your heart to beat twice.
 
-#### The Big Bang $(t = 0)$ {#the-big-bang-t-0 .unnumbered}
+ - The Big Bang $(t = 0)$ 
 
 The Universe began with the Big Bang, rapidly expanding from an initial
 singularity.
 
-#### Planck epoch $(t = 10^{-43}~s)$ {#planck-epoch-t-10-43s .unnumbered}
+ - Planck epoch $(t = 10^{-43}~s)$ 
 
 The Planck epoch refers to the stage when the Universe's density
 exceeded a critical density, such that the energy scale is greater than
 the Planck scale. At this scale, quantum effects are important even for
 gravitational physics.
 
-#### Separation of forces $(10^{-43}~s < t < 10^{-36}~s)$ {#separation-of-forces-10-43s-t-10-36s .unnumbered}
+ - Separation of forces $(10^{-43}~s < t < 10^{-36}~s)$ 
 
 After the Planck epoch, other fundamental forces start to separate out.
 First, the gravitational force and electronuclear force decouple, then
 the electronuclear force separates out into the strong and electroweak
 forces.
 
-#### Inflation $(t < 10^{-32}~s)$ {#inflation-t-10-32s .unnumbered}
+ - Inflation $(t < 10^{-32}~s)$ 
 
 Early in its evolution, the Universe underwent a period of rapid
 inflation, expanding by a factor of $10^{78}$ (or $10^{26}$ in each of
@@ -81,18 +81,18 @@ occur at greater than the speed of light ($c$). However, as it is the
 metric of space time that is expanding, the limitation of exceeding $c$
 is not applicable, and inflation can occur.
 
-#### Electroweak symmetry breaking $(t = 10^{-12}~s)$ {#electroweak-symmetry-breaking-t-10-12s .unnumbered}
+ - Electroweak symmetry breaking $(t = 10^{-12}~s)$ 
 
 After inflation, the electroweak force separates into the
 electromagnetic and weak nuclear forces.
 
-#### Quark epoch $(t = 10^{-12}~s)$ {#quark-epoch-t-10-12s .unnumbered}
+ - Quark epoch $(t = 10^{-12}~s)$ 
 
 At the same time as electroweak symmetry breaking, the energy density of
 the Universe has decreased such that matter can exist in the form of
 quarks.
 
-#### Baryogenesis $(t = 10^{-11}~s)$ {#baryogenesis-t-10-11s .unnumbered}
+ - Baryogenesis $(t = 10^{-11}~s)$ 
 
 Baryogenesis is the stage where matter can start to exist in the form of
 baryons - e.g. protons, neutrons. Baryogensis should have produced both
@@ -103,7 +103,7 @@ baryons/anti-baryons, otherwise they would have all have annihilated.
 The Baryogenesis process and baryon asymmetry are current areas of
 research.
 
-#### Hadron epoch $(10^{-6}~s < t < 1~s)$ {#hadron-epoch-10-6s-t-1s .unnumbered}
+ - Hadron epoch $(10^{-6}~s < t < 1~s)$ 
 
 The Hadron epoch occurred when the Universe had cooled far enough for
 hadrons to exist and dominate the energy density. The proportions of
@@ -111,7 +111,7 @@ hadrons and anti-hadrons were similar, such that they were in thermal
 equilibrium and mostly annihilated, producing photons, although a small
 number of hadrons remained.
 
-#### Neutrino decoupling $(t < 1~s)$ {#neutrino-decoupling-t-1s .unnumbered}
+ - Neutrino decoupling $(t < 1~s)$ 
 
 Around 1s after the Big Bang, neutrinos decoupled and were free to
 propagate through the Universe. Neutrinos have a very small interaction
@@ -120,39 +120,40 @@ decoupling should still exist today. However, as the neutrinos produced
 at decoupling have such low energies, it is impossible to detect them
 with current experiments.
 
-#### Lepton epoch $(1~s < t < 10~s)$ {#lepton-epoch-1s-t-10s .unnumbered}
+ - Lepton epoch $(1~s < t < 10~s)$ 
 
 Similar to the Hadron epoch, the Lepton epoch produced both leptons and
 anti-leptons (e.g, electrons, muons, neutrinos etc.) These would have
 annihilated, producing pairs of photons. A small number of leptons
 remain after annihilation.
 
-### After the first second: {#sec:after_1s}
+After the first second: {#sec:after_1s}
+-------------------------------
 
 The Universe has now been evolving for around 1 s. It has exponentially
 expanded, created all the matter and radiation we see (and destroyed a
 whole load too), and gone through several rounds of fundamental physical
 forces. What else is left to do for the next 13.77 billion years?
 
-#### Photon epoch $(10~s < t < 377,000\text{ years})$ {#photon-epoch-10s-t-377000text-years .unnumbered}
+ - Photon epoch $(10~s < t < 377,000\text{ years})$ 
 
 After baryons, hadrons and leptons have mostly been annihilated, the
 majority of the Universe's energy is dominated by photons.
 
-#### Light Element Nucleosynthesis $(2 \text{ mins} < t < 20\text{ mins})$ {#light-element-nucleosynthesis-2-text-mins-t-20text-mins .unnumbered}
+ - Light Element Nucleosynthesis $(2 \text{ mins} < t < 20\text{ mins})$ 
 
 Nucleosynthesis is the stage where light elements (i.e., Hydrogen,
 Deuterium, Helium, Lithium) were formed. Elements heavier than Helium
 were very difficult to form due to the large amounts of energy/time
 required.
 
-#### Matter domination $(t = 47,000\text{ years})$ {#matter-domination-t-47000text-years .unnumbered}
+ - Matter domination $(t = 47,000\text{ years})$ 
 
 Around 47,000 years after the Big Bang, the energy density of matter in
 the Universe overtakes that of radiation. Matter now becomes the
 dominant driver of the Universe's evolution.
 
-#### Epoch of recombination and photon decoupling $(t = 377,000\text{ years})$ {#epoch-of-recombination-and-photon-decoupling-t-377000text-years .unnumbered}
+ - Epoch of recombination and photon decoupling $(t = 377,000\text{ years})$ 
 
 During the epoch of recombination, ionised particles (e.g. electrons,
 protons) combined to form neutral atoms. At this stage, the matter
@@ -164,14 +165,14 @@ to photons. The decoupled photons produced during this time have been
 redshifted by the expansion of the Universe, so we now observe them as
 the Cosmic Microwave Background (CMB).
 
-#### Dark Ages $(380,000 \text{ years}< t < 1\text{ Gyr})$ {#dark-ages-380000-text-years-t-1text-gyr .unnumbered}
+ - Dark Ages $(380,000 \text{ years}< t < 1\text{ Gyr})$ 
 
 At this time, photons were free to stream through the Universe. However,
 light-producing systems such as stars had not yet formed, so the
 Universe was \"dark\". The only sources of photons were those from the
 CMB, and those emitted from neutral Hydrogen atoms at 21 cm.
 
-#### Formation of structure $(150\text{ Myr} < t < 1\text{ Gyr})$ {#formation-of-structure-150text-myr-t-1text-gyr .unnumbered}
+ - Formation of structure $(150\text{ Myr} < t < 1\text{ Gyr})$ 
 
 Structure forms hierarchically in the Universe; smaller structures form
 first and are built up into larger ones. The first structures to form in
@@ -180,7 +181,7 @@ population of stars (Population III stars) are thought to have formed
 around t $=700$ Myr. Pop III stars are yet to be detected
 observationally.
 
-#### Epoch of reionisation $(250 \text{ Myr} < t 1\text{ Gyr})$ {#epoch-of-reionisation-250-text-myr-t-1text-gyr .unnumbered}
+ - Epoch of reionisation $(250 \text{ Myr} < t 1\text{ Gyr})$ 
 
 Pop III stars introduced a new source of radiation into the Universe.
 During the epoch of reionisation this radiation ionised the neutral
@@ -189,14 +190,14 @@ reionisation most likely lasted until around 1 Gyr, when the Population
 III stars died off. At this time, the ionised Hydrogen gradually
 recombined to neutral Hydrogen once more.
 
-#### Formation of Galaxies and Clusters $(t$\>$1 \text{ Gyr})$ {#formation-of-galaxies-and-clusters-t1-text-gyr .unnumbered}
+ - Formation of Galaxies and Clusters $(t$\>$1 \text{ Gyr})$ 
 
 \"Large\" galaxies and galaxy clusters formed from around t = 1 Gyr.
 These would have first comprised Population II stars, which, unlike Pop
 III stars, we do observe today. Later, the next generation of stars, Pop
 I, formed.
 
-#### Dark Energy epoch $(t > 9.8 \text{ Gyr})$ {#dark-energy-epoch-t-9.8-text-gyr .unnumbered}
+ - Dark Energy epoch $(t > 9.8 \text{ Gyr})$ 
 
 We are currently believed to be in the dark energy epoch, where the
 energy density of the Universe is dominated by the dark energy
@@ -227,7 +228,7 @@ The Expanding Universe {#sec:expanding_intro}
 
 The first observational evidence that the Universe is expanding was
 found by Edwin Hubble [@1929Hubble]. By measuring the distances
-to nearby galaxies using the Cepheid Leavitt Law[^1], and comparing
+to nearby galaxies using the Cepheid Leavitt Law, and comparing
 these distances to the galaxies' redshifts. Hubble measured the
 expansion rate of the Universe (the **Hubble constant, $\mathbf{H_0}$**)
 to be approximately 500 km s$^{-1}$ Mpc$^{-1}$. Hubble's observations
@@ -241,11 +242,5 @@ understanding of Cosmology.
 knitr::include_graphics("Images/hubble-diagram.jpg")
 ```
 
-[^1]: The Cepheid Leavitt Law was previously known as the Cepheid
-    Period-Luminosity relation. The relation between a Cepheid's period
-    of pulsation and its absolute magnitude was first discovered by
-    Henrietta Leavitt [@1912Leavitt]. However, as a woman
-    working in the early 20$^{th}$ century, she didn't receive credit
-    for her work. In 2009, the International Astronomical Union passed a
-    resolution to change the name of the Period-Luminosity relation to
-    the Leavitt Law in recognition of her fundamental discovery.
+
+
