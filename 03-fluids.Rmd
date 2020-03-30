@@ -130,7 +130,7 @@ $$H(t) \equiv \dfrac{\dot{a}}{a} = \dfrac{1}{2t}$$ meaning that the
 Universe expands *more slowly* when it is radiation dominated than when
 it is matter dominated.
 
-This may seem counterintuitive at first; for a matter dominated Universe
+This may seem counter-intuitive at first; for a matter dominated Universe
 the energy density is proportional to the volume of the Universe
 ($1/a^3$), so why is this not the same for a radiation dominated
 Universe? The answer lies in what happens to radiation under an increase

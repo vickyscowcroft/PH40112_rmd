@@ -1,0 +1,48 @@
+Observational Parameters {#ch:obs-params}
+===================================
+
+Cosmological Models {#sec:cosmomodels}
+--------------------------
+
+Our understanding of how the Universe evolves can be contained in a **Cosmological model**. Such models are specified by a number of parameters, such as the densities of radiation and matter, the Universe's curvature, and the Hubble parameter, to name a few. 
+
+These parameters are measured observationally to determine which cosmological model best describes the Universe, with different experiments being able to constrain different parameters.
+
+The most widely accepted cosmological model is known as **$\Lambda$CDM**, which describes a Universe with two key features:
+1. The energy density of dark matter is dominated by **cold dark matter** (i.e. non-relativistic particles)
+2. The total energy density contains a significant contribution from the cosmological constant $\Lambda$, which we ascribe to **dark energy**.
+
+We will now look at the main observational parameters in today's cosmological models.
+
+The Hubble Constant $H_{0}$ {#sec:ho-cosmo}
+--------------------------
+
+The Hubble constant ($H_{0}$) is a measurement of the **current** expansion rate of the Universe. In cosmological models it is often expressed as the dimensionless parameter $h$, where
+
+\begin{equation}
+H_0 = 100 h \text{km s}^{-1} \text{Mpc}^{-1}
+(\#eq:h-h0)
+\end{equation}
+
+$H_{0}$ is measured by comparing distances of objects to their redshifts, such that
+\begin{equation}
+H_0 = \dfrac{v}{r}
+(\#eq:h0-v-r)
+\end{equation}
+where $v$ and $r$ are the recession velocities (redshifts) and distances of a sample of objects, such as supernova host galaxies. The first measurement of $H_0$ was made by Hubble in 1929 (see Sec. \@ref(sec:expanding_intro)). Since then, many measurements of $H_0$ have been made using large samples of galaxies out to higher and higher redshifts. We will cover the details of these experiments in the Observational Techniques section.
+
+We can also use measurements of $H_0$ to estimate the age of the Universe. As we showed in Chapter \@ref(ch:constituents), 
+\begin{equation}
+H(t) = \dfrac{\dot{a}}{a}
+(\#eq:ht-a)
+\end{equation}
+By substituting $\dot{a}$ and $a$ for their values now to get $H_0$ (i.e. $H_{t_0}$), we find that the age of the Universe, assuming that matter dominates the energy density, is
+\begin{equation}
+H(t) = \dfrac{2}{3t}
+(\#eq:ht-a-2)
+\end{equation}
+This is a rough estimate, as at early times the Universe was not matter dominated (and it may not be now either!), but it gives a reasonable guess.
+
+
+
+

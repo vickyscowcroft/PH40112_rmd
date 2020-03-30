@@ -1,2 +1,325 @@
 Observational Parameters {#ch:obs-params}
 ===================================
+
+Cosmological Models {#sec:cosmomodels}
+--------------------------
+
+Our understanding of how the Universe evolves can be contained in a **Cosmological model**. Such models are specified by a number of parameters, such as the densities of radiation and matter, the Universe's curvature, and the Hubble parameter, to name a few. 
+
+These parameters are measured observationally to determine which cosmological model best describes the Universe, with different experiments being able to constrain different parameters.
+
+The most widely accepted cosmological model is known as **$\Lambda$CDM**, which describes a Universe with two key features:
+1. The energy density of dark matter is dominated by **cold dark matter** (i.e. non-relativistic particles)
+2. The total energy density contains a significant contribution from the cosmological constant $\Lambda$, which we ascribe to **dark energy**.
+
+We will now look at the main observational parameters in today's cosmological models.
+
+The Hubble Constant $H_{0}$ {#sec:ho-cosmo}
+--------------------------
+
+The Hubble constant ($H_{0}$) is a measurement of the **current** expansion rate of the Universe. In cosmological models it is often expressed as the dimensionless parameter $h$, where
+
+\begin{equation}
+H_0 = 100 h \text{km s}^{-1} \text{Mpc}^{-1}
+(\#eq:h-h0)
+\end{equation}
+
+$H_{0}$ is measured by comparing distances of objects to their redshifts, such that
+\begin{equation}
+H_0 = \dfrac{v}{r}
+(\#eq:h0-v-r)
+\end{equation}
+where $v$ and $r$ are the recession velocities (redshifts) and distances of a sample of objects, such as supernova host galaxies. The first measurement of $H_0$ was made by Hubble in 1929 (see Sec. \@ref(sec:expanding_intro)). Since then, many measurements of $H_0$ have been made using large samples of galaxies out to higher and higher redshifts. We will cover the details of these experiments in the Observational Techniques section.
+
+We can also use measurements of $H_0$ to estimate the age of the Universe. As we showed in Chapter \@ref(ch:constituents), 
+\begin{equation}
+H(t) = \dfrac{\dot{a}}{a}
+(\#eq:ht-a)
+\end{equation}
+By substituting $\dot{a}$ and $a$ for their values now to get $H_0$ (i.e. $H_{t_0}$), we find that the age of the Universe, assuming that matter dominates the energy density, is
+\begin{equation}
+H(t) = \dfrac{2}{3t}
+(\#eq:ht-a-2)
+\end{equation}
+This is a rough estimate, as at early times the Universe was not matter dominated (and it may not be now either!), but it gives a reasonable guess.
+
+The Density Parameter $\Omega_{0}$ {#sec:density-cosmo}
+--------------------------
+
+The density parameter, $\Omega_0$ specifies the energy density of the Universe.
+
+To understand the meaning of $\Omega_0$, we go back to our old friend, the Friedman equation:
+
+\begin{equation}
+H(t)^2 = \dfrac{8\pi G \rho}{3} - \dfrac{k}{a^2} = \left(\dfrac{\dot{a}}{a}\right)^2
+(\#eq:fr-den-1)
+\end{equation}
+
+This tells us that for a given value of $H(t)$, there is a specific value of the density $\rho$ that will make the Universe flat (i.e. $k=0$). This value of the density is known as the **critical density, $\rho_c$**.
+
+\begin{equation}
+\rho_c(t) = \dfrac{3 H^2}{8 \pi G}
+(\#eq:fr-den-2)
+\end{equation}
+
+Importantly, Eq. \@ref(eq:fr-den-2) tells us that the critical density is time dependent.
+
+We can simplify Eq. \@ref(eq:fr-den-2) to define it in terms of $h$ (the only time dependent parameter). Plugging in all the values of the constants, we find
+
+\begin{equation}
+\rho_c(t_0) = 1.88 h^2 \times 10^{-26} \text{kg m}^{-3}
+(\#eq:fr-den-3)
+\end{equation}
+
+It's useful to compare this to something we can physically comprehend. For example, the density of water is $\rho_{water} = 10^3 \text{kg m}^{-3}$, so $\rho_c$ is $10^{29}$ times less dense than water! But why is this important?
+
+It's important because if the average density of the Universe $\rho$ becomes larger than $\rho_c$, the Universe becomes closed, i.e. $k$ will be greater than 0, and Universe will end in a big crunch. Not a particularly inviting prospect. 
+
+We can do another quick estimation to see if we should be worried. First, we put $\rho_c$ into more appropriate units of solar masses and megaparsecs:
+
+\begin{equation}
+\rho_c(t_0) = \dfrac{2.78  h^{-1} \times 10^{11} M_\odot}{\left(h^{-1} \text{Mpc}\right)^3} 
+(\#eq:fr-den-4)
+\end{equation}
+
+We can compare this to what we observe in the Universe. A typical galaxy has a mass of around $10^{11}$ to $10^{12} M_{\odot}$, and the typical separation between galaxies is of the order of 1~Mpc. So our estimate for $\rho_c$ in Eq. \@ref(eq:fr-den-4) seems fairly realistic! Our Universe could be flat after all (phew!)
+
+Does the Universe need to be flat?  {#sec:flat-density}
+--------------------------
+In the section above we've said that the critial density is that for which the Universe is flat. But there's nothing in the Cosmological Principle that forces flatness. Quite the opposite in fact; $k$ is not restricted to be equal to zero.
+
+It is useful to characterise the density of the Universe relative to the critical density, rather than an absolute value,
+
+\begin{equation}
+\Omega(t) \equiv \dfrac{\rho}{\rho_c}
+(\#eq:big-omega)
+\end{equation}
+
+where $\Omega(t)$ is dimensionless, similar to $h$.
+
+The present day value of $\Omega(t)$ is denoted by $\Omega_0$, such that
+\begin{equation}
+\Omega_0 = \dfrac{\rho_0}{\rho_c}
+(\#eq:big-omega-2)
+\end{equation}
+
+We can substitute Eqs. \@ref(eq:fr-den-2) and \@ref(eq:big-omega) into the Friedman equation (Eq. \@ref(eq:fr-den-1)) to find a relationship between $\Omega$, $H$, and $k$. First we find
+
+\begin{equation}
+H(t)^2 = \dfrac{8\pi G \rho_c \Omega}{3} - \dfrac{k}{a^2}
+(\#eq:big-omega-3)
+\end{equation}
+
+by putting Eq. \@ref(eq:big-omega-2) into Eq. \@ref(eq:fr-den-1). Then, substituting in Eq. \@ref(eq:fr-den-2), we find
+
+\begin{equation}
+H(t)^2 = H^2 \Omega -  \dfrac{k}{a^2}
+(\#eq:big-omega-4)
+\end{equation}
+
+which we can rearrange to get
+
+\begin{equation}
+\Omega - 1 =  \dfrac{k}{a^2 H^2}
+(\#eq:big-omega-5)
+\end{equation}
+
+This tells us the same thing as in the previous section -- that if $\Omega = 1$ (i.e. $\rho = \rho_c$) then we have a critical density Universe and $k=0$. If $\Omega \neq 1$ then we can use Eq. \@ref(eq:big-omega-5) to see how the density has evolved with time. 
+
+As discussed for density in Section \@ref(sec:mixtures}, the density parameter $\Omega$ can be separated into its different components, for example
+
+\begin{equation}
+\Omega = \Omega_{m} + \Omega_{r}
+(\#eq:big-omega-6)
+\end{equation}
+where $\Omega_m$ and $\Omega_r$ are the density parameters for matter and radiation, and $\Omega$ is the total density parameter. 
+
+Additionally, curvature can contribute to the total density parameter, via the equation
+
+\begin{equation}
+\Omega_k = \dfrac{-k}{a^2 H^2}
+(\#eq:big-omega-7)
+\end{equation}
+
+and, importantly, **$\Omega_k$ can be positive or negative!**. We can substitute these into the Friedman equation again (seriously, if in doubt, substitute into the Friedman equation...) to get:
+
+\begin{equation}
+\Omega + \Omega_k = 1
+(\#eq:big-omega-7)
+\end{equation}
+
+We'll return to the density parameter in more detail in later sections, when we look at how it is measured and how it affects the $\Lambda$CDM model.
+
+The Deceleration Parameter, $q_0$  {#sec:decel-param}
+--------------------------
+The Hubble parameter $H(t)$ describes the time dependence of the expansion of the Universe. The **deceleration parameter, $q_0$** quantifies how the expansion rate changes over time. 
+
+We start our exploration of the deceleration parameter by looking at a Taylor expansion of the scale factor at the present time, i.e. $a_0$.
+
+\begin{equation}
+a(t) = a(t_0) + \dot{a}(t_0)[t - t_0] + \dfrac{1}{2}\ddot{a}(t_0)[t-t_0]^2 ...
+(\#eq:decel-1)
+\end{equation}
+
+Dividing \@ref(eq:decel-1) by $a(t_0)$ gives us
+
+\begin{equation}
+\dfrac{a(t)}{a(t_0)} = 1 + \dfrac{\dot{a}(t_0)}{ a(t_0)}[t - t_0] + \dfrac{1}{2}\dfrac{\ddot{a}(t_0)}{a(t_0)}[t-t_0]^2
+(\#eq:decel-2)
+\end{equation}
+
+which we can re-write as
+
+\begin{equation}
+\dfrac{a(t)}{a(t_0)} = 1 + H_0 [t - t_0] + \dfrac{q_0}{2}H_0^2[t-t_0]^2
+(\#eq:decel-3)
+\end{equation}
+
+Where the deceleration parameter $q_0$ is defined as
+
+\begin{equation}
+q_0 = \dfrac{-\ddot{a}(t_0)}{a(t_0)}\dfrac{1}{H^2} 
+(\#eq:decel-4)
+\end{equation}
+or 
+\begin{equation}
+ q_0 = \dfrac{a(t_0) \ddot{a}(t_0)}{\dot{a}^2(t_0)}
+(\#eq:decel-5)
+\end{equation}
+
+which means that a higher value of $q_0$ means more rapid deceleration. 
+
+In Section \@ref(sec:friedman) we came across the **acceleration equation** 
+
+\begin{equation}
+    \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)
+(\#eq:acceleration-decel)
+\end{equation}
+(Note - I did not cover this derivation in the recorded lecture, but it is in the written notes). 
+Assuming the simplest case, that the Universe is matter dominated (i.e. $P=0$), Eq. \@ref(eq:acceleration-decel) becomes
+
+\begin{equation}
+ \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\rho
+(\#eq:decel-6)
+\end{equation}
+
+Substituting in Eq. \@ref(eq:decel-4), we find
+\begin{equation}
+ q_0 = -\dfrac{\ddot{a}(t_0)}{a(t_0)} H_0^2 = \dfrac{4\pi G}{3}\rho
+(\#eq:decel-6)
+\end{equation}
+
+And remebering the equations for the critical density $\rho_c$ (Eq. \@ref(eq:fr-den-2) and the density parameter $\Omega$ (Eq. eq:big-omega), we find
+
+\begin{equation}
+ q_0 = \dfrac{4\pi G}{3}\rho \dfrac{3}{8 \pi G \rho_c}
+(\#eq:decel-7)
+\end{equation}
+
+which (after all that....) simplifies to
+
+\begin{equation}
+ q_0 = \dfrac{\Omega_0}{2}
+(\#eq:decel-8)
+\end{equation}
+
+So the deceleration parameter doesn't just tell us about the expansion rate, it also gives us the density parameter!!
+
+Measuring $q_0$ {#sec:measuring_q}
+--------------------------
+
+In the section above, we have shown that $q_0$ is dependent on both $H_0$ and $\Omega_0$. That means that if we can measure $H_0$ and $\Omega_0$, then we should be able to describe the Universe. Right??
+
+No.
+
+The problem is we don't know everything about the Universe. Specifically, we don't know $\Omega_0$.
+
+However, $q_0$ can tell us about the Universe in a different way. We can measure $q_0$ by looking at distant galaxies. And, as we know, looking at more distant (i.e. high redshift) galaxies, is looking back to earlier times in the Universe's evolution.
+
+The first measurements of $q_0$ were made in the 1990's by looking at Type Ia supernovae (there'll be more on this in the observational techniques section.) One of the main publications to come out of these experiments was Riess et al. (1998), who found that $q_0$ was negative. This means that the expansion of the Universe is not decelerating, but is **accelerating**!!, Adam Riess, Brian Schmidt and Saul Perlmutter were awarded the Nobel Prize for Physics for this discovery a few years ago.
+
+If we take a look at the acceleration equation again
+
+\begin{equation}
+    \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)
+(\#eq:acceleration-decel-2)
+\end{equation} 
+
+we can try to figure out what is going on.
+
+If we assume the matter equation of state again ($P=0$), then the left hand side of Eq. \@ref(eq:acceleration-decel-2) will always be negative. The Universe's expansion will decelerate.
+
+If we assume a different equation of state, for example, one with a similar form to that of radiation such that $P>0$, then we find the same thing. The left hand side of Eq. \@ref(eq:acceleration-decel-2) will always be negative. The Universe's expansion will decelerate. (You can see now why they called it the deceleration parameter...)
+
+In fact, the only way we can get a Universe where the expansion is accelerating is if it's dominant component has a very strange equation of state **with negative pressure**!
+
+The Cosmological Constant {#sec:lambda-obs-params}
+--------------------------
+
+At the end of Lecture 3 we looked briefly at the Cosmological Constant ($\Lambda$). Einstein introduced $\Lambda$ into general relativity in order to create a 'static' Universe -- one that was neither expanding or contracting. His assumption was that as all matter interacts via gravity then there is no solution to the Friedman equation that permits $\dot{a} = 0$. To counteract this, he added in the $\Lambda$ term so that the $\dot{a} = 0$ solution would be permitted, making the Friedman equation become
+
+\begin{equation}
+    H^2 = \left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8 \pi G \rho}{3} - \dfrac{k}{a^2} + \dfrac{\Lambda}{3}
+(\#eq:fr-lam)
+\end{equation} 
+
+where $\Lambda$ has units of time$^{-2}$.
+
+A full derivation of the acceleration equation including $\Lambda$ is quite dry so I won't include it here. You're welcome to try it yourself (or see the PDF of the slides on moodle). The important point to take away is that if $\Lambda$ is positive, then it provides a positive repulsive force to drive the expansion.
+
+The density related to $\Lambda$ follows the same rules as other densities, i.e.
+
+\begin{equation}
+    \Omega + \Omega_{\Lambda} = 1
+(\#eq:den-lam)
+\end{equation} 
+
+in a flat Universe, where 
+\begin{equation}
+    \Omega_{\Lambda} = \dfrac{\Lambda}{3H^2}
+(\#eq:den-lam-2)
+\end{equation} 
+
+
+We can treat $\Lambda$ as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. \@ref(eq:fr_lam)) and the density (Eq. \@ref(eq:den-lam-2)) we can show that 
+
+\begin{equation}
+    \rho_{\Lambda} = \dfrac{\Lambda}{8 \pi G}
+(\#eq:den-lam-3)
+\end{equation} 
+
+to give 
+\begin{equation}
+    H^2 = \dfrac{8 \pi G}{3}(\rho + \rho_{\Lambda}) - \dfrac{k}{a^2}
+(\#eq:den-lam-4)
+\end{equation} 
+
+Finally, we can look at the Fluid equation (aha! you thought I was going to say the Friedman equation!) to find the equation of state for $\Lambda$:
+
+\begin{equation}
+    \dot{rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
+(\#eq:lam-fluid)
+\end{equation} 
+
+As $\Lambda$ is the cosmological **constant**, hence does not change with time, we know that $\dot{\rho_{\Lambda}} = 0$. Rearranging Eq. \@ref(eq:lam-fluid) gives us:
+
+\begin{equation}
+    P_{\Lambda} = -\rho_{\Lambda} c^2
+(\#eq:lam-fluid-2)
+\end{equation} 
+
+**The cosmological constant has negative pressure!!** What does this mean physically? It means that as the Universe expands, work is done on the $\Lambda$ fluid and its energy density remains constant.
+
+The generic form of the $\Lambda$ equation of state is 
+
+\begin{equation}
+    P_{\Lambda} =  w \rho_{\Lambda} c^2
+(\#eq:lam-fluid-2)
+\end{equation} 
+
+and you will often see the parameter $w$ referred to as the **dark energy equation of state**. We will revist the evidence for $\Lambda$, and measurements of the other parameters discussed in this section soon.
+
+
+
+
+

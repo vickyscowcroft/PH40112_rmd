@@ -1,24 +1,35 @@
-\contentsline {section}{Unit Overview}{3}{Doc-Start}% 
-\contentsline {section}{\numberline {1}Overview of Observational Cosmology}{4}{section.1}% 
-\contentsline {subsection}{\numberline {1.1}A brief history of the Universe}{4}{subsection.1.1}% 
-\contentsline {subsection}{\numberline {1.2}The first second}{5}{subsection.1.2}% 
-\contentsline {subsection}{\numberline {1.3}After the first second:}{7}{subsection.1.3}% 
-\contentsline {subsection}{\numberline {1.4}The Cosmological Principle}{8}{subsection.1.4}% 
-\contentsline {subsection}{\numberline {1.5}The Expanding Universe}{8}{subsection.1.5}% 
-\contentsline {section}{\numberline {2}Equations of the Expanding Universe}{10}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Metric of space-time}{10}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}The Einstein Equations}{11}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Fluid equation}{11}{subsection.2.3}% 
-\contentsline {subsection}{\numberline {2.4}Ricci tensor and Ricci scalar}{12}{subsection.2.4}% 
-\contentsline {subsection}{\numberline {2.5}Friedman Equation}{12}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}Natural units a.k.a. where have all the \(c^2\)'s gone?}{13}{subsection.2.6}% 
-\contentsline {subsection}{\numberline {2.7}An alternative derivation of the Friedman equation}{13}{subsection.2.7}% 
-\contentsline {subsection}{\numberline {2.8}The meaning of \(k\)}{14}{subsection.2.8}% 
-\contentsline {subsection}{\numberline {2.9}Exercises}{14}{subsection.2.9}% 
-\contentsline {section}{\numberline {3}Composition of the Universe}{16}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Matter}{16}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Radiation}{17}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Mixing matter and radiation}{19}{subsection.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Cosmological Constant}{20}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Exercises}{20}{subsection.3.5}% 
-\contentsfinish 
+\contentsline {chapter}{Unit Overview}{5}{chapter*.2}% 
+\contentsline {section}{Topics and Schedule}{6}{section*.3}% 
+\contentsline {section}{Discussion session - Thursday 2ndApril}{7}{table.0.1}% 
+\contentsline {section}{Suggested textbook}{8}{table.0.1}% 
+\contentsline {section}{Lecture notes, slides, recordings}{9}{table.0.1}% 
+\contentsline {chapter}{\numberline {1}Overview of Observational Cosmology}{11}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}The Cosmological Principle}{12}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}A brief history of the Universe}{13}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}The first second}{15}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}After the first second:}{17}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}The Expanding Universe}{19}{section.1.5}% 
+\contentsline {chapter}{\numberline {2}Equations of the Expanding Universe}{21}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Metric of space-time}{21}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}The Einstein Equations}{23}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Fluid equation}{24}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Ricci tensor and Ricci scalar}{25}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Friedman Equation}{26}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Natural units a.k.a. where have all the \(c^2\)'s gone?}{27}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}An alternative derivation of the Friedman equation}{28}{section.2.7}% 
+\contentsline {section}{\numberline {2.8}The meaning of \(k\)}{30}{section.2.8}% 
+\contentsline {section}{\numberline {2.9}Exercises}{31}{section.2.9}% 
+\contentsline {chapter}{\numberline {3}Composition of the Universe}{33}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Matter}{34}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Radiation}{36}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Why does a radiation dominated Universe expand more slowly?}{37}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Mixing matter and radiation}{39}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Cosmological Constant}{41}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Exercises}{42}{section.3.6}% 
+\contentsline {chapter}{\numberline {4}Observational Parameters}{43}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Observational Techniques}{45}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}\(\Lambda \)CDM: The Standard Cosmological Model}{47}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Dark Matter}{49}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Structures in the Universe}{51}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Inflation}{53}{chapter.9}% 
+\contentsline {chapter}{\numberline {10}The Evolving Universe}{55}{chapter.10}% 

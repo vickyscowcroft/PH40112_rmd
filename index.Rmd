@@ -11,10 +11,9 @@ output:
   bookdown::gitbook:
     css: [mystyle.css]
 bibliography: [book.bib, packages.bib]
-documentclass: tufte-handout
+documentclass: book
 classoption: 
  - a4paper
- - notoc
 biblio-style: apalike
 link-citations: yes
 github-repo: PH40112_rmd
@@ -24,6 +23,7 @@ filecolor: black
 linkcolor: black
 urlcolor: magenta
 fontsize: 11pt
+subparagraph: yes
 #abstract: | 
 
 ---
@@ -47,17 +47,17 @@ The planned schedule for sessions is as follows:
 
 | Week | Date      |         Session        |                                                              Topic |
 |:-----|:----------|:----------------------:|-------------------------------------------------------------------:|
-| 7    | 16/3 |        Lecture 1       |                            [Introduction to Observational Cosmology](#ch:intro_obs) |
-|      | 19/3  |        Lecture 2       |                                [Equations of the Expanding Universe](#ch:eqs_of_expanding) |
-|      | 20/3  |        Lecture 3       |                                        [Composition of the Universe](#ch:constituents) |
-| 8    | 23/3  |        Lecture 4       |                                             [Observational Parameters](#ch:obs-params) |
-|      | 26/3 |        Lecture 5       |                                           [Observational Techniques](#ch:obs-techs) |
-|      | 27/3  |        Lecture 6       |                                                        [The $\Lambda$CDM Model](#ch:lambdacdm) |
-| 9    | 30/3  |        Lecture 7       |                                         [Dark Matter](#ch:dark-matter) |
+| 7    | 16/3 |        Lecture 1       |                            Introduction to Observational Cosmology |
+|      | 19/3  |        Lecture 2       |                                Equations of the Expanding Universe |
+|      | 20/3  |        Lecture 3       |                                        Composition of the Universe |
+| 8    | 23/3  |        Lecture 4       |                                             Observational Parameters|
+|      | 26/3 |        Lecture 5       |                                           Observational Techniques |
+|      | 27/3  |        Lecture 6       |                                                        The $\Lambda$CDM Model |
+| 9    | 30/3  |        Lecture 7       |                                         Dark Matter |
 |      | 2/4  |     **Discussion session** |                        Current Research Topics |  
-|      | 3/4  |  Lecture 8       |                                        [Structures in the Universe](#ch:structures)  |
-| 10   | 20/4  |        Lecture 9       |                                                          [Inflation](#ch:inflation) |
-|      | 23/4  |       Lecture 10       |                                              [The Evolving Universe](#ch:evolving) |
+|      | 3/4  |  Lecture 8       |                                        Structures in the Universe |
+| 10   | 20/4  |        Lecture 9       |                                                          Inflation |
+|      | 23/4  |       Lecture 10       |                                              The Evolving Universe |
 |      | 24/4 |     Problems Class     |                                                     Problems Class |
 | 11   | 27/4  |     Problems Class     |                                                     Problems Class |
 |      | 30/4  |     Problems Class     |                                                     Problems Class |

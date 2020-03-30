@@ -7,6 +7,24 @@ derivations of the equations will be discussed in more depth, and will
 include the relativistic treatment introduced in the first half of this
 course.
 
+The Cosmological Principle {#sec:cosmoprinciple}
+--------------------------
+
+The Cosmological Principle is the belief that **our position in the
+Universe is not special in any way**.
+
+If the Cosmological Principle holds, then there is no special position
+in the Universe, meaning that it should be the same everywhere (i.e. it
+should be **homogeneous**), and it should have no preferred direction
+(i.e. it should be **isotropic**)
+
+Clearly the Universe is not isotropic and homogeneous on small scales --
+the distributions of things like stars, planets and galaxies give more
+or less dense regions locally. But on a large scale, the Universe does
+display homogeneity and isotropy; Galaxy clusters are spread over the
+Universe and not concentrated to one side, and the CMB has only very
+tiny fluctuations.
+
 A brief history of the Universe {#sec:history}
 -------------------------------
 
@@ -205,23 +223,6 @@ contribution. While we don't know the nature of dark energy, its effects
 are seen as driving the expansion of the Universe so it is not just
 getting larger, but the expansion itself is accelerating.
 
-The Cosmological Principle {#sec:cosmoprinciple}
---------------------------
-
-The Cosmological Principle is the belief that **our position in the
-Universe is not special in any way**.
-
-If the Cosmological Principle holds, then there is no special position
-in the Universe, meaning that it should be the same everywhere (i.e. it
-should be **homogeneous**), and it should have no preferred direction
-(i.e. it should be **isotropic**)
-
-Clearly the Universe is not isotropic and homogeneous on small scales --
-the distributions of things like stars, planets and galaxies give more
-or less dense regions locally. But on a large scale, the Universe does
-display homogeneity and isotropy; Galaxy clusters are spread over the
-Universe and not concentrated to one side, and the CMB has only very
-tiny fluctuations.
 
 The Expanding Universe {#sec:expanding_intro}
 ----------------------

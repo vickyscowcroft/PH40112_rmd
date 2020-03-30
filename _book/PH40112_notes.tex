@@ -1,8 +1,4 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
-\PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
-%
-\documentclass[11pt,a4paper,notoc]{tufte-handout}
+\documentclass[11pt,a4paper]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -10,40 +6,40 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
 \else % if luatex or xelatex
-  \usepackage{unicode-math}
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
+\usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{xcolor}
 \usepackage{hyperref}
-\hypersetup{
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
             pdftitle={Relativistic Cosmology Part 2},
             pdfauthor={Dr Vicky Scowcroft},
             colorlinks=true,
             linkcolor=black,
-            filecolor=black,
             citecolor=magenta,
             urlcolor=magenta,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
+% grffile has become a legacy package: https://ctan.org/pkg/grffile
+\IfFileExists{grffile.sty}{%
+\usepackage{grffile}
+}{}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -52,24 +48,42 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
 
-% set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Relativistic Cosmology Part 2}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Dr Vicky Scowcroft}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{Semester 2, 2019/20}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -104,24 +118,18 @@
 \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 
 %\usepackage[fontsize=11]{scrextend}
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
-
-\title{Relativistic Cosmology Part 2}
-\author{Dr Vicky Scowcroft}
-\date{2020-02-28}
 
 \begin{document}
 \maketitle
 
 {
-\hypersetup{linkcolor=}
-\setcounter{tocdepth}{2}
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{1}
 \tableofcontents
 }
 \hypertarget{unit-overview}{%
-\section*{Unit Overview}\label{unit-overview}}
-\addcontentsline{toc}{section}{Unit Overview}
+\chapter*{Unit Overview}\label{unit-overview}}
+\addcontentsline{toc}{chapter}{Unit Overview}
 
 The aim of this section of PH40112 is to present the observations and
 theory underpinning modern Cosmology. It is complementary to the first
@@ -136,49 +144,236 @@ assess how systematic errors and experimental uncertainties affect
 cosmological experiments, in particular how these affect our ability
 to discriminate between different models of the Universe's evolution.
 
-The following content will be addressed in the context of Relativistic
-Cosmology:
+\hypertarget{topics-and-schedule}{%
+\section*{Topics and Schedule}\label{topics-and-schedule}}
+\addcontentsline{toc}{section}{Topics and Schedule}
 
-\begin{itemize}
-\item
-  Cosmological dynamics
-\item
-  The Cosmological constant
-\item
-  The expanding Universe and the big bang
-\item
-  The accelerating expansion of the Universe
-\item
-  Inflation
-\item
-  The early Universe and the formation of structure
-\item
-  The standard Cosmological model (\(\Lambda\)CDM)
-\end{itemize}
+The planned schedule for sessions is as follows:
+
+\begin{longtable}[]{@{}llcr@{}}
+\toprule
+\begin{minipage}[b]{0.05\columnwidth}\raggedright
+Week\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
+Date\strut
+\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\centering
+Session\strut
+\end{minipage} & \begin{minipage}[b]{0.55\columnwidth}\raggedleft
+Topic\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+7\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+16/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 1\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Introduction to Observational Cosmology\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+19/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 2\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Equations of the Expanding Universe\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+20/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 3\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Composition of the Universe\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+8\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+23/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 4\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Observational Parameters\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+26/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 5\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Observational Techniques\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+27/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 6\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+The \(\Lambda\)CDM Model\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+9\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+30/3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 7\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Dark Matter\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+2/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+\textbf{Discussion session}\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Current Research Topics\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+3/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 8\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Structures in the Universe\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+10\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+20/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 9\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Inflation\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+23/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Lecture 10\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+The Evolving Universe\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+24/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Problems Class\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Problems Class\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+11\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+27/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Problems Class\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Problems Class\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+30/4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Problems Class\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Problems Class\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+1/5\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Revision Session\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Revision Session and Q\&A\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+4/5 - 7/5\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
+Office hours\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedleft
+Revision week. Office hours will be posted closer to the date.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until weeks 10 and 11.
+
+The schedule was last updated on 13th March. Changes to the planned schedule will be posted here and on the moodle page.
+
+\hypertarget{discussion-session---thursday-2ndapril}{%
+\section*{Discussion session - Thursday 2ndApril}\label{discussion-session---thursday-2ndapril}}
+\addcontentsline{toc}{section}{Discussion session - Thursday 2ndApril}
+
+The session on Thursday April 2nd will be a discussion session, covering three journal publications using different techniques used to estimate cosmological parameters. You will each be assigned to a group during week 8 and the group assignments and corresponding papers will be posted to Moodle. After the session, summaries of the discussions will be uploaded to Moodle and the relavent section of these notes.
+
+If the date and/or format of this session needs to change, updates will be posted here and on the Moodle forum.
+
+\hypertarget{suggested-textbook}{%
+\section*{Suggested textbook}\label{suggested-textbook}}
+\addcontentsline{toc}{section}{Suggested textbook}
 
 This section of the course closely follows several chapters of \emph{An
-Introduction to Modern Cosmology: 3\(^{\text{rd}}\) edition} by Liddle.
+Introduction to Modern Cosmology: 3rd edition} by Liddle.
 You may find it helpful to refer to this book or others such as \emph{The
 Oxford companion to Cosmology} by Liddle and Loveday, which is
 available in the University library.
 
-In addition to these notes, we will be discussing journal publications
-from \emph{The Astrophysical Journal} and \emph{Astronomy \& Astrophysics}. These
-are available online through the library and will be placed on Moodle
-in advance of the relevant sessions.
+\hypertarget{lecture-notes-slides-recordings}{%
+\section*{Lecture notes, slides, recordings}\label{lecture-notes-slides-recordings}}
+\addcontentsline{toc}{section}{Lecture notes, slides, recordings}
+
+Written notes for lectures 1 - 10 will be made available online in html and PDF format. The html notes are available at \url{https://vickyscowcroft.github.io/PH40112_rmd/} and will be updated throughout the course. PDF versions of the notes will be posted to the course Moodle page. The html notes have been designed so that the maths content is compatible with screen readers.
+
+Lectures will follow the same general structure as the written notes, but will not be identical - i.e.~they will not be `skeleton' notes for you to fill in the blanks. They are designed to support your learning of the lecture material, so you may find it useful to make your own notes during the session.
+
+PDF versions of the slides for each session will be posted on Moodle before each session. If you need these in an alternative format please let me know.
+
+All sessions will be recorded with Panopto and can be accessed in the usual way.
 
 \hypertarget{ch:intro_obs}{%
-\section{Overview of Observational Cosmology}\label{ch:intro_obs}}
+\chapter{Overview of Observational Cosmology}\label{ch:intro_obs}}
 
-This part introduces the observational foundation of Cosmology. It
+This section introduces the observational foundation of Cosmology. It
 builds upon the material in PH30111: Introduction to Galaxies and
 Cosmology. Some material may be familiar to you, but the origins and
 derivations of the equations will be discussed in more depth, and will
 include the relativistic treatment introduced in the first half of this
 course.
 
+\hypertarget{sec:cosmoprinciple}{%
+\section{The Cosmological Principle}\label{sec:cosmoprinciple}}
+
+The Cosmological Principle is the belief that \textbf{our position in the
+Universe is not special in any way}.
+
+If the Cosmological Principle holds, then there is no special position
+in the Universe, meaning that it should be the same everywhere (i.e.~it
+should be \textbf{homogeneous}), and it should have no preferred direction
+(i.e.~it should be \textbf{isotropic})
+
+Clearly the Universe is not isotropic and homogeneous on small scales --
+the distributions of things like stars, planets and galaxies give more
+or less dense regions locally. But on a large scale, the Universe does
+display homogeneity and isotropy; Galaxy clusters are spread over the
+Universe and not concentrated to one side, and the CMB has only very
+tiny fluctuations.
+
 \hypertarget{sec:history}{%
-\subsection{A brief history of the Universe}\label{sec:history}}
+\section{A brief history of the Universe}\label{sec:history}}
 
 The `Cosmic Calendar' shown in
 Figure \ref{fig:cosmic-calendar} condenses the evolution of the Universe
@@ -196,9 +391,9 @@ of the Solar System and the evolution of Earth comes from geology.
 However, to understand how the Universe as a whole came to be, we must
 look further back in time.
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{Images/CosmicCalendar} \caption{The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0 \citep{wikipedia_2020}.}\label{fig:cosmic-calendar}
-\end{figure}
+\textbackslash{}begin\{figure\}
+\includegraphics[width=1\linewidth]{Images/CosmicCalendar} \textbackslash{}caption\{The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0 \citep{wikipedia_2020}.\}\label{fig:cosmic-calendar}
+\textbackslash{}end\{figure\}
 
 Figure \ref{fig:evo-universe} illustrates our current understanding of
 the evolution of the Universe, starting with the Big Bang, through to
@@ -213,7 +408,7 @@ ideas we cover come together.
 \end{figure}
 
 \hypertarget{sec:first_second}{%
-\subsection{The first second}\label{sec:first_second}}
+\section{The first second}\label{sec:first_second}}
 
 The first second after the Big Bang was quite dramatic. Highlights of
 this time are given below. Bear in mind that all of the following
@@ -336,7 +531,7 @@ annihilated, producing pairs of photons. A small number of leptons
 remain after annihilation.
 
 \hypertarget{sec:after_1s}{%
-\subsection{After the first second:}\label{sec:after_1s}}
+\section{After the first second:}\label{sec:after_1s}}
 
 The Universe has now been evolving for around 1 s. It has exponentially
 expanded, created all the matter and radiation we see (and destroyed a
@@ -449,26 +644,8 @@ contribution. While we don't know the nature of dark energy, its effects
 are seen as driving the expansion of the Universe so it is not just
 getting larger, but the expansion itself is accelerating.
 
-\hypertarget{sec:cosmoprinciple}{%
-\subsection{The Cosmological Principle}\label{sec:cosmoprinciple}}
-
-The Cosmological Principle is the belief that \textbf{our position in the
-Universe is not special in any way}.
-
-If the Cosmological Principle holds, then there is no special position
-in the Universe, meaning that it should be the same everywhere (i.e.~it
-should be \textbf{homogeneous}), and it should have no preferred direction
-(i.e.~it should be \textbf{isotropic})
-
-Clearly the Universe is not isotropic and homogeneous on small scales --
-the distributions of things like stars, planets and galaxies give more
-or less dense regions locally. But on a large scale, the Universe does
-display homogeneity and isotropy; Galaxy clusters are spread over the
-Universe and not concentrated to one side, and the CMB has only very
-tiny fluctuations.
-
 \hypertarget{sec:expanding_intro}{%
-\subsection{The Expanding Universe}\label{sec:expanding_intro}}
+\section{The Expanding Universe}\label{sec:expanding_intro}}
 
 The first observational evidence that the Universe is expanding was
 found by Edwin Hubble \citep{1929Hubble}. By measuring the distances
@@ -487,10 +664,10 @@ understanding of Cosmology.
 \end{figure}
 
 \hypertarget{ch:eqs_of_expanding}{%
-\section{Equations of the Expanding Universe}\label{ch:eqs_of_expanding}}
+\chapter{Equations of the Expanding Universe}\label{ch:eqs_of_expanding}}
 
 \hypertarget{sec:metric}{%
-\subsection{Metric of space-time}\label{sec:metric}}
+\section{Metric of space-time}\label{sec:metric}}
 
 Consider a flat piece of paper where points can be specified by
 coordinates \(x_1\) and \(x_2\). The distance between two points is given by
@@ -551,7 +728,7 @@ factor of the Universe} - i.e. \(a(t) = r/r_0,\) where \(r_0\) is \(r\) at
 time \(t_0\).
 
 \hypertarget{sec:einstein_eqs}{%
-\subsection{The Einstein Equations}\label{sec:einstein_eqs}}
+\section{The Einstein Equations}\label{sec:einstein_eqs}}
 
 The Robertson-Walker metric evolves according to Einstein's equation:
 \begin{equation}
@@ -569,7 +746,7 @@ there are potentially 10 Einstein equations. If \(T_{\mu\nu}\) has
 additional symmetries, then the number of equations is reduced.
 
 \hypertarget{sec:fluid-eqns}{%
-\subsection{Fluid equation}\label{sec:fluid-eqns}}
+\section{Fluid equation}\label{sec:fluid-eqns}}
 
 We consider that any possible components of the Universe (e.g.~matter,
 radiation) can be described as perfect fluids. Perfect fluids have no
@@ -619,7 +796,7 @@ in two independent Einstein equations, the time-time solution and the
 space-space solution.
 
 \hypertarget{sec:ricci}{%
-\subsection{Ricci tensor and Ricci scalar}\label{sec:ricci}}
+\section{Ricci tensor and Ricci scalar}\label{sec:ricci}}
 
 Deriving the full Ricci tensor is beyond the scope of this course. The
 following is provided for completeness. The components of the Ricci
@@ -654,7 +831,7 @@ R = g_{ik}R_{ik} = - 6\dfrac{\ddot{a}}{a} - 6\left(\dfrac{\dot{a}}{a}\right)^2 -
 \end{equation}
 
 \hypertarget{sec:friedman}{%
-\subsection{Friedman Equation}\label{sec:friedman}}
+\section{Friedman Equation}\label{sec:friedman}}
 
 Using the time-time solution of the Einstein equation gives
 \begin{equation}
@@ -679,7 +856,7 @@ Which looks odd right now, but by subtracting the Friedman equation (Eqn. \eqref
 which is the known as the \textbf{acceleration equation}.
 
 \hypertarget{sec:natural_units}{%
-\subsection{\texorpdfstring{Natural units a.k.a. where have all the \(c^2\)'s gone?}{Natural units a.k.a. where have all the c\^{}2's gone?}}\label{sec:natural_units}}
+\section{\texorpdfstring{Natural units a.k.a. where have all the \(c^2\)'s gone?}{Natural units a.k.a. where have all the c\^{}2's gone?}}\label{sec:natural_units}}
 
 From this point forward, you will see that the factor
 \(\left(k c^2/a^2\right)\) in the Friedman equation will magically become
@@ -694,7 +871,7 @@ parameters, discussed in sections XXXX. So don't worry about our missing \(c^2\)
 factor, it's just another maths trick.
 
 \hypertarget{sec:alt_friedman}{%
-\subsection{An alternative derivation of the Friedman equation}\label{sec:alt_friedman}}
+\section{An alternative derivation of the Friedman equation}\label{sec:alt_friedman}}
 
 The evolution of the scale factor, \(a\), can be derived using mostly
 Newtonian mechanics, in addition to two results from General Relativity:
@@ -777,7 +954,7 @@ which is the same as the Friedman equation
 (Equation \eqref{eq:friedman}), when \(c=1\).
 
 \hypertarget{sec:curvature}{%
-\subsection{\texorpdfstring{The meaning of \(k\)}{The meaning of k}}\label{sec:curvature}}
+\section{\texorpdfstring{The meaning of \(k\)}{The meaning of k}}\label{sec:curvature}}
 
 In the previous sections, \(k\) has been used to describe the curvature of
 the Universe. \(k\) has three possible values:
@@ -803,7 +980,7 @@ In some derivations \(k\) can have different values from those
 listed here. However, they will scale such that \(k = -1, 0, 1\).
 
 \hypertarget{sec:geometry-ex}{%
-\subsection{Exercises}\label{sec:geometry-ex}}
+\section{Exercises}\label{sec:geometry-ex}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -820,7 +997,7 @@ listed here. However, they will scale such that \(k = -1, 0, 1\).
 \end{enumerate}
 
 \hypertarget{ch:constituents}{%
-\section{Composition of the Universe}\label{ch:constituents}}
+\chapter{Composition of the Universe}\label{ch:constituents}}
 
 Like all good physicists, Cosmologists like to simplify the Universe
 with assumptions. In the previous section we decided that the Universe
@@ -835,7 +1012,7 @@ fluids behave in the same way. Each component will obey its own
 (\(\rho\)) are related.
 
 \hypertarget{sec:matter-eos}{%
-\subsection{Matter}\label{sec:matter-eos}}
+\section{Matter}\label{sec:matter-eos}}
 
 The simplest place to start is with the equation of state for matter, as
 that is the component that we are most familiar with. We know that for
@@ -916,7 +1093,7 @@ dominated Universe, the expansion will continue forever. It will slow
 down over time, becoming infinitely slow at \(t=\infty\).
 
 \hypertarget{sec:radiation-eos}{%
-\subsection{Radiation}\label{sec:radiation-eos}}
+\section{Radiation}\label{sec:radiation-eos}}
 
 The equation of state for radiation is
 \begin{equation}
@@ -948,14 +1125,14 @@ scale factor, \(a\), we find:
 Universe expands \emph{more slowly} when it is radiation dominated than when
 it is matter dominated.
 
-This may seem counterintuitive at first; for a matter dominated Universe
+This may seem counter-intuitive at first; for a matter dominated Universe
 the energy density is proportional to the volume of the Universe
 (\(1/a^3\)), so why is this not the same for a radiation dominated
 Universe? The answer lies in what happens to radiation under an increase
 in the scale factor.
 
 \hypertarget{sec:slow_expansion_rad}{%
-\subsection{Why does a radiation dominated Universe expand more slowly?}\label{sec:slow_expansion_rad}}
+\section{Why does a radiation dominated Universe expand more slowly?}\label{sec:slow_expansion_rad}}
 
 As the Universe expands, the scale factor \(a\) increases. The energy
 density of the radiation will decrease proportionally as the volume
@@ -1012,7 +1189,7 @@ energy by an additional factor of \(a\) accounts for the slowed expansion
 in a radiation dominated Universe.
 
 \hypertarget{sec:mixtures}{%
-\subsection{Mixing matter and radiation}\label{sec:mixtures}}
+\section{Mixing matter and radiation}\label{sec:mixtures}}
 
 In Sections \ref{sec:matter-eos} and
 \ref{sec:radiation-eos} we considered the cases where the
@@ -1082,7 +1259,7 @@ dominates, \(a\) will evolve as in the matter case:
 \end{equation}
 
 \hypertarget{sec:dark_energy_1}{%
-\subsection{Cosmological Constant}\label{sec:dark_energy_1}}
+\section{Cosmological Constant}\label{sec:dark_energy_1}}
 
 The final case that we haven't considered is the contribution from the
 cosmological constant, \(\Lambda\) and its density \(\rho_{\Lambda}\). We
@@ -1106,7 +1283,7 @@ Universe increases in volume. We'll come back to the ridiculousness of
 \(\Lambda\) later in the course.
 
 \hypertarget{sec:composition_ex}{%
-\subsection{Exercises}\label{sec:composition_ex}}
+\section{Exercises}\label{sec:composition_ex}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1128,5 +1305,6 @@ Universe increases in volume. We'll come back to the ridiculousness of
 \end{enumerate}
 
 \bibliography{book.bib,packages.bib}
+
 
 \end{document}
