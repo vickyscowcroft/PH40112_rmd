@@ -43,36 +43,29 @@ subparagraph: yes
   
 ## Topics and Schedule {-}
 
-The planned schedule for sessions is as follows:
 
-| Week | Date      |         Session        |                                                              Topic |
-|:-----|:----------|:----------------------:|-------------------------------------------------------------------:|
-| 7    | 16/3 |        Lecture 1       |                            Introduction to Observational Cosmology |
-|      | 19/3  |        Lecture 2       |                                Equations of the Expanding Universe |
-|      | 20/3  |        Lecture 3       |                                        Composition of the Universe |
-| 8    | 23/3  |        Lecture 4       |                                             Observational Parameters|
-|      | 26/3 |        Lecture 5       |                                           Observational Techniques |
-|      | 27/3  |        Lecture 6       |                                                        The $\Lambda$CDM Model |
-| 9    | 30/3  |        Lecture 7       |                                         Dark Matter |
-|      | 2/4  |     **Discussion session** |                        Current Research Topics |  
-|      | 3/4  |  Lecture 8       |                                        Structures in the Universe |
-| 10   | 20/4  |        Lecture 9       |                                                          Inflation |
-|      | 23/4  |       Lecture 10       |                                              The Evolving Universe |
-|      | 24/4 |     Problems Class     |                                                     Problems Class |
-| 11   | 27/4  |     Problems Class     |                                                     Problems Class |
-|      | 30/4  |     Problems Class     |                                                     Problems Class |
-|      | 1/5     |    Revision Session    |                                           Revision Session and Q&A |
-| 12   | 4/5 - 7/5 |      Office hours      | Revision week. <br>Office hours will be posted closer to the date. |
 
-Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until weeks 10 and 11.
+| Topic                                      | Written notes | Slides |                                  Recording |
+|--------------------------------------------|--------------:|-------:|-------------------------------------------:|
+| Introduction to Observational Cosmology    |     Available | Moodle |                                    Panopto |
+| Equations of the Expanding Universe        |     Available | Moodle |           Moodle - supplementary recording |
+| Composition of the Universe                |     Available |     NA | Explain Everything link - see Moodle forum |
+| Observational Parameters                   |     Available | Moodle |                                            |
+| Observational Techniques - Distance Ladder |     Available | Moodle |                                            |
+| Observational Techniques - CMB             |               | Moodle |                                            |
+| The $\Lambda$CDM Model                     |               | Moodle |                                            |
+| Dark Matter                                |               | Moodle |                                            |
+| Current Research Topics                    |               |        |                                            |
+| Structures in the Universe                 |               | Moodle |                                            |
+| Inflation                                  |               | Moodle |                                            |
 
-The schedule was last updated on 13<sup>th</sup> March. Changes to the planned schedule will be posted here and on the moodle page. 
+Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until week 11.
 
-## Discussion session - Thursday 2<sup>nd</sup>April {-}
+The schedule was last updated on 2<sup>nd</sup> April. Changes to the planned schedule will be posted here and on the moodle page. 
 
-The session on Thursday April 2nd will be a discussion session, covering three journal publications using different techniques used to estimate cosmological parameters. You will each be assigned to a group during week 8 and the group assignments and corresponding papers will be posted to Moodle. After the session, summaries of the discussions will be uploaded to Moodle and the relavent section of these notes. 
+## Current Research Topics section {-}
 
-If the date and/or format of this session needs to change, updates will be posted here and on the Moodle forum. 
+The discussion session originally planned for April 2nd is no longer feasible. Two journal papers on different cosmological experiements will be posted on Moodle at the end of week 9. I will provide *brief* summaries of papers, and a list of questions you should have in mind when reading the papers. This section will have strong ties with the Observational Techniques sections, so you should ensure you are familiar with the material in that section when working on this. 
 
 ## Suggested textbook {-}
   This section of the course closely follows several chapters of *An
@@ -89,8 +82,7 @@ Lectures will follow the same general structure as the written notes, but will n
 
 PDF versions of the slides for each session will be posted on Moodle before each session. If you need these in an alternative format please let me know. 
 
-All sessions will be recorded with Panopto and can be accessed in the usual way. 
-
+Where appropriate, recordings will be made available to accompany the slides and lecture notes. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

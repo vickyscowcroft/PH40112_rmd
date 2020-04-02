@@ -44,7 +44,7 @@ of the Solar System and the evolution of Earth comes from geology.
 However, to understand how the Universe as a whole came to be, we must
 look further back in time.
 
-```{r echo=FALSE, cosmic-calendar, out.width='100%', fig.show='hold', fig.cap='The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0 [@wikipedia_2020].'}
+```{r echo=FALSE, cosmic-calendar, out.width='100%', fig.show='hold', fig.cap='The Cosmic Calendar. Credit: By Efbrazil, CC BY-SA 3.0.'}
 knitr::include_graphics("Images/CosmicCalendar.png")
 ```
 

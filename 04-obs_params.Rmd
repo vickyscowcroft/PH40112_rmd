@@ -281,7 +281,7 @@ in a flat Universe, where
 \end{equation} 
 
 
-We can treat $\Lambda$ as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. \@ref(eq:fr_lam)) and the density (Eq. \@ref(eq:den-lam-2)) we can show that 
+We can treat $\Lambda$ as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. \@ref(eq:fr-lam)) and the density (Eq. \@ref(eq:den-lam-2)) we can show that 
 
 \begin{equation}
     \rho_{\Lambda} = \dfrac{\Lambda}{8 \pi G}
@@ -297,7 +297,7 @@ to give
 Finally, we can look at the Fluid equation (aha! you thought I was going to say the Friedman equation!) to find the equation of state for $\Lambda$:
 
 \begin{equation}
-    \dot{rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
+    \dot{\rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
 (\#eq:lam-fluid)
 \end{equation} 
 

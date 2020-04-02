@@ -1,0 +1,199 @@
+By comparing the apparent magnitude of a standard candle with it's absolute magnitude we can obtain its distance:
+\begin{equation}
+	\mu = m - M = 5 \log(d) - 5
+\end{equation}
+where $\mu$ is the distance modulus, $m$ is the apparent magnitude, $M$ is the absolute magnitude, and $d$ is the distance in parsecs. In the case of Cepheids, we observe the star's apparent magnitude and calculate its absolute magnitude using the Leavitt law. The Leavitt law takes the form
+\begin{equation}
+	M_{\lambda} = a_{\lambda} \log(P) + b_{\lambda}
+\end{equation}
+where $M_{\lambda}$ is the absolute magnitude at wavelength $\lambda$, and $a_{\lambda}$ and $b_{\lambda}$ are the slope and intercept of the relation. Figure~\ref{fig:smc_pls} shows how the slope ($a$) and intercept ($b$) change with wavelength, with $a$ becoming increasingly negative as we move to longer wavelengths. 
+
+Moving to longer wavelengths to measure Cepheid distances is advantageous for several reasons. First, effects of reddening and extinction on apparent magnitudes are dramatically reduced compared to optical wavelengths. Second, the Leavitt law has smaller dispersion -- i.e. the standard deviation, $\sigma$ of the points around the Leavitt law is smaller, and the amplitude of their lightcurves are smaller (see Figure~\ref{fig:cd_cyg}). This means that distances obtained from redder wavelengths are more accurate than those from shorter wavelength observations. 
+
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{Images/SMC_PL_relations.pdf}
+        \caption{}
+        \label{fig:smc_pls}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{Images/CDCyg.pdf}
+        \caption{}
+        \label{fig:cd_cyg}
+    \end{subfigure}
+    \caption{(a) Leavitt laws for Cepheids in the Small Magellanic Cloud observed at optical (purple, bottom) to mid-infrared (pink, top) wavelengths. There is a clear relation between period and luminosity, with the relation tightening and steepening as we move to longer wavelengths. The relations are offset so these changes can be seen. Adapted from \citet{2016ApJ...816...49S}. (b) Multiwavelength lightcurves for Milky Way Cepheid CD Cyg. The lightcurves become more sinusoidal and smaller in amplitude as you move from blue to red wavelengths.}\label{fig:cepheids}
+\end{figure}
+
+\section{Calibration of standard candles}\label{sec:sc_calibration}
+Standard candles are useful as they are objects of \textbf{known intrinsic luminosity}. But how do we know their intrinsic luminosity? To determine the intrinsic luminosity of a standard candle, we must have a \textbf{calibration sample} for which we know the objects' distance in addition to their apparent magnitudes. In the case of variable stars, this is done using \textbf{parallax} measurements of objects within the Milky way.
+
+\subsection{Parallax calibration of standard candles}\label{sec:parallax}
+Parallax is a geometric distance determination. Distances are estimated by measuring how the positions of objects change over time with respect to a reference frame of distant, background objects. 
+\begin{figure}
+\begin{centering}
+\includegraphics[width=0.7\textwidth]{Images/parallax.pdf}
+\caption{Schematic of the parallax method (not to scale). Distances are determined by measuring the apparent angular shift of nearby objects compared to a ``static'' background of distant objects. Observations are separated by six months (i.e. opposite sides of the Earth's orbit in order to maximise the baseline of the observations. }	
+\label{fig:parallax}
+\end{centering}
+\end{figure}
+Figure~\ref{fig:parallax} illustrates how parallax distance determinations are made. The positions of target stars relative to distant, background objects are measured. Observations are separated by six months, in order to maximise the baseline of the observations. The parallax angle, $\varpi = \left(\theta / 2\right)$ is used to calculate the distance via simple trigonometry:
+\begin{equation}\label{eqn:par_1}
+	d = \dfrac{r}{\tan(\varpi)}
+\end{equation}
+As the parallax angle, $\varpi$, is extremely small, and the baseline length is much smaller than the distance of the target object $\left(\text{i.e. }r \ll d \right)$, Equation~\ref{eqn:par_1} can be simplified to:
+\begin{equation}\label{eqn:par_2}
+	d = \dfrac{1}{\varpi}
+\end{equation}
+where $d$ is the distance of the target in parsecs.
+
+In the case of the distance ladder, parallax distances of Cepheids are used to fix the intercept, or zero-point, of the Leavitt law. Until recently only 10 Cepheids with high-precision parallaxes were available for this calibration. However, the \textit{Gaia} mission promises to dramatically improve this situation. \textit{Gaia} is a European Space Agency mission which is measuring the parallaxes of over \textit{one billion} stars in the Milky Way and its nearest neighbours to extremely high precision. The precision of \textit{Gaia} is such that if we put it on top of Buckingham Palace it could resolve a human hair on top of the Empire State Building, over 5,500~km away. \textit{Gaia}'s parallax catalogue will contain many thousands of Cepheids that could potentially be included in the Leavitt law calibration. 
+
+\section{The Distance Ladder}\label{sec:distance_ladder}
+With the Leavitt law calibrated, we can now measure distances to objects outside the Galaxy. However, although Cepheids are bright stars, we cannot observe them in very distant galaxies. In order to measure distances to the furthest objects we must use different techniques, each calibrated to our parallax zero-point. Tying together different methods to estimate distances to progressively further objects is known as the \textbf{distance ladder}. Figure~\ref{fig:distance_ladder} shows how the techniques tie together to measure \ho.
+
+\begin{figure}[!ht]
+\begin{centering}
+\includegraphics[width=0.75\textwidth]{Images/distance_ladder_pic.pdf}
+\caption{The distance ladder. The bottom rung of the distance ladder is established by measuring parallax distances to Cepheids within our own Galaxy. Cepheids are measured in increasingly distant galaxies in order to calibrate the absolute scale of techniques such as the Tully Fisher relation and Type Ia supernovae (SN Ia). The Hubble constant is measured using the recession velocities (redshift) and distances of SN Ia in the furthest galaxies, where contribution of peculiar velocities is minimized.}	
+\label{fig:distance_ladder}
+\end{centering}
+\end{figure}
+
+To get an accurate measurement of \ho we must use objects that are as far away as possible. If we were to use only galaxies that were nearby in our estimation then the velocities we measure would be dominated by \textbf{peculiar motions}. Peculiar motions are caused by gravitational interaction with other nearby objects. For very distant galaxies -- those deemed to be in the \textbf{Hubble flow} -- the galaxy's velocity is dominated by its \textbf{recession velocity}, and the contribution from the peculiar velocity is negligible. 
+
+
+
+\begin{figure}[!h]
+\begin{centering}
+\includegraphics[width=0.75\textwidth]{Images/Hubble_Parameter_Measurements_zoomedout.jpeg}
+\caption{Measurements of \ho as a function of time. Hubble's original measurement \citep{1929PNAS...15..168H} was around 500~km~s$^{-1}$~Mpc$^{-1}$. Over the last one-hundred years, we appear to have reached a consensus that \ho$\approx 70$~km~s$^{-1}$~Mpc$^{-1}$, although recent high precision measurements have brought that consensus into question.}	
+\label{fig:ho_distance_ladder}
+\end{centering}
+\end{figure}
+
+\subsection{Measurements of \ho from the distance ladder}\label{sec:ho_distance_ladder}
+The distance ladder is one of the oldest and most frequently used techniques to measure \ho. Figure~\ref{fig:ho_distance_ladder} shows how our measurements of \ho have converged over time, from the early measurements in the 1930's, to the high-precision measurements of the 2010's. From Figure~\ref{fig:ho_distance_ladder} it looks like we may have reached a consensus on the value of \ho. To confirm that, we need to consider the uncertainties on our measurements. 
+
+\section{Uncertainties in the distance ladder}\label{sec:distance_ladder_uncertainties}
+There are two types of uncertainties that can be present in a result -- \textbf{systematic} and \textbf{random}. A comparison of the two and their effects on the precision and accuracy of a measurement are shown in Table~\ref{tab:sys_vs_rand} and Figure~\ref{fig:sys_vs_rand}. 
+\vspace{0.3cm}
+\begin{table}[!h]
+\centering
+\caption{Comparison of systematic and random uncertainties}\label{tab:sys_vs_rand}
+\begin{tabular}{|l|r|}  \hline 
+\textbf{Systematic} & \textbf{Random} \\
+ \hline \hline
+ Affects all data points the same way & Affects each point differently \\
+& Often assumed to have Gaussian distribution \\
+Causes \textbf{offsets} & Causes \textbf{dispersion} \\
+Affects \textbf{accuracy} & Affects \textbf{precision} \\
+Doesn't decrease with $N_{\text{obs}}$ & Decreases with $\sqrt{N_{\text{obs}}}$ \\
+ \hline
+ \end{tabular}
+\end{table}
+
+\begin{figure}[!h]
+\begin{centering}
+\includegraphics[width=0.75\textwidth]{Images/precision_accuracy.pdf}
+\caption{The effect of systematic and random uncertainties on accuracy and precision.}\label{fig:sys_vs_rand}
+\end{centering}
+\end{figure}
+
+The distance ladder ties together several techniques to measure distances to the furthest galaxies, hence uncertainties on each ``rung'' of the ladder propagate through to our final measurements. Large uncertainties at the bottom will lead to unreliable measurements at the top, in a similar way to having an unstable foundation for the bottom of a ladder leads to an unstable, wobbly ladder that you really wouldn't want to stand at the top of. 
+
+A major step forward in measuring a high-precision value of \ho was made in 2001 with the publication of the results from the \textit{HST Key Project to Measure the Hubble Constant} \citep{2001ApJ...553...47F}, who found \ho = 71~$\pm$~2~(rand.)~$\pm$~6~(sys.) km~s$^{-1}$~Mpc$^{-1}$. Table~\ref{tab:kp_errs} shows how different components of systematic uncertainty combine in their final result.
+%
+%\begin{table*}
+%\begin{center}
+%\caption{LMC Distance Moduli from different methods \citep[][table 13]{2001ApJ...553...47F}.}\label{tab:kp_lmc}	
+%\begin{tabular}{|l|c|c|c|c|c|c|}
+%\hline 
+% & $\left\langle\mu_{0}\right\rangle$\tablenotemark{a} & $\sigma$ &  & $\left\langle\mu_{0}\right\rangle$\tablenotemark{b} & $\sigma$ &  \\
+%Method & (mag) & (mag) & $N$ & (mag) & (mag) & $N$ \\
+% \hline \hline
+%Cepheids & 18.57 & $\pm$ 0.14 & 5 & 18.52 & $\pm$ 0.13 & 15 \\
+%Eclipsing variables & 18.33 & $\pm$ 0.05 & 3 & \ldots & \ldots & \ldots \\
+%SN 1987A & 18.47 & $\pm$ 0.08 & 4 & 18.50 & $\pm$ 0.12 & 5 \\
+%TRGB & 18.64 & $\pm$ 0.05 & 2 & 18.42 & $\pm$ 0.15 & 1 \\
+%Red clump & 18.27 & $\pm$ 0.11 & 10 & \ldots & \ldots & \ldots \\
+%RR Lyrae variables & 18.30 & $\pm$ 0.13 & 7 & 18.40 & $\pm$ 0.19 & 14 \\
+%Mira variables & 18.54 & $\pm$ 0.04 & 3 & 18.46 & $\pm$ 0.11 & 4 \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\tablenotetext{a}{Based on \citet{2000MmSAI..71..693G} compilation.}
+%\tablenotetext{b}{Based on \citet{1997macl.book.....W} compilation.}
+%\end{table*}
+\begin{table*}
+\begin{center}
+\caption{Overall systematic uncertainties in the Hubble constant \citep[][table 14]{2001ApJ...553...47F}.}\label{tab:kp_errs}	
+\rowcolors{3}{color2}{color1}
+\begin{tabular}{|l | l | r|}
+\hline	
+\cellcolor{color1}Source of uncertainty & \cellcolor{color1}Description & \cellcolor{color1}Error (\%) \\
+\hline \hline
+	& 	&  \\
+\multirow{-2}{*}{\cellcolor{color2}{LMC zero point}}& \multirow{-2}{8cm}{\cellcolor{color2}\parbox{8cm}{Error on mean from Cepheids, TRGB, SN 1987A, red clump, eclipsing binaries}} & \multirow{-2}{*}{\cellcolor{color2}{$\pm$  5}}\\
+\textit{HST} camera calibration &	Tie-in to Galactic star clusters	& $\pm$ 3.5 \\
+Reddening &	Limits from NICMOS photometry &	$\pm$ 1 \\
+Metallicity	& Optical, NICMOS, theoretical constraints & $\pm$ 4 \\
+Bias in Cepheid PL &	Short-end period cutoff &	$\pm$ 1 \\
+Crowding &	Artificial star experiments	& $+$5, $-$0 \\
+Bulk flows on scales $>$10,000 km s$^{-1}$ &	Limits from SN Ia, CMB	& $\pm$ 5 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+In the years since these components have been further reduced. One of the highest precision measurements of \ho to date comes from the \shoes experiment \citep{2016ApJ...826...56R}, who found \ho~=~73.24~$\pm$~1.74~km~s$^{-1}$~Mpc$^{-1}$. Figure~\ref{fig:riess_errs} shows the breakdown of their uncertainty budget.  
+
+\begin{figure}
+	\begin{centering}
+\includegraphics[width=0.45\textwidth]{Images/apjaa293ef1_hr.jpg}
+\caption{Uncertainty budget from the \shoes experiment \citep{2016ApJ...826...56R}.}\label{fig:riess_errs}
+\end{centering}
+\end{figure}
+
+One of the largest uncertainties remaining in distance ladder measurements of \ho comes from the bottom rung of the ladder. In the Key Project, the ladder was tied to our nearest galaxy, the Large Magellanic Cloud (LMC). \shoes reduced this uncertainty by tying their calibration to the Cepheids in the LMC (which can all be assumed to be at the same distance), Cepheids with parallaxes in the Milky Way (MW), and Cepheids in the megamaser host galaxy NGC4258\footnote{Astrophysical masers are sources of stimulated microwave emission, similar to lasers. Megamasers are astrophysical masers with very high isotropic luminosities. Megamasers are excellent geometric distance indicators. By assuming that the maser is travelling round a galaxy with a Keplerian orbit we can calculate the intrinsic size of the system. Comparing this with its apparent size gives us an estimate of the distance.}.
+
+Until recently, only a handful of MW Cepheids had high-precision parallax measurements. The ESA \textit{Gaia} mission will change this in the coming years by measuring high-precision parallaxes for over 1~billion stars in the MW. The \textit{Gaia} sample will include several thousand Cepheids which can then be used to anchor the distance ladder. Figure~\ref{fig:gaia_sky} shows the sky as seen by \textit{Gaia}. Each star in this image has a parallax measurement, including those in the Magellanic Clouds (seen to the bottom right of the Galactic Plane).
+
+\begin{figure}
+	\begin{centering}
+\includegraphics[width=0.95\textwidth]{Images/Gaia_s_sky_in_colour.jpg}
+\caption{The \textit{Gaia} sky in colour. Credit: \href{http://sci.esa.int/gaia/60169-gaia-s-sky-in-colour/}{ESA/Gaia/DPAC, CC BY-SA 3.0 IGO}}\label{fig:gaia_sky}
+\end{centering}
+\end{figure}
+
+In order to properly calibrate the Leavitt law and the uncertainties it contributes to the distance ladder, the \textit{Gaia} Cepheid parallaxes must be treated extremely carefully. When using small samples of Cepheids with reasonably small uncertainties, it is appropriate to estimate the parallax distance ($r$) as
+\begin{equation}\label{eqn:gaia_1}
+r = \dfrac{1}{\varpi}
+\end{equation}
+where $\varpi$ is the parallax angle. However, if we wish to ensure an unbiased calibration of the Leavitt law, we must not cut the Cepheid sample with limits on (a) parallax uncertainty ($\sigma_{\varpi}$) or (b) apparent magnitude. As there is an inverse relation between parallax and distance, the probability distribution of distances for a given parallax angle is skewed, becoming more so as the fractional uncertainty ${f}_{\mathrm{obs}} = \sigma_{\varpi}/\varpi$ increases. This is illustrated in Figure~\ref{fig:gaia_errs}. This skewness must be taken into account in order to prevent systematic uncertainties being introduced into the Leavitt law calibration. Therefore, rather than use the simple parallax equation given in Equation~\ref{eqn:gaia_1}, we must use a full Bayesian analysis to estimate distances:
+\begin{align}
+P\left(r | \varpi, \sigma_{\varpi}\right) &= \dfrac{1}{Z} P\left(\varpi | r, \sigma_{\varpi}\right)P(r)\\
+Z &= \int_0^{\infty} P\left(r | \varpi, \sigma_{\varpi}\right)P(r) dr
+\end{align}
+where $P\left(r | \varpi, \sigma_{\varpi}\right)$ is the posterior probability distribution of $r$ given parallax $\varpi$ and parallax uncertainty $\sigma_{\varpi}$, $P\left(\varpi | r, \sigma_{\varpi}\right)$ is the likelihood of our observation, and $P(r)$ represents our prior on $r$. $Z$ is the normalisation constant. 
+
+Assuming that our parallax uncertainties are Gaussian, then the measurement, $\varpi$ can be thought of as having been drawn from a Gaussian distribution with mean $1/r$ and standard deviation ${\sigma }_{\varpi }$. The likelihood is given by
+\begin{align}
+	P\left(\varpi | r, \sigma_{\varpi}\right) = \dfrac{1}{\sqrt{2\pi}\sigma_{\varpi}} \exp\left[-\dfrac{1}{2\sigma_{\varpi}^2} \left(\varpi - \dfrac{1}{r}\right)^2\right]
+\end{align}
+You
+
+
+\begin{figure}
+	\begin{centering}
+\includegraphics[width=0.95\textwidth]{Images/apjaa3f0ff1_hr.jpg}
+\caption{Left panel is the probability $P(\varpi | r,{\sigma }_{\varpi })$ as a function of $\varpi$. The middle panel is $P(\varpi | r,{\sigma }_{\varpi })$ as a function of $r$ for an object with ${f}_{\mathrm{obs}}=0.2$, and the right panel is as the middle panel but for ${f}_{\mathrm{obs}}=0.5$, where. ${f}_{\mathrm{obs}} = \sigma_{\varpi}/\varpi$. The shaded areas indicate the $2\sigma $ credible interval about $1/r$ and the corresponding transformed credible interval. As $f_{\text{obs}}$ increases, the probability distribution for $r$ becomes more skewed, such that stars with larger parallax uncertainties become more likely to have overestimated $r$ than to have underestimated $r$. From \citet{2016ApJ...832..137A}.}\label{fig:gaia_errs}
+\end{centering}
+\end{figure}
+
+
+
