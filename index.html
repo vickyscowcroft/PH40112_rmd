@@ -70,7 +70,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Unit Overview</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#topics-and-schedule"><i class="fa fa-check"></i>Topics and Schedule</a></li>
-<li><a href="index.html#discussion-session---thursday-2ndapril">Discussion session - Thursday 2<sup>nd</sup>April</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#current-research-topics-section"><i class="fa fa-check"></i>Current Research Topics section</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#suggested-textbook"><i class="fa fa-check"></i>Suggested textbook</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#lecture-notes-slides-recordings"><i class="fa fa-check"></i>Lecture notes, slides, recordings</a></li>
 </ul></li>
@@ -109,6 +109,15 @@
 <li class="chapter" data-level="4.6" data-path="ch-obs-params.html"><a href="ch-obs-params.html#sec:measuring_q"><i class="fa fa-check"></i><b>4.6</b> Measuring <span class="math inline">\(q_0\)</span></a></li>
 <li class="chapter" data-level="4.7" data-path="ch-obs-params.html"><a href="ch-obs-params.html#sec:lambda-obs-params"><i class="fa fa-check"></i><b>4.7</b> The Cosmological Constant</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html"><i class="fa fa-check"></i><b>5</b> Observational Techniques: The Distance Ladder</a><ul>
+<li class="chapter" data-level="5.1" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:eq-to-obs"><i class="fa fa-check"></i><b>5.1</b> Equations to Observations</a></li>
+<li class="chapter" data-level="5.2" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:standard-candle-h0"><i class="fa fa-check"></i><b>5.2</b> Standard candle measurements of <span class="math inline">\(H_0\)</span></a></li>
+<li class="chapter" data-level="5.3" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:sc_calibration"><i class="fa fa-check"></i><b>5.3</b> Calibration of standard candles</a></li>
+<li class="chapter" data-level="5.4" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:parallax"><i class="fa fa-check"></i><b>5.4</b> Parallax calibration of standard candles</a></li>
+<li class="chapter" data-level="5.5" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:distance_ladder"><i class="fa fa-check"></i><b>5.5</b> The Distance Ladder</a></li>
+<li class="chapter" data-level="5.6" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:ho_distance_ladder"><i class="fa fa-check"></i><b>5.6</b> Measurements of <span class="math inline">\(H_0\)</span> from the distance ladder</a></li>
+<li class="chapter" data-level="5.7" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:distance_ladder_uncertainties"><i class="fa fa-check"></i><b>5.7</b> Uncertainties in the distance ladder</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://vickyscowcroft.github.io/PH40112_rmd/" target="blank">Published with bookdown</a></li>
@@ -140,128 +149,96 @@
 <p>The aim of this section of PH40112 is to present the observations and theory underpinning modern Cosmology. It is complementary to the first half of PH40112, which focusses on General Relativity and its applications to Cosmology. At the end of this course, you should be able to describe the key ideas of Cosmology, comparing and contrasting different observational techniques and Cosmological models. You should understand the implications for the fate of the Universe arising from these different models, and discuss the open questions being addressed by current state of the art experiments. You should also be able to assess how systematic errors and experimental uncertainties affect cosmological experiments, in particular how these affect our ability to discriminate between different models of the Universe’s evolution.</p>
 <div id="topics-and-schedule" class="section level2 unnumbered">
 <h2>Topics and Schedule</h2>
-<p>The planned schedule for sessions is as follows:</p>
 <table style="width:100%;">
 <colgroup>
-<col width="6%" />
-<col width="10%" />
-<col width="22%" />
-<col width="61%" />
+<col width="39%" />
+<col width="13%" />
+<col width="7%" />
+<col width="39%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Week</th>
-<th align="left">Date</th>
-<th align="center">Session</th>
-<th align="right">Topic</th>
+<th>Topic</th>
+<th align="right">Written notes</th>
+<th align="right">Slides</th>
+<th align="right">Recording</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">7</td>
-<td align="left">16/3</td>
-<td align="center">Lecture 1</td>
-<td align="right">Introduction to Observational Cosmology</td>
+<td>Introduction to Observational Cosmology</td>
+<td align="right">Available</td>
+<td align="right">Moodle</td>
+<td align="right">Panopto</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">19/3</td>
-<td align="center">Lecture 2</td>
-<td align="right">Equations of the Expanding Universe</td>
+<td>Equations of the Expanding Universe</td>
+<td align="right">Available</td>
+<td align="right">Moodle</td>
+<td align="right">Moodle - supplementary recording</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">20/3</td>
-<td align="center">Lecture 3</td>
-<td align="right">Composition of the Universe</td>
+<td>Composition of the Universe</td>
+<td align="right">Available</td>
+<td align="right">NA</td>
+<td align="right">Explain Everything link - see Moodle forum</td>
 </tr>
 <tr class="even">
-<td align="left">8</td>
-<td align="left">23/3</td>
-<td align="center">Lecture 4</td>
-<td align="right">Observational Parameters</td>
+<td>Observational Parameters</td>
+<td align="right">Available</td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">26/3</td>
-<td align="center">Lecture 5</td>
-<td align="right">Observational Techniques</td>
+<td>Observational Techniques - Distance Ladder</td>
+<td align="right">Available</td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">27/3</td>
-<td align="center">Lecture 6</td>
-<td align="right">The <span class="math inline">\(\Lambda\)</span>CDM Model</td>
+<td>Observational Techniques - CMB</td>
+<td align="right"></td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="odd">
-<td align="left">9</td>
-<td align="left">30/3</td>
-<td align="center">Lecture 7</td>
-<td align="right">Dark Matter</td>
+<td>The <span class="math inline">\(\Lambda\)</span>CDM Model</td>
+<td align="right"></td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left">2/4</td>
-<td align="center"><strong>Discussion session</strong></td>
-<td align="right">Current Research Topics</td>
+<td>Dark Matter</td>
+<td align="right"></td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">3/4</td>
-<td align="center">Lecture 8</td>
-<td align="right">Structures in the Universe</td>
+<td>Current Research Topics</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
 </tr>
 <tr class="even">
-<td align="left">10</td>
-<td align="left">20/4</td>
-<td align="center">Lecture 9</td>
-<td align="right">Inflation</td>
+<td>Structures in the Universe</td>
+<td align="right"></td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">23/4</td>
-<td align="center">Lecture 10</td>
-<td align="right">The Evolving Universe</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">24/4</td>
-<td align="center">Problems Class</td>
-<td align="right">Problems Class</td>
-</tr>
-<tr class="odd">
-<td align="left">11</td>
-<td align="left">27/4</td>
-<td align="center">Problems Class</td>
-<td align="right">Problems Class</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">30/4</td>
-<td align="center">Problems Class</td>
-<td align="right">Problems Class</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">1/5</td>
-<td align="center">Revision Session</td>
-<td align="right">Revision Session and Q&amp;A</td>
-</tr>
-<tr class="even">
-<td align="left">12</td>
-<td align="left">4/5 - 7/5</td>
-<td align="center">Office hours</td>
-<td align="right">Revision week. <br>Office hours will be posted closer to the date.</td>
+<td>Inflation</td>
+<td align="right"></td>
+<td align="right">Moodle</td>
+<td align="right"></td>
 </tr>
 </tbody>
 </table>
-<p>Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until weeks 10 and 11.</p>
-<p>The schedule was last updated on 13<sup>th</sup> March. Changes to the planned schedule will be posted here and on the moodle page.</p>
+<p>Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until week 11.</p>
+<p>The schedule was last updated on 2<sup>nd</sup> April. Changes to the planned schedule will be posted here and on the moodle page.</p>
 </div>
-<div id="discussion-session---thursday-2ndapril" class="section level2 unnumbered">
-<h2>Discussion session - Thursday 2<sup>nd</sup>April</h2>
-<p>The session on Thursday April 2nd will be a discussion session, covering three journal publications using different techniques used to estimate cosmological parameters. You will each be assigned to a group during week 8 and the group assignments and corresponding papers will be posted to Moodle. After the session, summaries of the discussions will be uploaded to Moodle and the relavent section of these notes.</p>
-<p>If the date and/or format of this session needs to change, updates will be posted here and on the Moodle forum.</p>
+<div id="current-research-topics-section" class="section level2 unnumbered">
+<h2>Current Research Topics section</h2>
+<p>The discussion session originally planned for April 2nd is no longer feasible. Two journal papers on different cosmological experiements will be posted on Moodle at the end of week 9. I will provide <em>brief</em> summaries of papers, and a list of questions you should have in mind when reading the papers. This section will have strong ties with the Observational Techniques sections, so you should ensure you are familiar with the material in that section when working on this.</p>
 </div>
 <div id="suggested-textbook" class="section level2 unnumbered">
 <h2>Suggested textbook</h2>
@@ -272,7 +249,7 @@
 <p>Written notes for lectures 1 - 10 will be made available online in html and PDF format. The html notes are available at <a href="https://vickyscowcroft.github.io/PH40112_rmd/" class="uri">https://vickyscowcroft.github.io/PH40112_rmd/</a> and will be updated throughout the course. PDF versions of the notes will be posted to the course Moodle page. The html notes have been designed so that the maths content is compatible with screen readers.</p>
 <p>Lectures will follow the same general structure as the written notes, but will not be identical - i.e. they will not be `skeleton’ notes for you to fill in the blanks. They are designed to support your learning of the lecture material, so you may find it useful to make your own notes during the session.</p>
 <p>PDF versions of the slides for each session will be posted on Moodle before each session. If you need these in an alternative format please let me know.</p>
-<p>All sessions will be recorded with Panopto and can be accessed in the usual way.</p>
+<p>Where appropriate, recordings will be made available to accompany the slides and lecture notes.</p>
 
 </div>
 </div>

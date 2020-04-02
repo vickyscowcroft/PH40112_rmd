@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="ch-constituents.html"/>
-<link rel="next" href="references.html"/>
+<link rel="next" href="ch-obs-techs.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -70,7 +70,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Unit Overview</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#topics-and-schedule"><i class="fa fa-check"></i>Topics and Schedule</a></li>
-<li><a href="index.html#discussion-session---thursday-2ndapril">Discussion session - Thursday 2<sup>nd</sup>April</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#current-research-topics-section"><i class="fa fa-check"></i>Current Research Topics section</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#suggested-textbook"><i class="fa fa-check"></i>Suggested textbook</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#lecture-notes-slides-recordings"><i class="fa fa-check"></i>Lecture notes, slides, recordings</a></li>
 </ul></li>
@@ -108,6 +108,15 @@
 <li class="chapter" data-level="4.5" data-path="ch-obs-params.html"><a href="ch-obs-params.html#sec:decel-param"><i class="fa fa-check"></i><b>4.5</b> The Deceleration Parameter, <span class="math inline">\(q_0\)</span></a></li>
 <li class="chapter" data-level="4.6" data-path="ch-obs-params.html"><a href="ch-obs-params.html#sec:measuring_q"><i class="fa fa-check"></i><b>4.6</b> Measuring <span class="math inline">\(q_0\)</span></a></li>
 <li class="chapter" data-level="4.7" data-path="ch-obs-params.html"><a href="ch-obs-params.html#sec:lambda-obs-params"><i class="fa fa-check"></i><b>4.7</b> The Cosmological Constant</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html"><i class="fa fa-check"></i><b>5</b> Observational Techniques: The Distance Ladder</a><ul>
+<li class="chapter" data-level="5.1" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:eq-to-obs"><i class="fa fa-check"></i><b>5.1</b> Equations to Observations</a></li>
+<li class="chapter" data-level="5.2" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:standard-candle-h0"><i class="fa fa-check"></i><b>5.2</b> Standard candle measurements of <span class="math inline">\(H_0\)</span></a></li>
+<li class="chapter" data-level="5.3" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:sc_calibration"><i class="fa fa-check"></i><b>5.3</b> Calibration of standard candles</a></li>
+<li class="chapter" data-level="5.4" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:parallax"><i class="fa fa-check"></i><b>5.4</b> Parallax calibration of standard candles</a></li>
+<li class="chapter" data-level="5.5" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:distance_ladder"><i class="fa fa-check"></i><b>5.5</b> The Distance Ladder</a></li>
+<li class="chapter" data-level="5.6" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:ho_distance_ladder"><i class="fa fa-check"></i><b>5.6</b> Measurements of <span class="math inline">\(H_0\)</span> from the distance ladder</a></li>
+<li class="chapter" data-level="5.7" data-path="ch-obs-techs.html"><a href="ch-obs-techs.html#sec:distance_ladder_uncertainties"><i class="fa fa-check"></i><b>5.7</b> Uncertainties in the distance ladder</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -332,7 +341,7 @@ in a flat Universe, where
     \Omega_{\Lambda} = \dfrac{\Lambda}{3H^2}
 \tag{4.28}
 \end{equation}\]</span>
-<p>We can treat <span class="math inline">\(\Lambda\)</span> as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. @ref(eq:fr_lam)) and the density (Eq. <a href="ch-obs-params.html#eq:den-lam-2">(4.28)</a>) we can show that</p>
+<p>We can treat <span class="math inline">\(\Lambda\)</span> as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. <a href="ch-obs-params.html#eq:fr-lam">(4.26)</a>) and the density (Eq. <a href="ch-obs-params.html#eq:den-lam-2">(4.28)</a>) we can show that</p>
 <span class="math display" id="eq:den-lam-3">\[\begin{equation}
     \rho_{\Lambda} = \dfrac{\Lambda}{8 \pi G}
 \tag{4.29}
@@ -344,7 +353,7 @@ to give
 \end{equation}\]</span>
 <p>Finally, we can look at the Fluid equation (aha! you thought I was going to say the Friedman equation!) to find the equation of state for <span class="math inline">\(\Lambda\)</span>:</p>
 <span class="math display" id="eq:lam-fluid">\[\begin{equation}
-    \dot{rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
+    \dot{\rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
 \tag{4.31}
 \end{equation}\]</span>
 <p>As <span class="math inline">\(\Lambda\)</span> is the cosmological <strong>constant</strong>, hence does not change with time, we know that <span class="math inline">\(\dot{\rho_{\Lambda}} = 0\)</span>. Rearranging Eq. <a href="ch-obs-params.html#eq:lam-fluid">(4.31)</a> gives us:</p>
@@ -368,7 +377,7 @@ to give
         </div>
       </div>
 <a href="ch-constituents.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-obs-techs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
