@@ -9,9 +9,9 @@
     background-repeat: no-repeat;
     background-position: 15px center;
     min-height: 120px;
-    color: #1f5386;
-    background-color: #bed3ec;
-    border: solid 5px #dfedff;
+    color: #000000;
+    background-color: #ffb3d1;
+    border: solid 5px #ffe6f0;
   }
 
   div.aside {
@@ -46,3 +46,13 @@ div.note {
 p.caption {
   font-weight: bold;
 }
+
+table.caption {
+  font-weight: bold;
+}
+
+
+a.fyi:link { color:#ff3399; text-decoration:none; font-weight:bold; }
+a.fyi:visited { color:#ff3399; text-decoration:none; font-weight:bold; }
+a.fyi:hover { color:#ff3399; text-decoration:underline; font-weight:bold; }
+a.fyi:active { color:#ff3399; text-decoration:none; font-weight:bold; }
