@@ -1,4 +1,4 @@
-Equations of the Expanding Universe {#ch:eqs_of_expanding}
+Equations of the Expanding Universe {#ch:eqs-of-expanding}
 ===================================
 
 Metric of space-time {#sec:metric}

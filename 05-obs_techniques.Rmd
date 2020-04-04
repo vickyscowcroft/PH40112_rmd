@@ -1,7 +1,7 @@
 Observational Techniques: The Distance Ladder {#ch:obs-techs}
 ===================================
 
-In Chapters \@ref(ch:eqs_of_expanding), \@ref(ch:constituents) and \@ref(ch:obs-params), we mainly considered the theoretical aspects of Cosmology. In this section we will investigate the link between the models that describe the expanding Universe and the observations that allow us to measure their parameters.
+In Chapters \@ref(ch:eqs-of-expanding), \@ref(ch:constituents) and \@ref(ch:obs-params), we mainly considered the theoretical aspects of Cosmology. In this section we will investigate the link between the models that describe the expanding Universe and the observations that allow us to measure their parameters.
 
 Equations to Observations {#sec:eq-to-obs}
 --------------------------
@@ -103,14 +103,14 @@ The distance ladder is one of the oldest and most frequently used techniques to 
 knitr::include_graphics("Images/Hubble-Parameter-Measurements-zoomedout.jpeg")
 ```
 
-Uncertainties in the distance ladder {#sec:distance_ladder_uncertainties}
+Uncertainties in the distance ladder {#sec:distance-ladder-uncertainties}
 -----------
 There are two types of uncertainties that can be present in a result -- **systematic** and **random**. A comparison of the two and their effects on the precision and accuracy of a measurement are shown in Table \@ref(tab:sys-vs-rand) and Figure \@ref(fig:sys-vs-rand). 
 
 Table: (\#tab:sys-vs-rand) Comparison of systematic and random uncertainties
 
 | Systematic | Random      | 
-|:-----|----------:|
+|:----------|----------:|
 | Affects all data points the same way | Affects each point differently |
 | |  Often assumed to have Gaussian distribution |
 | Causes **offsets** | Causes **dispersion** |

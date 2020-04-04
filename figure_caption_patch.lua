@@ -4,3 +4,4 @@ function Image (img)
   img.caption[4] = pandoc.Strong(".  ")
   return img
 end
+
