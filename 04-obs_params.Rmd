@@ -86,7 +86,7 @@ We can compare this to what we observe in the Universe. A typical galaxy has a m
 
 Does the Universe need to be flat?  {#sec:flat-density}
 --------------------------
-In the section above we've said that the critial density is that for which the Universe is flat. But there's nothing in the Cosmological Principle that forces flatness. Quite the opposite in fact; $k$ is not restricted to be equal to zero.
+In the section above we've said that the critical density is that for which the Universe is flat. But there's nothing in the Cosmological Principle that forces flatness. Quite the opposite in fact; $k$ is not restricted to be equal to zero.
 
 It is useful to characterise the density of the Universe relative to the critical density, rather than an absolute value,
 
@@ -209,7 +209,7 @@ Substituting in Eq. \@ref(eq:decel-4), we find
 (\#eq:decel-6)
 \end{equation}
 
-And remebering the equations for the critical density $\rho_c$ (Eq. \@ref(eq:fr-den-2) and the density parameter $\Omega$ (Eq. eq:big-omega), we find
+And remembering the equations for the critical density $\rho_c$ (Eq. \@ref(eq:fr-den-2) and the density parameter $\Omega$ (Eq. eq:big-omega), we find
 
 \begin{equation}
  q_0 = \dfrac{4\pi G}{3}\rho \dfrac{3}{8 \pi G \rho_c}
@@ -317,7 +317,7 @@ The generic form of the $\Lambda$ equation of state is
 (\#eq:lam-fluid-2)
 \end{equation} 
 
-and you will often see the parameter $w$ referred to as the **dark energy equation of state**. We will revist the evidence for $\Lambda$, and measurements of the other parameters discussed in this section soon.
+and you will often see the parameter $w$ referred to as the **dark energy equation of state**. We will revisit the evidence for $\Lambda$, and measurements of the other parameters discussed in this section soon.
 
 
 

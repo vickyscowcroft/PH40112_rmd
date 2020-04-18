@@ -265,7 +265,7 @@ dominates, $a$ will evolve as in the matter case:
 (\#eq:a-rho-comb)
 \end{equation}
 
-Cosmological Constant {#sec:dark_energy_1}
+Cosmological Constant {#sec:dark-energy-1}
 ---------------------
 
 The final case that we haven't considered is the contribution from the

@@ -33,7 +33,7 @@ Standard candles are astronomical objects of known intrinsic brightness. Example
 
 Cepheids are standard candles as they have a well-defined relationship between their intrinsic brightness (or absolute magnitude) and their period of variation. This relation is known as the **Leavitt law** [@1912Leavitt], but you may also see it referred to as the period-luminosity relation. Figure \@ref(fig:smc-pls) shows the Leavitt laws for a selection of Cepheids in the Small Magellanic Cloud.
 
-```{r echo=FALSE, smc-pls, out.width='100%', fig.show='hold', fig.cap='Leavitt laws for Cepheids in the Small Magellanic Cloud observed at optical (purple, bottom) to mid-infrared (pink, top) wavelengths. There is a clear relation between period and luminosity, with the relation tightening and steepening as we move to longer wavelengths. The relations are offset so these changes can be seen. Adapted from [@2016Scowcroft].'}
+```{r echo=FALSE, smc-pls, out.width='100%', fig.show='hold', fig.cap='Leavitt laws for Cepheids in the Small Magellanic Cloud observed at optical (purple, bottom) to mid-infrared (pink, top) wavelengths. There is a clear relation between period and luminosity, with the relation tightening and steepening as we move to longer wavelengths. The relations are offset so these changes can be seen. Adapted from @2016Scowcroft.'}
 knitr::include_graphics("Images/SMC-PL-relations.jpg")
 ```
 
@@ -49,9 +49,9 @@ where $\mu$ is the distance modulus, $m$ is the apparent magnitude, $M$ is the a
 \end{equation}
 where $M_{\lambda}$ is the absolute magnitude at wavelength $\lambda$, and $a_{\lambda}$ and $b_{\lambda}$ are the slope and intercept of the relation. Figure \@ref(fig:smc-pls) shows how the slope ($a$) and intercept ($b$) change with wavelength, with $a$ becoming increasingly negative as we move to longer wavelengths. 
 
-Moving to longer wavelengths to measure Cepheid distances is advantageous for several reasons. First, effects of reddening and extinction on apparent magnitudes are dramatically reduced compared to optical wavelengths. Second, the Leavitt law has smaller dispersion -- i.e. the standard deviation, $\sigma$ of the points around the Leavitt law is smaller, and the amplitude of their lightcurves are smaller (see Figure \@ref(fig:CDCyg). This means that distances obtained from redder wavelengths are more accurate than those from shorter wavelength observations. 
+Moving to longer wavelengths to measure Cepheid distances is advantageous for several reasons. First, effects of reddening and extinction on apparent magnitudes are dramatically reduced compared to optical wavelengths. Second, the Leavitt law has smaller dispersion -- i.e. the standard deviation, $\sigma$ of the points around the Leavitt law is smaller, and the amplitude of their light curves are smaller (see Figure \@ref(fig:CDCyg). This means that distances obtained from redder wavelengths are more accurate than those from shorter wavelength observations. 
 
-```{r echo=FALSE, CDCyg, out.width='80%', fig.show='hold', fig.cap='Multiwavelength lightcurves for Milky Way Cepheid CD Cyg. The lightcurves become more sinusoidal and smaller in amplitude as you move from blue to red wavelengths.'}
+```{r echo=FALSE, CDCyg, out.width='80%', fig.show='hold', fig.cap='Multiwavelength light curves for Milky Way Cepheid CD Cyg. The light curves become more sinusoidal and smaller in amplitude as you move from blue to red wavelengths.'}
 knitr::include_graphics("Images/CDCyg-.png")
 ```
 
@@ -135,7 +135,7 @@ Table: (\#tab:kp-errs) Overall systematic uncertainties in the Hubble constant. 
 | *HST* camera calibration |	Tie-in to Galactic star clusters	| $\pm$ 3.5 |
 | Reddening |	Limits from photometry |	$\pm$ 1 |
 | Metallicity	| Observational and theoretical constraints | $\pm$ 4 |
-| Bias in Leavitt law |	Short-end period cutoff |	$\pm$ 1 |
+| Bias in Leavitt law |	Short-end period cut-off |	$\pm$ 1 |
 | Crowding |	Artificial star experiments	| +5, -0 |
 | Large scale flows  |	Limits from SN Ia, CMB	| $\pm$ 5 |
 
@@ -145,10 +145,10 @@ In the years since the *HST* Key Project, these uncertainties have been further 
 knitr::include_graphics("Images/apjaa293ef1_hr.jpg")
 ```
 
-One of the largest uncertainties remaining in distance ladder measurements of $H_0$ comes from the bottom rung of the ladder. In the Key Project, the ladder was tied to our nearest galaxy, the Large Magellanic Cloud (LMC). *SH$_{0}$ES* reduced this uncertainty by tying their calibration to the Cepheids in the LMC (which can all be assumed to be at the same distance), Cepheids with parallaxes in the Milky Way (MW), and Cepheids in the megamaser host galaxy NGC4258.
+One of the largest uncertainties remaining in distance ladder measurements of $H_0$ comes from the bottom rung of the ladder. In the Key Project, the ladder was tied to our nearest galaxy, the Large Magellanic Cloud (LMC). *SH$_{0}$ES* reduced this uncertainty by tying their calibration to the Cepheids in the LMC (which can all be assumed to be at the same distance), Cepheids with parallaxes in the Milky Way (MW), and Cepheids in the mega-maser host galaxy NGC4258.
 
 :::fyi
-Astrophysical masers are sources of stimulated microwave emission, similar to lasers. Megamasers are astrophysical masers with very high isotropic luminosities. Megamasers are excellent geometric distance indicators. By assuming that the maser is travelling round a galaxy with a Keplerian orbit we can calculate the intrinsic size of the system. Comparing this with its apparent size gives us an estimate of the distance.
+Astrophysical masers are sources of stimulated microwave emission, similar to lasers. Mega-masers are astrophysical masers with very high isotropic luminosities. Mega-masers are excellent geometric distance indicators. By assuming that the maser is travelling round a galaxy with a Keplerian orbit we can calculate the intrinsic size of the system. Comparing this with its apparent size gives us an estimate of the distance.
 :::
 
 Until recently, only a handful of MW Cepheids had high-precision parallax measurements. The ESA *Gaia* mission will change this in the coming years by measuring high-precision parallaxes for over 1~billion stars in the MW. The *Gaia* sample will include several thousand Cepheids which can then be used to anchor the distance ladder. Figure \@ref(fig:gaia-sky) shows the sky as seen by *Gaia*. Each star in this image has a parallax measurement, including those in the Magellanic Clouds (seen to the bottom right of the Galactic Plane).
@@ -168,7 +168,7 @@ where $\varpi$ is the parallax angle. However, if we wish to ensure an unbiased 
 knitr::include_graphics("Images/apjaa3f0ff1_hr.jpg")
 ```
 
-This skewness must be taken into account in order to prevent systematic uncertainties being introduced into the Leavitt law calibration. Therefore, rather than use the simple parallax equation given in Eq. \@ref(eq:gaia-1), we must use a full Bayesian analysis to estimate distances. A full discussion of the applicaiton of Bayesian statistics to parallax measurements is beyond the scope of this course. However, if you are interested in the methodology, the series of papers by Astraatmadja & Bailer-Jones gives an excellent introduction to the topic [@2015BJ; @2016BJ; @2016ABJ2].
+This skewness must be taken into account in order to prevent systematic uncertainties being introduced into the Leavitt law calibration. Therefore, rather than use the simple parallax equation given in Eq. \@ref(eq:gaia-1), we must use a full Bayesian analysis to estimate distances. A full discussion of the application of Bayesian statistics to parallax measurements is beyond the scope of this course. However, if you are interested in the methodology, the series of papers by Astraatmadja & Bailer-Jones gives an excellent introduction to the topic [@2015BJ; @2016BJ; @2016ABJ2].
 
 
 

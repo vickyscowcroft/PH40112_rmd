@@ -30,7 +30,7 @@ A brief history of the Universe {#sec:history}
 
 The 'Cosmic Calendar' shown in
 Figure \@ref(fig:cosmic-calendar) condenses the evolution of the Universe
-to a timescale of 1 calendar year. If the Big Bang occurred on January
+to a time-scale of 1 calendar year. If the Big Bang occurred on January
 1st, human life wouldn't exist until 11:52pm on 31st December! The
 formation of the Solar System would have occurred in September, and our
 home in the Galaxy, the disk of the Milky Way, would have formed in May.
@@ -113,7 +113,7 @@ quarks.
  - Baryogenesis $(t = 10^{-11}~s)$ 
 
 Baryogenesis is the stage where matter can start to exist in the form of
-baryons - e.g. protons, neutrons. Baryogensis should have produced both
+baryons - e.g. protons, neutrons. Baryogenesis should have produced both
 baryons and anti-baryons (e.g. protons and anti-protons). Current
 evidence - i.e. the fact that we exist and are composed of baryons -
 shows that there must have been an asymmetry in the proportions of
@@ -239,7 +239,7 @@ explore how observations of the Universe have developed over the past
 century, increasing in precision and accuracy, leading to our current
 understanding of Cosmology.
 
-```{r echo=FALSE, hubble-h0-diagram, out.width='100%', fig.show='hold', fig.cap='The first observational evidence of the expanding Universe. His first measurement of the expansion rate, now known as the Hubble constant, was 500 km s$^{-1}$ Mpc$^{-1}$. From [@1929Hubble].'}
+```{r echo=FALSE, hubble-h0-diagram, out.width='100%', fig.show='hold', fig.cap='The first observational evidence of the expanding Universe. His first measurement of the expansion rate, now known as the Hubble constant, was 500 km s$^{-1}$ Mpc$^{-1}$. From @1929Hubble.'}
 knitr::include_graphics("Images/hubble-diagram.jpg")
 ```
 

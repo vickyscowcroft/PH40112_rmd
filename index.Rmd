@@ -59,13 +59,13 @@ subparagraph: yes
 | Structures in the Universe                 |               | Moodle |                                            |
 | Inflation                                  |               | Moodle |                                            |
 
-Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relavent material has been covered, but formal problems classes will not take place until week 11.
+Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relevant material has been covered, but formal problems classes will not take place until week 11.
 
 The schedule was last updated on 2<sup>nd</sup> April. Changes to the planned schedule will be posted here and on the moodle page. 
 
 ## Current Research Topics section {-}
 
-The discussion session originally planned for April 2nd is no longer feasible. Two journal papers on different cosmological experiements will be posted on Moodle at the end of week 9. I will provide *brief* summaries of papers, and a list of questions you should have in mind when reading the papers. This section will have strong ties with the Observational Techniques sections, so you should ensure you are familiar with the material in that section when working on this. 
+The discussion session originally planned for April 2nd is no longer feasible. Two journal papers on different cosmological experiments will be posted on Moodle at the end of week 9. I will provide *brief* summaries of papers, and a list of questions you should have in mind when reading the papers. This section will have strong ties with the Observational Techniques sections, so you should ensure you are familiar with the material in that section when working on this. 
 
 ## Suggested textbook {-}
   This section of the course closely follows several chapters of *An
