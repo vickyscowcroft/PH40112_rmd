@@ -49,7 +49,7 @@ where $\mu$ is the distance modulus, $m$ is the apparent magnitude, $M$ is the a
 \end{equation}
 where $M_{\lambda}$ is the absolute magnitude at wavelength $\lambda$, and $a_{\lambda}$ and $b_{\lambda}$ are the slope and intercept of the relation. Figure \@ref(fig:smc-pls) shows how the slope ($a$) and intercept ($b$) change with wavelength, with $a$ becoming increasingly negative as we move to longer wavelengths. 
 
-Moving to longer wavelengths to measure Cepheid distances is advantageous for several reasons. First, effects of reddening and extinction on apparent magnitudes are dramatically reduced compared to optical wavelengths. Second, the Leavitt law has smaller dispersion -- i.e. the standard deviation, $\sigma$ of the points around the Leavitt law is smaller, and the amplitude of their light curves are smaller (see Figure \@ref(fig:CDCyg). This means that distances obtained from redder wavelengths are more accurate than those from shorter wavelength observations. 
+Moving to longer wavelengths to measure Cepheid distances is advantageous for several reasons. First, effects of reddening and extinction on apparent magnitudes are dramatically reduced compared to optical wavelengths. Second, the Leavitt law has smaller dispersion -- i.e. the standard deviation, $\sigma$ of the points around the Leavitt law is smaller, and the amplitude of their light curves are smaller (see Figure \@ref(fig:CDCyg)). This means that distances obtained from redder wavelengths are more accurate than those from shorter wavelength observations. 
 
 ```{r echo=FALSE, CDCyg, out.width='80%', fig.show='hold', fig.cap='Multiwavelength light curves for Milky Way Cepheid CD Cyg. The light curves become more sinusoidal and smaller in amplitude as you move from blue to red wavelengths.'}
 knitr::include_graphics("Images/CDCyg-.png")
@@ -97,9 +97,9 @@ To get an accurate measurement of $H_0$ we must use objects that are as far away
 
 Measurements of $H_0$ from the distance ladder {#sec:ho_distance_ladder}
 -----------
-The distance ladder is one of the oldest and most frequently used techniques to measure $H_0$. Figure \@ref(fig:ho-distance-ladder) shows how our measurements of $H_0$ have converged over time, from the early measurements in the 1930's, to the high-precision measurements of the 2010's and 2020's. From Figure~\ref{fig:ho_distance_ladder} it looks like we may have reached a consensus on the value of $H_0$. To confirm that, we need to consider the uncertainties on our measurements. 
+The distance ladder is one of the oldest and most frequently used techniques to measure $H_0$. Figure \@ref(fig:ho-distance-ladder) shows how our measurements of $H_0$ have converged over time, from the early measurements in the 1930's, to the high-precision measurements of the 2010's and 2020's. From Figure \@ref(fig:ho-distance-ladder) it looks like we may have reached a consensus on the value of $H_0$. To confirm that, we need to consider the uncertainties on our measurements. 
 
-```{r echo=FALSE, ho-distance-ladder, out.width='100%', fig.show='hold', fig.cap="Measurements of $H_0$ as a function of time. Hubble's original measurement [1929Hubble] was around 500 km s$^{-1}$ Mpc$^{-1}$. Over the last one-hundred years, we appear to have reached a consensus that $H_{0}$ is approximately 70 km s$^{-1}$ Mpc$^{-1}$, although recent high precision measurements have brought that consensus into question."}
+```{r echo=FALSE, ho-distance-ladder, out.width='100%', fig.show='hold', fig.cap="Measurements of $H_0$ as a function of time. Hubble's original measurement [@1929Hubble] was around 500 km s$^{-1}$ Mpc$^{-1}$. Over the last one-hundred years, we appear to have reached a consensus that $H_{0}$ is approximately 70 km s$^{-1}$ Mpc$^{-1}$, although recent high precision measurements have brought that consensus into question."}
 knitr::include_graphics("Images/Hubble-Parameter-Measurements-zoomedout.jpeg")
 ```
 
@@ -124,9 +124,9 @@ knitr::include_graphics("Images/precision_accuracy.png")
 
 The distance ladder ties together several techniques to measure distances to the furthest galaxies, hence uncertainties on each "rung" of the ladder propagate through to our final measurements. Large uncertainties at the bottom will lead to unreliable measurements at the top, in a similar way to having an unstable foundation for the bottom of a ladder leads to an unstable, wobbly ladder that you really wouldn't want to stand at the top of. 
 
-A major step forward in measuring a high-precision value of $H_0$ was made in 2001 with the publication of the results from the *HST Key Project to Measure the Hubble Constant* [2001Freedman], who found $H_0$ = 71~$\pm$~2~(rand.)~$\pm$~6~(sys.) km~s$^{-1}$~Mpc$^{-1}$. Table \@ref(tab:kp-errs) shows how different components of systematic uncertainty combine in their final result.
+A major step forward in measuring a high-precision value of $H_0$ was made in 2001 with the publication of the results from the *HST Key Project to Measure the Hubble Constant* @2001Freedman, who found $H_0$ = 71 $\pm$ 2 (rand.) $\pm$ 6 (sys.) km s$^{-1}$ Mpc$^{-1}$. Table \@ref(tab:kp-errs) shows how different components of systematic uncertainty combine in their final result.
 
-Table: (\#tab:kp-errs) Overall systematic uncertainties in the Hubble constant. From [@2001Freedman].
+Table: (\#tab:kp-errs) Overall systematic uncertainties in the Hubble constant. From @2001Freedman.
 
 
 | Source of uncertainty | Method of estimation | Error (%) |
