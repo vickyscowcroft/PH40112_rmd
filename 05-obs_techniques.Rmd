@@ -85,7 +85,7 @@ where $d$ is the distance of the target in parsecs.
 
 In the case of the distance ladder, parallax distances of Cepheids are used to fix the intercept, or zero-point, of the Leavitt law. Until recently only 10 Cepheids with high-precision parallaxes were available for this calibration. However, the *Gaia* mission promises to dramatically improve this situation. *Gaia* is a European Space Agency mission which is measuring the parallaxes of over *one billion* stars in the Milky Way and its nearest neighbours to extremely high precision. The precision of *Gaia* is such that if we put it on top of Buckingham Palace it could resolve a human hair on top of the Empire State Building, over 5,500 km away. *Gaia*'s parallax catalogue will contain many thousands of Cepheids that could potentially be included in the Leavitt law calibration. 
 
-The Distance Ladder {#sec:distance_ladder}
+The Distance Ladder {#sec:distance-ladder}
 -----------------
 With the Leavitt law calibrated, we can now measure distances to objects outside of our own Galaxy. However, although Cepheids are bright stars, we cannot observe them in very distant galaxies. In order to measure distances to the furthest objects we must use different techniques, each calibrated to our parallax zero-point. Tying together different methods to estimate distances to progressively further objects is known as the **distance ladder**. Figure \@ref(fig:distance-ladder) shows how the techniques tie together to measure $H_0$.
 

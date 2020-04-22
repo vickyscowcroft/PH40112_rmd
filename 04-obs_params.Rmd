@@ -103,7 +103,7 @@ The present day value of $\Omega(t)$ is denoted by $\Omega_0$, such that
 (\#eq:big-omega-2)
 \end{equation}
 
-We can substitute Eqs. \@ref(eq:fr-den-2) and \@ref(eq:big-omega) into the Friedman equation (Eq. \@ref(eq:fr-den-1)) to find a relationship between $\Omega$, $H$, and $k$. First we find
+We can substitute Eqs. \@ref(eq:fr-den-2) and \@ref(eq:big-omega-2) into the Friedman equation (Eq. \@ref(eq:fr-den-1)) to find a relationship between $\Omega$, $H$, and $k$. First we find
 
 \begin{equation}
 H(t)^2 = \dfrac{8\pi G \rho_c \Omega}{3} - \dfrac{k}{a^2}
@@ -126,7 +126,7 @@ which we can rearrange to get
 
 This tells us the same thing as in the previous section -- that if $\Omega = 1$ (i.e. $\rho = \rho_c$) then we have a critical density Universe and $k=0$. If $\Omega \neq 1$ then we can use Eq. \@ref(eq:big-omega-5) to see how the density has evolved with time. 
 
-As discussed for density in Section \@ref(sec:mixtures}, the density parameter $\Omega$ can be separated into its different components, for example
+As discussed for density in Section \@ref(sec:mixtures), the density parameter $\Omega$ can be separated into its different components, for example
 
 \begin{equation}
 \Omega = \Omega_{m} + \Omega_{r}
@@ -153,6 +153,8 @@ We'll return to the density parameter in more detail in later sections, when we 
 The Deceleration Parameter, $q_0$  {#sec:decel-param}
 --------------------------
 The Hubble parameter $H(t)$ describes the time dependence of the expansion of the Universe. The **deceleration parameter, $q_0$** quantifies how the expansion rate changes over time. 
+
+**The derivation of the deceleration parameter is not examinable**.
 
 We start our exploration of the deceleration parameter by looking at a Taylor expansion of the scale factor at the present time, i.e. $a_0$.
 
@@ -209,7 +211,7 @@ Substituting in Eq. \@ref(eq:decel-4), we find
 (\#eq:decel-6)
 \end{equation}
 
-And remembering the equations for the critical density $\rho_c$ (Eq. \@ref(eq:fr-den-2) and the density parameter $\Omega$ (Eq. eq:big-omega), we find
+And remembering the equations for the critical density $\rho_c$ (Eq. \@ref(eq:fr-den-2)) and the density parameter $\Omega$ (Eq. \@ref(eq:big-omega)), we find
 
 \begin{equation}
  q_0 = \dfrac{4\pi G}{3}\rho \dfrac{3}{8 \pi G \rho_c}
