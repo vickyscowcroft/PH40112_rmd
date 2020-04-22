@@ -224,7 +224,7 @@ are seen as driving the expansion of the Universe so it is not just
 getting larger, but the expansion itself is accelerating.
 
 
-The Expanding Universe {#sec:expanding_intro}
+The Expanding Universe {#sec:expanding-intro}
 ----------------------
 
 The first observational evidence that the Universe is expanding was

@@ -29,7 +29,7 @@ $H_{0}$ is measured by comparing distances of objects to their redshifts, such t
 H_0 = \dfrac{v}{r}
 (\#eq:h0-v-r)
 \end{equation}
-where $v$ and $r$ are the recession velocities (redshifts) and distances of a sample of objects, such as supernova host galaxies. The first measurement of $H_0$ was made by Hubble in 1929 (see Sec. \@ref(sec:expanding_intro)). Since then, many measurements of $H_0$ have been made using large samples of galaxies out to higher and higher redshifts. We will cover the details of these experiments in the Observational Techniques section.
+where $v$ and $r$ are the recession velocities (redshifts) and distances of a sample of objects, such as supernova host galaxies. The first measurement of $H_0$ was made by Hubble in 1929 (see Sec. \@ref(sec:expanding-intro)). Since then, many measurements of $H_0$ have been made using large samples of galaxies out to higher and higher redshifts. We will cover the details of these experiments in the Observational Techniques section.
 
 We can also use measurements of $H_0$ to estimate the age of the Universe. As we showed in Chapter \@ref(ch:constituents), 
 \begin{equation}
@@ -316,7 +316,7 @@ The generic form of the $\Lambda$ equation of state is
 
 \begin{equation}
     P_{\Lambda} =  w \rho_{\Lambda} c^2
-(\#eq:lam-fluid-2)
+(\#eq:lam-fluid-3)
 \end{equation} 
 
 and you will often see the parameter $w$ referred to as the **dark energy equation of state**. We will revisit the evidence for $\Lambda$, and measurements of the other parameters discussed in this section soon.
