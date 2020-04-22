@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Lecture 3 Composition of the Universe | Relativistic Cosmology Part 2</title>
+  <title>Lecture 8 Current Research | Relativistic Cosmology Part 2</title>
   <meta name="description" content="PH40112 Relativistic Cosmology Part 2." />
   <meta name="generator" content="bookdown 0.18.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Lecture 3 Composition of the Universe | Relativistic Cosmology Part 2" />
+  <meta property="og:title" content="Lecture 8 Current Research | Relativistic Cosmology Part 2" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="PH40112_rmd" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lecture 3 Composition of the Universe | Relativistic Cosmology Part 2" />
+  <meta name="twitter:title" content="Lecture 8 Current Research | Relativistic Cosmology Part 2" />
   
   <meta name="twitter:description" content="PH40112 Relativistic Cosmology Part 2." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-eqs-of-expanding.html"/>
-<link rel="next" href="ch-obs-params.html"/>
+<link rel="prev" href="ch-lambdacdm.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -166,195 +166,66 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch:constituents" class="section level1">
-<h1><span class="header-section-number">Lecture 3</span> Composition of the Universe</h1>
-<p>Like all good physicists, Cosmologists like to simplify the Universe with assumptions. In the previous section we decided that the Universe is a perfect fluid. We’re continuing with that assumption here, now looking at how the different components of the Universe behave.</p>
-<p>In Section <a href="ch-eqs-of-expanding.html#sec:fluid-eqns">2.3</a> we stated that any possible components of the Universe could be described as perfect fluids. On a Cosmological scale, this is a reasonable assumption. However, not all Cosmological fluids behave in the same way. Each component will obey its own <strong>equation of state</strong> that describes how its pressure (<span class="math inline">\(P\)</span>) and density (<span class="math inline">\(\rho\)</span>) are related.</p>
-<div id="sec:matter-eos" class="section level2">
-<h2><span class="header-section-number">3.1</span> Matter</h2>
-The simplest place to start is with the equation of state for matter, as that is the component that we are most familiar with. We know that for matter <span class="math display">\[P = 0\]</span> which we can substitute into the Fluid equation (Eqn. <a href="ch-eqs-of-expanding.html#eq:fluid">(2.10)</a>) to find
-<span class="math display" id="eq:fluid-matter-1">\[\begin{equation}
-    \dot{\rho} + 3\dfrac{\dot{a}}{a}\rho = 0
-\tag{3.1}
-\end{equation}\]</span>
-Again, using our amazing differentiation skillz, we can show that Eqn <a href="ch-constituents.html#eq:fluid-matter-1">(3.1)</a> can be rewritten as
-<span class="math display" id="eq:fluid-matter-2">\[\begin{equation}
-\dfrac{1}{a^3}\dfrac{d}{dt}\left(\rho a^3\right) = 0
-\tag{3.2}
-\end{equation}\]</span>
-This means that
-<span class="math display" id="eq:fluid-matter-2">\[\begin{equation}
-\dfrac{d}{dt}\left(\rho a^3\right) = 0
-\tag{3.2}
-\end{equation}\]</span>
-or that
-<span class="math display" id="eq:fluid-matter-3">\[\begin{equation}
-    \rho a^3 = \text{constant,} \text{ or }\rho \propto \dfrac{1}{a^3}
-    \tag{3.3}
-\end{equation}\]</span>
-This is not a surprising answer; it’s telling us that the density falls off with <span class="math inline">\(a^3\)</span>. We know that intuitively – if you keep the amount of material the same, but increase the volume, the density will fall off proportionally. We can rewrite this as
-<span class="math display" id="eq:fluid-matter-4">\[\begin{equation}
-\rho = \dfrac{\rho_0}{a^3}
-\tag{3.4}
-\end{equation}\]</span>
-<p>where <span class="math inline">\(\rho_0\)</span> denotes the <em>present day</em> value.</p>
-<p>Now that we know how the density of the Universe evolves with the scale factor, we can look further into the fate of a “matter dominated” Universe.</p>
-<p>:::fyi <strong>Power laws</strong></p>
-<p>In case you hadn’t realised by now, a lot of Cosmology is built on assumptions and estimation. Luckily, these estimates describe evolution of the Universe very well. One such estimate is the <strong>power law</strong> – the astronomers favourite tool for estimating relations. Power laws, e.g <span class="math inline">\(a \propto t^q\)</span> crop up frequently in astronomy and cosmology, so it’s useful to be able to recognise when to use them.</p>
-Substituting Eqn. <a href="ch-constituents.html#eq:fluid-matter-4">(3.4)</a> into the Friedman equation (and assuming <span class="math inline">\(k=0\)</span>) gives
-<span class="math display" id="eq:power-1">\[\begin{equation}
-\dot{a}^2 = \dfrac{8\pi G \rho_0}{3}\dfrac{1}{a}
-\tag{3.5}
-\end{equation}\]</span>
-We can substitute in the power law <span class="math inline">\(a \propto t^q\)</span> to find a relation between <span class="math inline">\(a\)</span>, <span class="math inline">\(\rho\)</span> and <span class="math inline">\(t\)</span>:
-<span class="math display" id="eq:power-2">\[\begin{equation}
-t^{(2q-2)} \propto t^{-q}
-\tag{3.6}
-\end{equation}\]</span>
-which gives us <span class="math inline">\(q = 2/3\)</span>, or
-<span class="math display" id="eq:power-3">\[\begin{align}
-    a(t) &amp;= \left(\dfrac{t}{t_0}\right)^{2/3}\\
-    \rho(t) &amp;= \dfrac{\rho_0}{a^3} = \dfrac{\rho_0 t_{0}^{2}}{t^2}
-    \tag{3.7}
-\end{align}\]</span>
-The Hubble parameter, <span class="math inline">\(H(t)\)</span>, is a measure of the expansion rate of the Universe at time <span class="math inline">\(t\)</span> (note that <span class="math inline">\(H(t)\)</span> is different to the Hubble constant, <span class="math inline">\(H_0\)</span>, which is a measure of the expansion rate at the present time). <span class="math inline">\(H(t)\)</span> is therefore related to <span class="math inline">\(a\)</span>, and hence <span class="math inline">\(t\)</span>:
-<span class="math display" id="eq:power-4">\[\begin{equation}
-H(t) \equiv \dfrac{\dot{a}}{a} = \dfrac{2}{3t}
-\tag{3.8}
-\end{equation}\]</span>
-<p>As discussed in Section <a href="ch-eqs-of-expanding.html#sec:curvature">2.8</a>, we can see that in this <span class="math inline">\(k=0\)</span>, matter dominated Universe, the expansion will continue forever. It will slow down over time, becoming infinitely slow at <span class="math inline">\(t=\infty\)</span>. :::</p>
+<div id="ch:current-research" class="section level1">
+<h1><span class="header-section-number">Lecture 8</span> Current Research</h1>
+<p>In this section we will look at three recent experiments to measure the Hubble constant, <span class="math inline">\(H_0\)</span>. Each experiment uses a different technique that is independent and complementary to the others. We will not be going into the technical details of each experiment here, but you are welcome to look at the original papers if you wish to learn more.</p>
+<p>Under normal circumstances this part of the course would have been a discussion session, with each of you reading one of the three papers and discussing it in a group. As the format has been changed, you are not expected to read the papers, but you are expected to understand the main points that are summarised in this chapter.</p>
+<div id="sec:how-to-read" class="section level2">
+<h2><span class="header-section-number">8.1</span> How to read a scientific paper</h2>
+<p>When reading any scientific paper, there are several key questions you should keep in mind.</p>
+<ul>
+<li>What is the technique being used in this paper? How does it work?</li>
+<li>How does the technique relate to other techniques you know about?</li>
+<li>What is the main result of the paper?</li>
+<li>What are the possible uncertainties in the experiment? How well are they understood?</li>
+<li>Which parameters are constrained by the experiment, and which are assumed?</li>
+<li>What (if any) improvements are suggested to better constrain their results?</li>
+</ul>
+<p>These are the same questions you should be able to answer for each of the experiments in this section. I’ve done some of the hard work for you here by summarising the key results, but you’ll get the most out of this section if you make your own comparisons between them and try to come to your own conclusions.</p>
 </div>
-<div id="sec:radiation-eos" class="section level2">
-<h2><span class="header-section-number">3.2</span> Radiation</h2>
-The equation of state for radiation is
-<span class="math display" id="eq:rad-eos-1">\[\begin{equation}
-P = \dfrac{\rho c^2}{3}
-\tag{3.9}
-\end{equation}\]</span>
-which we can substitute into the Fluid equation (Eqn. <a href="ch-eqs-of-expanding.html#eq:fluid">(2.10)</a>):
-<span class="math display" id="eq:rad-eos-2">\[\begin{align}
-    \dot{\rho} + 3\dfrac{\dot{a}}{a}\left(\rho + \dfrac{\rho c^2}{3}\right) &amp;= 0\\
-    \dot{\rho} + 4\dfrac{\dot{a}}{a}\rho &amp;= 0
-\tag{3.10}
-\end{align}\]</span>
-Using the same power law analysis as in Section <a href="ch-constituents.html#sec:matter-eos">3.1</a>, i.e. <span class="math inline">\(a \propto t^q\)</span>, we find that <span class="math inline">\(q = 1/2\)</span>, leading to:
-<span class="math display" id="eq:rad-eos-3">\[\begin{equation}
-\begin{array}{lcr}
-    \rho \propto \dfrac{1}{a^4} &amp; \qquad a(t) = \left(\dfrac{t}{t_0}\right)^{1/2} &amp; \qquad \rho(t) = \dfrac{\rho_0}{a^4} = \dfrac{\rho_0 t_0^2}{t^2}\\
-\end{array}
-\tag{3.11}    
-\end{equation}\]</span>
-<p>In the radiation dominated case, <span class="math inline">\(\rho(t)\)</span> decreases with <span class="math inline">\(t^2\)</span>, as is the case with the matter dominated case. However, when we consider the scale factor, <span class="math inline">\(a\)</span>, we find: <span class="math display">\[H(t) \equiv \dfrac{\dot{a}}{a} = \dfrac{1}{2t}\]</span> meaning that the Universe expands <em>more slowly</em> when it is radiation dominated than when it is matter dominated.</p>
-<p>This may seem counter-intuitive at first; for a matter dominated Universe the energy density is proportional to the volume of the Universe (<span class="math inline">\(1/a^3\)</span>), so why is this not the same for a radiation dominated Universe? The answer lies in what happens to radiation under an increase in the scale factor.</p>
-</div>
-<div id="sec:slow_expansion_rad" class="section level2">
-<h2><span class="header-section-number">3.3</span> Why does a radiation dominated Universe expand more slowly?</h2>
-<p>As the Universe expands, the scale factor <span class="math inline">\(a\)</span> increases. The energy density of the radiation will decrease proportionally as the volume increases. However, the radiation loses additional energy, proportional to <span class="math inline">\(a\)</span>, as the photons are redshifted.</p>
-<div class="figure"><span id="fig:redshift-galaxies"></span>
-<img src="Images/redshift-galaxies.png" alt="A photon travelling between two galaxies" width="100%" />
+<div id="sec:candle-paper" class="section level2">
+<h2><span class="header-section-number">8.2</span> Experiment A: The standard candle experiment</h2>
+<p><strong>Large Magellanic Cloud Cepheid Standards Provide a 1% Foundation for the Determination of the Hubble Constant and Stronger Evidence for Physics Beyond <span class="math inline">\(\Lambda\)</span>CDM</strong>, <span class="citation">Riess et al. (<a href="#ref-Riess2019">2019</a>)</span></p>
+<p><a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...876...85R/abstract">https://ui.adsabs.harvard.edu/abs/2019ApJ…876…85R/abstract</a></p>
+<p><a href="Riess_2019_ApJ_876_85.pdf">Click here for paper pdf</a></p>
+<p>In this experiment, <span class="citation">Riess et al. (<a href="#ref-Riess2019">2019</a>)</span> use Cepheids in the Large Magellanic Cloud (our nearest galaxy) to improve their measurement of <span class="math inline">\(H_0\)</span>. The use the distance ladder technique (Sec. <a href="ch-obs-techs.html#sec:distance-ladder">5.5</a>), fixing the base of the ladder using precise measurements of Cepheids using the <em>Hubble Space Telescope</em>. Combining their Cepheid measurements with an independent measurement of the distance to the Large Magellanic Cloud from eclipsing binaries, they estimate <span class="math inline">\(H_0 = 74.03 \pm 1.42\)</span> km s<span class="math inline">\(^{-1}\)</span> Mpc<span class="math inline">\(^{-1}\)</span>.</p>
+<p>There are two key results in this paper. Firstly, they are able to reduce the <strong>uncertainty</strong> on their <span class="math inline">\(H_0\)</span> measurement to just under 2%. Note that the 1% quoted in the title of the paper is not the uncertainty on <span class="math inline">\(H_0\)</span>, but is the uncertainty on the distance to the Large Magellanic Cloud. This work was the first distance ladder experiment to measure <span class="math inline">\(H_0\)</span> to better than 2%.</p>
+<p>The second key result comes from comparing their result to the <em>Planck</em> experiment. <span class="citation">Planck Collaboration (<a href="#ref-Planck18">2018</a>)</span> found a significantly lower value for <span class="math inline">\(H_0\)</span> than had been measured in distance ladder experiments. However, the uncertainties on the distance ladder experiments were large compared to the <em>Planck</em> uncertainties. This meant that, although the difference in the results was interesting, it wasn’t significant as the results differed by less than 3<span class="math inline">\(\sigma\)</span> (3 standard deviations). By measuring <span class="math inline">\(H_0\)</span> more precisely, <span class="citation">Riess et al. (<a href="#ref-Riess2019">2019</a>)</span> showed that the difference between the standard candle and standard ruler experiments was significant, with <span class="math inline">\(\Delta H_0 = 4.4\sigma\)</span>.</p>
+<p>Figure <a href="ch-current-research.html#fig:riess19-fig4">8.1</a> shows Riess’s result (red point, labelled “Here”) compared to other standard candle results (other red points) and standard ruler results (blue points)</p>
+<div class="figure"><span id="fig:riess19-fig4"></span>
+<img src="Images/riess19-fig4.jpg" alt="The 4.4$\sigma$ difference between local measurements of $H_0$ and the value predicted from Planck+$\Lambda$CDM. Possible physics causes for a 2%–4% change in $H_0$ include time-dependent dark energy or nonzero curvature, while a larger 5%– 8% difference may come from dark matter interaction, early dark energy or additional relativistic particles. From @Riess2019." width="80%" />
 <p class="caption">
-Figure 3.1: A photon travelling between two galaxies
+Figure 8.1: The 4.4<span class="math inline">\(\sigma\)</span> difference between local measurements of <span class="math inline">\(H_0\)</span> and the value predicted from Planck+<span class="math inline">\(\Lambda\)</span>CDM. Possible physics causes for a 2%–4% change in <span class="math inline">\(H_0\)</span> include time-dependent dark energy or nonzero curvature, while a larger 5%– 8% difference may come from dark matter interaction, early dark energy or additional relativistic particles. From <span class="citation">Riess et al. (<a href="#ref-Riess2019">2019</a>)</span>.
 </p>
 </div>
-<p>Consider a photon travelling between two points in space, as shown in Figure <a href="ch-constituents.html#fig:redshift-galaxies">3.1</a>. The relative velocities of the galaxies in Fig. <a href="ch-constituents.html#fig:redshift-galaxies">3.1</a> is given by</p>
-<span class="math display" id="eq:red-1">\[\begin{equation}
-dv = H dr = \dfrac{\dot{a}}{a} dr
-\tag{3.12}
-\end{equation}\]</span>
-<p>We can use the Doppler law to find the change of the photon’s wavelength, <span class="math inline">\(d\lambda\)</span>, while it’s travelling between the two positions</p>
-<span class="math display" id="eq:red-2">\[\begin{equation}
-\dfrac{d\lambda}{\lambda} = \dfrac{dv}{c}
-\tag{3.13}
-\end{equation}\]</span>
-<p>The travel time of the photon is <span class="math inline">\(dt = dr/c\)</span>, which we can combine with Equations <a href="ch-constituents.html#eq:red-1">(3.12)</a> and <a href="ch-constituents.html#eq:red-2">(3.13)</a> to find</p>
-<span class="math display" id="eq:lambda-a">\[\begin{equation}
-\dfrac{d\lambda}{\lambda} = \dfrac{\dot{a}}{a} \dfrac{dr}{c} = \dfrac{\dot{a}}{a} dt
-\tag{3.14}
-\end{equation}\]</span>
-Integrating Equation <a href="ch-constituents.html#eq:lambda-a">(3.14)</a> shows that <span class="math inline">\(\ln \lambda = \ln a + \text{constant}\)</span>, i.e.
-<span class="math display" id="eq:lambda-a-2">\[\begin{equation}
-\lambda \propto a
-\tag{3.15}
-\end{equation}\]</span>
-The energy of a photon is proportional to its wavelength, so
-<span class="math display" id="eq:lambda-a-3">\[\begin{equation}
-E = \dfrac{h c}{\lambda} \propto \dfrac{1}{a}
-\tag{3.16}
-\end{equation}\]</span>
-<p>This reduction in energy by an additional factor of <span class="math inline">\(a\)</span> accounts for the slowed expansion in a radiation dominated Universe.</p>
 </div>
-<div id="sec:mixtures" class="section level2">
-<h2><span class="header-section-number">3.4</span> Mixing matter and radiation</h2>
-<p>In Sections <a href="ch-constituents.html#sec:matter-eos">3.1</a> and <a href="ch-constituents.html#sec:radiation-eos">3.2</a> we considered the cases where the Universe was composed of either only matter or only radiation. This is not particularly realistic; the Universe contains a mixture of these two components.</p>
-<p>We found that the energy densities of matter and radiation are related to the scale factor by different amounts, with the radiation energy density decreasing more quickly as <span class="math inline">\(a\)</span> increases:</p>
-<span class="math display" id="eq:rad-mat-1">\[\begin{equation}
-\begin{array}{lr}
-    \rho_{\text{mat}} \propto \dfrac{1}{a^3} &amp; \qquad
-    \rho_{\text{rad}} \propto \dfrac{1}{a^4}
-\end{array}
-\tag{3.17}
-\end{equation}\]</span>
-Even though the Universe is a mixture of matter and radiation, it still obeys the Friedman equation (Eqn. <a href="ch-eqs-of-expanding.html#eq:friedman">(2.15)</a>) in the same way, with the individual densities combined into a single value of <span class="math inline">\(\rho\)</span>:
-<span class="math display" id="eq:rho-mat-rad">\[\begin{equation}
-\rho = \rho_{\text{mat}} + \rho_{\text{rad}}
-\tag{3.18}
-\end{equation}\]</span>
-<p>We could solve the Friedman equation in full, but in practice only the dominant density term significantly affects the evolution of the scale factor at any given time.</p>
-At early times, the radiation energy density will dominate over the matter energy density, meaning that <span class="math inline">\(a\)</span> will evolve as in the radiation case:
-<span class="math display" id="eq:a-t">\[\begin{equation}
-a(t) \propto t^{1/2}
-\tag{3.19}
-\end{equation}\]</span>
-Combining this with our individual equations for <span class="math inline">\(\rho(t)\)</span> we find
-<span class="math display" id="eq:rho-rad-t">\[\begin{equation}
-\rho_{\text{rad}} \propto \dfrac{1}{t^2}
-\tag{3.20}
-\end{equation}\]</span>
-for the radiation dominated case, and
-<span class="math display" id="eq:rho-mat-t">\[\begin{equation}
-     \rho_{\text{mat}} \propto \dfrac{1}{a^3} \propto \dfrac{1}{t^{3/2}}
-\tag{3.21}
-\end{equation}\]</span>
-<p>for the matter dominated case.</p>
-<div class="figure"><span id="fig:density-fig"></span>
-<img src="Images/density_plot.png" alt="Evolution of the matter (orange solid line) and radiation (blue dashed line) density components as a function of time in a mixed composition Universe. Radiation dominates for early times, but as $t$ (hence $a$) increases, matter becomes the dominant component." width="100%" />
-<p class="caption">
-Figure 3.2: Evolution of the matter (orange solid line) and radiation (blue dashed line) density components as a function of time in a mixed composition Universe. Radiation dominates for early times, but as <span class="math inline">\(t\)</span> (hence <span class="math inline">\(a\)</span>) increases, matter becomes the dominant component.
-</p>
+<div id="sec:ruler-paper" class="section level2">
+<h2><span class="header-section-number">8.3</span> Experiment B: The standard ruler experiment</h2>
+<p><strong>Dark Energy Survey Year 1 Results: A Precise <span class="math inline">\(H_0\)</span> Estimate from DES Y1, BAO, and D/H Data</strong>, <span class="citation">Dark Energy Survey Collaboration (<a href="#ref-DES2018">2018</a>)</span></p>
+<p><a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.480.3879A/abstract" class="uri">https://ui.adsabs.harvard.edu/abs/2018MNRAS.480.3879A/abstract</a></p>
+<p><a href="Abbott_2018.pdf">Click here for paper pdf</a></p>
 </div>
-Initially, radiation will dominate. However, as <span class="math inline">\(t\)</span> increases, the energy density contribution from matter will dominate over radiation, as shown in Figure <a href="ch-constituents.html#fig:density-fig">3.2</a>. However, when the matter density dominates, <span class="math inline">\(a\)</span> will evolve as in the matter case:
-<span class="math display" id="eq:a-rho-comb">\[\begin{equation}
-\begin{array}{lcr}
-    a(t) \propto t^{2/3} &amp; \qquad
-    \rho_{\text{mat}} \propto \dfrac{1}{t^2} &amp; \qquad
-    \rho_{\text{rad}} \propto \dfrac{1}{a^4} \propto \dfrac{1}{t^{8/3}}
-\end{array}
-\tag{3.22}
-\end{equation}\]</span>
-</div>
-<div id="sec:dark-energy-1" class="section level2">
-<h2><span class="header-section-number">3.5</span> Cosmological Constant</h2>
-<p>The final case that we haven’t considered is the contribution from the cosmological constant, <span class="math inline">\(\Lambda\)</span> and its density <span class="math inline">\(\rho_{\Lambda}\)</span>. We know from observations that the Universe is now in the <span class="math inline">\(\Lambda\)</span> (Dark Energy) dominated era, but what does that mean for its evolution?</p>
-The fluid equation for <span class="math inline">\(\Lambda\)</span> is
-<span class="math display" id="eq:rho-lambda-1">\[\begin{equation}
-\dot{\rho_{\Lambda}} + 3\frac{\dot{a}}{a} \left(\rho_{\Lambda} + \dfrac{P_{\Lambda}}{c^2}\right) = 0
-\tag{3.23}
-\end{equation}\]</span>
-We know that <span class="math inline">\(\rho_{\Lambda}\)</span> is constant over time, which leads to
-<span class="math display" id="eq:rho-lambda-2">\[\begin{equation}
-P_\Lambda = -\rho_{\Lambda}c^2
-\tag{3.24}
-\end{equation}\]</span>
-<p>This means that <span class="math inline">\(\Lambda\)</span> has a <strong>negative effective pressure</strong>. As Universe expands, work is done on the <span class="math inline">\(\Lambda\)</span> fluid, allowing its density to stay constant even as the Universe increases in volume. We’ll come back to the ridiculousness of <span class="math inline">\(\Lambda\)</span> later in the course.</p>
-</div>
-<div id="sec:composition_ex" class="section level2">
-<h2><span class="header-section-number">3.6</span> Exercises</h2>
-<ol style="list-style-type: decimal">
-<li><p>So far we’ve looked at the cases for matter, where <span class="math inline">\(P = 0\)</span>, and radiation, where <span class="math inline">\(P = \rho c^2 / 3\)</span>. Consider a generic equation of state where <span class="math inline">\(P = (\gamma - 1) \rho c^2\)</span>, where <span class="math inline">\(0 &lt; \gamma &lt; 2\)</span>. Find equations for <span class="math inline">\(\rho(a)\)</span>, <span class="math inline">\(a(t)\)</span> and <span class="math inline">\(\rho(t)\)</span> for this equation of state. Assume a flat Universe, i.e. <span class="math inline">\(k=0\)</span>.</p></li>
-<li><p>Recall the Friedman equation: <span class="math display">\[\left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8\pi G}{3}\rho - \dfrac{k}{a^2}\]</span> Considering the equations you derived in part 1, what value of <span class="math inline">\(\gamma\)</span> is required so that <span class="math inline">\(\rho\)</span> has the same time dependence as the curvature term, <span class="math inline">\(k/a^2\)</span>?</p></li>
-<li><p>Assuming <span class="math inline">\(k&lt;0\)</span>, find the solution <span class="math inline">\(a(t)\)</span> to the Friedman equation for a fluid with the value of <span class="math inline">\(\gamma\)</span> you derived in Section <a href="ch-eqs-of-expanding.html#sec:geometry-ex">2.9</a>.</p></li>
-</ol>
+<div id="sec:siren-paper" class="section level2">
+<h2><span class="header-section-number">8.4</span> Experiment C: The standard siren experiment</h2>
+<p><strong>A gravitational-wave standard siren measurement of the Hubble constant</strong>, <span class="citation">Ligo collaboration (<a href="#ref-Ligo2017">2017</a>)</span></p>
+<p><a href="https://ui.adsabs.harvard.edu/abs/2017Natur.551...85A/abstract">https://ui.adsabs.harvard.edu/abs/2017Natur.551…85A/abstract</a></p>
+<p><a href="nature24471.pdf">Click here for paper pdf</a></p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-DES2018">
+<p>Dark Energy Survey Collaboration. 2018. “Dark Energy Survey Year 1 Results: A Precise H<span class="math inline">\(_{0}\)</span> Estimate from DES Y1, BAO, and D/H Data.” <em>MNRAS</em> 480 (3): 3879–88.</p>
+</div>
+<div id="ref-Ligo2017">
+<p>Ligo collaboration. 2017. “A gravitational-wave standard siren measurement of the Hubble constant.” <em>Nature</em> 551 (7678): 85–88.</p>
+</div>
+<div id="ref-Planck18">
+<p>Planck Collaboration. 2018. “Planck 2018 results. VI. Cosmological parameters.” <em>arXiv E-Prints</em>, arXiv:1807.06209.</p>
+</div>
+<div id="ref-Riess2019">
+<p>Riess, Adam G., Stefano Casertano, Wenlong Yuan, Lucas M. Macri, and Dan Scolnic. 2019. “Large Magellanic Cloud Cepheid Standards Provide a 1% Foundation for the Determination of the Hubble Constant and Stronger Evidence for Physics beyond <span class="math inline">\(\Lambda\)</span>CDM.” <em>ApJ</em> 876 (1): 85.</p>
 </div>
 </div>
             </section>
@@ -362,8 +233,8 @@ P_\Lambda = -\rho_{\Lambda}c^2
           </div>
         </div>
       </div>
-<a href="ch-eqs-of-expanding.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-obs-params.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-lambdacdm.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
