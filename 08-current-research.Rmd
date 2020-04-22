@@ -1,6 +1,9 @@
 Current Research {#ch:current-research}
 ===================================
 
+**IGNORE THIS SECTION FOR NOW.** 
+
+
 In this section we will look at three recent experiments to measure the Hubble constant, $H_0$. Each experiment uses a different technique that is independent and complementary to the others. We will not be going into the technical details of each experiment here, but you are welcome to look at the original papers if you wish to learn more.
 
 Under normal circumstances this part of the course would have been a discussion session, with each of you reading one of the three papers and discussing it in a group. As the format has been changed, you are not expected to read the papers, but you are expected to understand the main points that are summarised in this chapter. 
