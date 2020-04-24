@@ -1,6 +1,8 @@
 Composition of the Universe {#ch:constituents}
 ===========================
 
+**Updates - 24/4/20**: I have updated the derivations in the matter and radiation sections to include the correct $a_0$ proportionality constant.
+
 Like all good physicists, Cosmologists like to simplify the Universe
 with assumptions. In the previous section we decided that the Universe
 is a perfect fluid. We're continuing with that assumption here, now
@@ -45,10 +47,10 @@ off with $a^3$. We know that intuitively -- if you keep the amount of
 material the same, but increase the volume, the density will fall off
 proportionally. We can rewrite this as 
 \begin{equation}
-\rho = \dfrac{\rho_0}{a^3}
+\rho = \dfrac{\rho_0 a_0^3}{a^3}
 (\#eq:fluid-matter-4)
 \end{equation}
-where $\rho_0$ denotes the *present day* value.
+where $\rho_0$ and $a_0$ denote the *present day* values.
 
 Now that we know how the density of the Universe evolves with the scale
 factor, we can look further into the fate of a "matter dominated"
@@ -79,8 +81,8 @@ t^{(2q-2)} \propto t^{-q}
 which gives us
 $q = 2/3$, or 
 \begin{align}
-    a(t) &= \left(\dfrac{t}{t_0}\right)^{2/3}\\
-    \rho(t) &= \dfrac{\rho_0}{a^3} = \dfrac{\rho_0 t_{0}^{2}}{t^2}
+    a(t) &= a_0 \left(\dfrac{t}{t_0}\right)^{2/3}\\
+    \rho(t) &= \dfrac{\rho_0 a_0^3 }{a^3} = \dfrac{\rho_0 t_{0}^{2}}{t^2}
     (\#eq:power-3)
 \end{align}
 The Hubble parameter, $H(t)$, is a measure of the expansion rate of the
@@ -118,7 +120,7 @@ Section \@ref(sec:matter-eos), i.e. $a \propto t^q$, we find that
 $q = 1/2$, leading to: 
 \begin{equation}
 \begin{array}{lcr}
-    \rho \propto \dfrac{1}{a^4} & \qquad a(t) = \left(\dfrac{t}{t_0}\right)^{1/2} & \qquad \rho(t) = \dfrac{\rho_0}{a^4} = \dfrac{\rho_0 t_0^2}{t^2}\\
+    \rho \propto \dfrac{1}{a^4} & \qquad a(t) = a_0 \left(\dfrac{t}{t_0}\right)^{1/2} & \qquad \rho(t) = \dfrac{\rho_0 a_0^4}{a^4} = \dfrac{\rho_0 t_0^2}{t^2}\\
 \end{array}
 (\#eq:rad-eos-3)    
 \end{equation}

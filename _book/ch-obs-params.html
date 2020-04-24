@@ -168,6 +168,11 @@
             <section class="normal" id="section-">
 <div id="ch:obs-params" class="section level1">
 <h1><span class="header-section-number">Lecture 4</span> Observational Parameters</h1>
+<p><strong>Updates - 24/4/20</strong>:</p>
+<ul>
+<li>Corrected typo (missing minus sign) in Eq. <a href="ch-obs-params.html#eq:decel-5">(4.21)</a>.</li>
+<li>Updated Sec. <a href="ch-obs-params.html#sec:lambda-obs-params">4.7</a> to say that Eq. <a href="ch-obs-params.html#eq:den-lam-2">(4.29)</a> is derived in the same way as Eqs. <a href="ch-obs-params.html#eq:big-omega-4">(4.12)</a> to <a href="ch-obs-params.html#eq:big-omega-7">(4.15)</a>.</li>
+</ul>
 <div id="sec:cosmomodels" class="section level2">
 <h2><span class="header-section-number">4.1</span> Cosmological Models</h2>
 <p>Our understanding of how the Universe evolves can be contained in a <strong>Cosmological model</strong>. Such models are specified by a number of parameters, such as the densities of radiation and matter, the Universe’s curvature, and the Hubble parameter, to name a few.</p>
@@ -272,9 +277,9 @@ where <span class="math inline">\(\Omega_m\)</span> and <span class="math inline
 \tag{4.15}
 \end{equation}\]</span></p>
 <p>and, importantly, <strong><span class="math inline">\(\Omega_k\)</span> can be positive or negative!</strong>. We can substitute these into the Friedman equation again (seriously, if in doubt, substitute into the Friedman equation…) to get:</p>
-<p><span class="math display" id="eq:big-omega-7">\[\begin{equation}
+<p><span class="math display" id="eq:big-omega-8">\[\begin{equation}
 \Omega + \Omega_k = 1
-\tag{4.15}
+\tag{4.16}
 \end{equation}\]</span></p>
 <p>We’ll return to the density parameter in more detail in later sections, when we look at how it is measured and how it affects the <span class="math inline">\(\Lambda\)</span>CDM model.</p>
 </div>
@@ -285,54 +290,54 @@ where <span class="math inline">\(\Omega_m\)</span> and <span class="math inline
 <p>We start our exploration of the deceleration parameter by looking at a Taylor expansion of the scale factor at the present time, i.e. <span class="math inline">\(a_0\)</span>.</p>
 <p><span class="math display" id="eq:decel-1">\[\begin{equation}
 a(t) = a(t_0) + \dot{a}(t_0)[t - t_0] + \dfrac{1}{2}\ddot{a}(t_0)[t-t_0]^2 ...
-\tag{4.16}
+\tag{4.17}
 \end{equation}\]</span></p>
-<p>Dividing <a href="ch-obs-params.html#eq:decel-1">(4.16)</a> by <span class="math inline">\(a(t_0)\)</span> gives us</p>
+<p>Dividing <a href="ch-obs-params.html#eq:decel-1">(4.17)</a> by <span class="math inline">\(a(t_0)\)</span> gives us</p>
 <p><span class="math display" id="eq:decel-2">\[\begin{equation}
 \dfrac{a(t)}{a(t_0)} = 1 + \dfrac{\dot{a}(t_0)}{ a(t_0)}[t - t_0] + \dfrac{1}{2}\dfrac{\ddot{a}(t_0)}{a(t_0)}[t-t_0]^2
-\tag{4.17}
+\tag{4.18}
 \end{equation}\]</span></p>
 <p>which we can re-write as</p>
 <p><span class="math display" id="eq:decel-3">\[\begin{equation}
 \dfrac{a(t)}{a(t_0)} = 1 + H_0 [t - t_0] + \dfrac{q_0}{2}H_0^2[t-t_0]^2
-\tag{4.18}
+\tag{4.19}
 \end{equation}\]</span></p>
 <p>Where the deceleration parameter <span class="math inline">\(q_0\)</span> is defined as</p>
 <p><span class="math display" id="eq:decel-4">\[\begin{equation}
 q_0 = \dfrac{-\ddot{a}(t_0)}{a(t_0)}\dfrac{1}{H^2} 
-\tag{4.19}
+\tag{4.20}
 \end{equation}\]</span>
 or
 <span class="math display" id="eq:decel-5">\[\begin{equation}
- q_0 = \dfrac{a(t_0) \ddot{a}(t_0)}{\dot{a}^2(t_0)}
-\tag{4.20}
+ q_0 = \dfrac{-a(t_0) \ddot{a}(t_0)}{\dot{a}^2(t_0)}
+\tag{4.21}
 \end{equation}\]</span></p>
 <p>which means that a higher value of <span class="math inline">\(q_0\)</span> means more rapid deceleration.</p>
 <p>In Section <a href="ch-eqs-of-expanding.html#sec:friedman">2.5</a> we came across the <strong>acceleration equation</strong></p>
 <p><span class="math display" id="eq:acceleration-decel">\[\begin{equation}
     \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)
-\tag{4.21}
+\tag{4.22}
 \end{equation}\]</span>
 (Note - I did not cover this derivation in the recorded lecture, but it is in the written notes).
-Assuming the simplest case, that the Universe is matter dominated (i.e. <span class="math inline">\(P=0\)</span>), Eq. <a href="ch-obs-params.html#eq:acceleration-decel">(4.21)</a> becomes</p>
+Assuming the simplest case, that the Universe is matter dominated (i.e. <span class="math inline">\(P=0\)</span>), Eq. <a href="ch-obs-params.html#eq:acceleration-decel">(4.22)</a> becomes</p>
 <p><span class="math display" id="eq:decel-6">\[\begin{equation}
  \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\rho
-\tag{4.22}
+\tag{4.23}
 \end{equation}\]</span></p>
-<p>Substituting in Eq. <a href="ch-obs-params.html#eq:decel-4">(4.19)</a>, we find
+<p>Substituting in Eq. <a href="ch-obs-params.html#eq:decel-4">(4.20)</a>, we find
 <span class="math display" id="eq:decel-6">\[\begin{equation}
  q_0 = -\dfrac{\ddot{a}(t_0)}{a(t_0)} H_0^2 = \dfrac{4\pi G}{3}\rho
-\tag{4.22}
+\tag{4.23}
 \end{equation}\]</span></p>
 <p>And remembering the equations for the critical density <span class="math inline">\(\rho_c\)</span> (Eq. <a href="ch-obs-params.html#eq:fr-den-2">(4.6)</a>) and the density parameter <span class="math inline">\(\Omega\)</span> (Eq. <a href="ch-obs-params.html#eq:big-omega">(4.9)</a>), we find</p>
 <p><span class="math display" id="eq:decel-7">\[\begin{equation}
  q_0 = \dfrac{4\pi G}{3}\rho \dfrac{3}{8 \pi G \rho_c}
-\tag{4.23}
+\tag{4.24}
 \end{equation}\]</span></p>
 <p>which (after all that….) simplifies to</p>
 <p><span class="math display" id="eq:decel-8">\[\begin{equation}
  q_0 = \dfrac{\Omega_0}{2}
-\tag{4.24}
+\tag{4.25}
 \end{equation}\]</span></p>
 <p>So the deceleration parameter doesn’t just tell us about the expansion rate, it also gives us the density parameter!!</p>
 </div>
@@ -346,11 +351,11 @@ Assuming the simplest case, that the Universe is matter dominated (i.e. <span cl
 <p>If we take a look at the acceleration equation again</p>
 <p><span class="math display" id="eq:acceleration-decel-2">\[\begin{equation}
     \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)
-\tag{4.25}
+\tag{4.26}
 \end{equation}\]</span></p>
 <p>we can try to figure out what is going on.</p>
-<p>If we assume the matter equation of state again (<span class="math inline">\(P=0\)</span>), then the left hand side of Eq. <a href="ch-obs-params.html#eq:acceleration-decel-2">(4.25)</a> will always be negative. The Universe’s expansion will decelerate.</p>
-<p>If we assume a different equation of state, for example, one with a similar form to that of radiation such that <span class="math inline">\(P&gt;0\)</span>, then we find the same thing. The left hand side of Eq. <a href="ch-obs-params.html#eq:acceleration-decel-2">(4.25)</a> will always be negative. The Universe’s expansion will decelerate. (You can see now why they called it the deceleration parameter…)</p>
+<p>If we assume the matter equation of state again (<span class="math inline">\(P=0\)</span>), then the left hand side of Eq. <a href="ch-obs-params.html#eq:acceleration-decel-2">(4.26)</a> will always be negative. The Universe’s expansion will decelerate.</p>
+<p>If we assume a different equation of state, for example, one with a similar form to that of radiation such that <span class="math inline">\(P&gt;0\)</span>, then we find the same thing. The left hand side of Eq. <a href="ch-obs-params.html#eq:acceleration-decel-2">(4.26)</a> will always be negative. The Universe’s expansion will decelerate. (You can see now why they called it the deceleration parameter…)</p>
 <p>In fact, the only way we can get a Universe where the expansion is accelerating is if it’s dominant component has a very strange equation of state <strong>with negative pressure</strong>!</p>
 </div>
 <div id="sec:lambda-obs-params" class="section level2">
@@ -358,45 +363,46 @@ Assuming the simplest case, that the Universe is matter dominated (i.e. <span cl
 <p>At the end of Lecture 3 we looked briefly at the Cosmological Constant (<span class="math inline">\(\Lambda\)</span>). Einstein introduced <span class="math inline">\(\Lambda\)</span> into general relativity in order to create a ‘static’ Universe – one that was neither expanding or contracting. His assumption was that as all matter interacts via gravity then there is no solution to the Friedman equation that permits <span class="math inline">\(\dot{a} = 0\)</span>. To counteract this, he added in the <span class="math inline">\(\Lambda\)</span> term so that the <span class="math inline">\(\dot{a} = 0\)</span> solution would be permitted, making the Friedman equation become</p>
 <p><span class="math display" id="eq:fr-lam">\[\begin{equation}
     H^2 = \left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8 \pi G \rho}{3} - \dfrac{k}{a^2} + \dfrac{\Lambda}{3}
-\tag{4.26}
+\tag{4.27}
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(\Lambda\)</span> has units of time<span class="math inline">\(^{-2}\)</span>.</p>
 <p>A full derivation of the acceleration equation including <span class="math inline">\(\Lambda\)</span> is quite dry so I won’t include it here. You’re welcome to try it yourself (or see the PDF of the slides on moodle). The important point to take away is that if <span class="math inline">\(\Lambda\)</span> is positive, then it provides a positive repulsive force to drive the expansion.</p>
 <p>The density related to <span class="math inline">\(\Lambda\)</span> follows the same rules as other densities, i.e.</p>
 <p><span class="math display" id="eq:den-lam">\[\begin{equation}
     \Omega + \Omega_{\Lambda} = 1
-\tag{4.27}
+\tag{4.28}
 \end{equation}\]</span></p>
 <p>in a flat Universe, where
 <span class="math display" id="eq:den-lam-2">\[\begin{equation}
     \Omega_{\Lambda} = \dfrac{\Lambda}{3H^2}
-\tag{4.28}
-\end{equation}\]</span></p>
-<p>We can treat <span class="math inline">\(\Lambda\)</span> as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. <a href="ch-obs-params.html#eq:fr-lam">(4.26)</a>) and the density (Eq. <a href="ch-obs-params.html#eq:den-lam-2">(4.28)</a>) we can show that</p>
+\tag{4.29}
+\end{equation}\]</span>
+which comes from rearranging the Freedman equation in the same way as we did in Eqs. <a href="ch-obs-params.html#eq:big-omega-4">(4.12)</a> to <a href="ch-obs-params.html#eq:big-omega-7">(4.15)</a>.</p>
+<p>We can treat <span class="math inline">\(\Lambda\)</span> as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. <a href="ch-obs-params.html#eq:fr-lam">(4.27)</a>) and the density (Eq. <a href="ch-obs-params.html#eq:den-lam-2">(4.29)</a>) we can show that</p>
 <p><span class="math display" id="eq:den-lam-3">\[\begin{equation}
     \rho_{\Lambda} = \dfrac{\Lambda}{8 \pi G}
-\tag{4.29}
+\tag{4.30}
 \end{equation}\]</span></p>
 <p>to give
 <span class="math display" id="eq:den-lam-4">\[\begin{equation}
     H^2 = \dfrac{8 \pi G}{3}(\rho + \rho_{\Lambda}) - \dfrac{k}{a^2}
-\tag{4.30}
+\tag{4.31}
 \end{equation}\]</span></p>
 <p>Finally, we can look at the Fluid equation (aha! you thought I was going to say the Friedman equation!) to find the equation of state for <span class="math inline">\(\Lambda\)</span>:</p>
 <p><span class="math display" id="eq:lam-fluid">\[\begin{equation}
     \dot{\rho_{\Lambda}} + 3\dfrac{\dot{a}}{a}\left(\rho_{\Lambda} + \dfrac{P}{c^2}\right) = 0
-\tag{4.31}
+\tag{4.32}
 \end{equation}\]</span></p>
-<p>As <span class="math inline">\(\Lambda\)</span> is the cosmological <strong>constant</strong>, hence does not change with time, we know that <span class="math inline">\(\dot{\rho_{\Lambda}} = 0\)</span>. Rearranging Eq. <a href="ch-obs-params.html#eq:lam-fluid">(4.31)</a> gives us:</p>
+<p>As <span class="math inline">\(\Lambda\)</span> is the cosmological <strong>constant</strong>, hence does not change with time, we know that <span class="math inline">\(\dot{\rho_{\Lambda}} = 0\)</span>. Rearranging Eq. <a href="ch-obs-params.html#eq:lam-fluid">(4.32)</a> gives us:</p>
 <p><span class="math display" id="eq:lam-fluid-2">\[\begin{equation}
     P_{\Lambda} = -\rho_{\Lambda} c^2
-\tag{4.32}
+\tag{4.33}
 \end{equation}\]</span></p>
 <p><strong>The cosmological constant has negative pressure!!</strong> What does this mean physically? It means that as the Universe expands, work is done on the <span class="math inline">\(\Lambda\)</span> fluid and its energy density remains constant.</p>
 <p>The generic form of the <span class="math inline">\(\Lambda\)</span> equation of state is</p>
 <p><span class="math display" id="eq:lam-fluid-3">\[\begin{equation}
     P_{\Lambda} =  w \rho_{\Lambda} c^2
-\tag{4.33}
+\tag{4.34}
 \end{equation}\]</span></p>
 <p>and you will often see the parameter <span class="math inline">\(w\)</span> referred to as the <strong>dark energy equation of state</strong>. We will revisit the evidence for <span class="math inline">\(\Lambda\)</span>, and measurements of the other parameters discussed in this section soon.</p>
 

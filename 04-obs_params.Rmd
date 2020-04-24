@@ -1,6 +1,11 @@
 Observational Parameters {#ch:obs-params}
 ===================================
 
+**Updates - 24/4/20**: 
+
+ - Corrected typo (missing minus sign) in Eq. \@ref(eq:decel-5).
+ - Updated Sec. \@ref(sec:lambda-obs-params) to say that Eq. \@ref(eq:den-lam-2) is derived in the same way as Eqs. \@ref(eq:big-omega-4) to \@ref(eq:big-omega-7).
+
 Cosmological Models {#sec:cosmomodels}
 --------------------------
 
@@ -145,7 +150,7 @@ and, importantly, **$\Omega_k$ can be positive or negative!**. We can substitute
 
 \begin{equation}
 \Omega + \Omega_k = 1
-(\#eq:big-omega-7)
+(\#eq:big-omega-8)
 \end{equation}
 
 We'll return to the density parameter in more detail in later sections, when we look at how it is measured and how it affects the $\Lambda$CDM model.
@@ -185,7 +190,7 @@ q_0 = \dfrac{-\ddot{a}(t_0)}{a(t_0)}\dfrac{1}{H^2}
 \end{equation}
 or 
 \begin{equation}
- q_0 = \dfrac{a(t_0) \ddot{a}(t_0)}{\dot{a}^2(t_0)}
+ q_0 = \dfrac{-a(t_0) \ddot{a}(t_0)}{\dot{a}^2(t_0)}
 (\#eq:decel-5)
 \end{equation}
 
@@ -281,6 +286,7 @@ in a flat Universe, where
     \Omega_{\Lambda} = \dfrac{\Lambda}{3H^2}
 (\#eq:den-lam-2)
 \end{equation} 
+which comes from rearranging the Freedman equation in the same way as we did in Eqs. \@ref(eq:big-omega-4) to \@ref(eq:big-omega-7).
 
 
 We can treat $\Lambda$ as a fluid, similarly to the treatment we did for matter and radiation. Taking the Friedman equation (Eq. \@ref(eq:fr-lam)) and the density (Eq. \@ref(eq:den-lam-2)) we can show that 
