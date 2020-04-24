@@ -168,6 +168,7 @@
             <section class="normal" id="section-">
 <div id="ch:constituents" class="section level1">
 <h1><span class="header-section-number">Lecture 3</span> Composition of the Universe</h1>
+<p><strong>Updates - 24/4/20</strong>: I have updated the derivations in the matter and radiation sections to include the correct <span class="math inline">\(a_0\)</span> proportionality constant.</p>
 <p>Like all good physicists, Cosmologists like to simplify the Universe with assumptions. In the previous section we decided that the Universe is a perfect fluid. We’re continuing with that assumption here, now looking at how the different components of the Universe behave.</p>
 <p>In Section <a href="ch-eqs-of-expanding.html#sec:fluid-eqns">2.3</a> we stated that any possible components of the Universe could be described as perfect fluids. On a Cosmological scale, this is a reasonable assumption. However, not all Cosmological fluids behave in the same way. Each component will obey its own <strong>equation of state</strong> that describes how its pressure (<span class="math inline">\(P\)</span>) and density (<span class="math inline">\(\rho\)</span>) are related.</p>
 <div id="sec:matter-eos" class="section level2">
@@ -194,10 +195,10 @@ or that
 \end{equation}\]</span>
 This is not a surprising answer; it’s telling us that the density falls off with <span class="math inline">\(a^3\)</span>. We know that intuitively – if you keep the amount of material the same, but increase the volume, the density will fall off proportionally. We can rewrite this as
 <span class="math display" id="eq:fluid-matter-4">\[\begin{equation}
-\rho = \dfrac{\rho_0}{a^3}
+\rho = \dfrac{\rho_0 a_0^3}{a^3}
 \tag{3.4}
 \end{equation}\]</span>
-<p>where <span class="math inline">\(\rho_0\)</span> denotes the <em>present day</em> value.</p>
+<p>where <span class="math inline">\(\rho_0\)</span> and <span class="math inline">\(a_0\)</span> denote the <em>present day</em> values.</p>
 <p>Now that we know how the density of the Universe evolves with the scale factor, we can look further into the fate of a “matter dominated” Universe.</p>
 <p>:::fyi <strong>Power laws</strong></p>
 <p>In case you hadn’t realised by now, a lot of Cosmology is built on assumptions and estimation. Luckily, these estimates describe evolution of the Universe very well. One such estimate is the <strong>power law</strong> – the astronomers favourite tool for estimating relations. Power laws, e.g <span class="math inline">\(a \propto t^q\)</span> crop up frequently in astronomy and cosmology, so it’s useful to be able to recognise when to use them.</p>
@@ -213,8 +214,8 @@ t^{(2q-2)} \propto t^{-q}
 \end{equation}\]</span>
 which gives us <span class="math inline">\(q = 2/3\)</span>, or
 <span class="math display" id="eq:power-3">\[\begin{align}
-    a(t) &amp;= \left(\dfrac{t}{t_0}\right)^{2/3}\\
-    \rho(t) &amp;= \dfrac{\rho_0}{a^3} = \dfrac{\rho_0 t_{0}^{2}}{t^2}
+    a(t) &amp;= a_0 \left(\dfrac{t}{t_0}\right)^{2/3}\\
+    \rho(t) &amp;= \dfrac{\rho_0 a_0^3 }{a^3} = \dfrac{\rho_0 t_{0}^{2}}{t^2}
     \tag{3.7}
 \end{align}\]</span>
 The Hubble parameter, <span class="math inline">\(H(t)\)</span>, is a measure of the expansion rate of the Universe at time <span class="math inline">\(t\)</span> (note that <span class="math inline">\(H(t)\)</span> is different to the Hubble constant, <span class="math inline">\(H_0\)</span>, which is a measure of the expansion rate at the present time). <span class="math inline">\(H(t)\)</span> is therefore related to <span class="math inline">\(a\)</span>, and hence <span class="math inline">\(t\)</span>:
@@ -240,7 +241,7 @@ which we can substitute into the Fluid equation (Eqn. <a href="ch-eqs-of-expandi
 Using the same power law analysis as in Section <a href="ch-constituents.html#sec:matter-eos">3.1</a>, i.e. <span class="math inline">\(a \propto t^q\)</span>, we find that <span class="math inline">\(q = 1/2\)</span>, leading to:
 <span class="math display" id="eq:rad-eos-3">\[\begin{equation}
 \begin{array}{lcr}
-    \rho \propto \dfrac{1}{a^4} &amp; \qquad a(t) = \left(\dfrac{t}{t_0}\right)^{1/2} &amp; \qquad \rho(t) = \dfrac{\rho_0}{a^4} = \dfrac{\rho_0 t_0^2}{t^2}\\
+    \rho \propto \dfrac{1}{a^4} &amp; \qquad a(t) = a_0 \left(\dfrac{t}{t_0}\right)^{1/2} &amp; \qquad \rho(t) = \dfrac{\rho_0 a_0^4}{a^4} = \dfrac{\rho_0 t_0^2}{t^2}\\
 \end{array}
 \tag{3.11}    
 \end{equation}\]</span>
