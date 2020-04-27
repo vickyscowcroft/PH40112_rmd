@@ -1,6 +1,9 @@
 Observational Techniques: The Cosmic Microwave Background {#ch:obs-techs-cmb}
 ===================================
 
+**Updates - 27/4/20**: 
+ - Edited Sec. \@ref(sec:planck-results) to emphasise that you are **not** required to memorise the values of the *Planck* cosmological parameters.
+
 In Chapter \@ref(ch:obs-techs) we looked at the standard candle distance ladder. Like all experiments, measurements from the distance ladder contain both **systematic** and **random** uncertainties (see Sec. \@ref(sec:distance-ladder-uncertainties)). In order to determine whether our measurements of cosmological parameters are robust, we must use more than one technique to measure them. In this Chapter, we will look at **standard rulers**, and how the **Cosmic Microwave Background** (CMB) can be used to make independent and complementary measurements of the cosmological model.
 
 Standard Candles vs Standard Rulers {#sec:candles-vs-rulers}
@@ -88,6 +91,7 @@ A sound wave of a given wavelength can only propagate if it travels over a dista
 
 ::: fyi
 **Wavelengths and wavelengths**
+
 In the discussion above, the "wavelengths" referred to are the density waves in the plasma. This is not the same as the wavelength of the CMB photons. The CMB photons have microwave wavelengths, not Mpc scale wavelengths.
 :::
 
@@ -146,4 +150,4 @@ Table: (\#tab:planck-res) Selection of results from @Planck18 (table 1).
 | $\Omega_{m}$ | 0.3147 $\pm$ 0.0074 | 
 | Age (Gyr) | 13.801 $\pm$ 0.024 | 
 
-You are not expected to memorise the values of the cosmological parameters. In an upcoming session, we will compare results from different (complementary) experiments to assess just how much we really understand about the cosmological model. The key point to take away from this subsection is that there are interdependencies and degeneracies between the parameters, and that one experiment cannot give us all the answers.
+**You are not expected to memorise the values of the cosmological parameters**. In an upcoming session, we will compare results from different (complementary) experiments to assess just how much we really understand about the cosmological model. The key point to take away from this subsection is that there are interdependencies and degeneracies between the parameters, and that one experiment cannot give us all the answers.

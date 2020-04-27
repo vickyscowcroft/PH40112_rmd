@@ -1,6 +1,11 @@
 Observational Techniques: The Distance Ladder {#ch:obs-techs}
 ===================================
 
+**Updates - 27/4/20**: 
+
+ - Clarified in Sec. \@ref(sec:distance-ladder-uncertainties) that you are **not** expected to memorise the numbers in the Key Project error budget.
+ - Clarified in Sec. \@ref(sec:distance-ladder-uncertainties) that the details of the Bayesian analysis of *Gaia* parallex uncertainties is included only for those who want to look into it further. 
+
 In Chapters \@ref(ch:eqs-of-expanding), \@ref(ch:constituents) and \@ref(ch:obs-params), we mainly considered the theoretical aspects of Cosmology. In this section we will investigate the link between the models that describe the expanding Universe and the observations that allow us to measure their parameters.
 
 Equations to Observations {#sec:eq-to-obs}
@@ -124,7 +129,9 @@ knitr::include_graphics("Images/precision_accuracy.png")
 
 The distance ladder ties together several techniques to measure distances to the furthest galaxies, hence uncertainties on each "rung" of the ladder propagate through to our final measurements. Large uncertainties at the bottom will lead to unreliable measurements at the top, in a similar way to having an unstable foundation for the bottom of a ladder leads to an unstable, wobbly ladder that you really wouldn't want to stand at the top of. 
 
-A major step forward in measuring a high-precision value of $H_0$ was made in 2001 with the publication of the results from the *HST Key Project to Measure the Hubble Constant* @2001Freedman, who found $H_0$ = 71 $\pm$ 2 (rand.) $\pm$ 6 (sys.) km s$^{-1}$ Mpc$^{-1}$. Table \@ref(tab:kp-errs) shows how different components of systematic uncertainty combine in their final result.
+A major step forward in measuring a high-precision value of $H_0$ was made in 2001 with the publication of the results from the *HST Key Project to Measure the Hubble Constant* @2001Freedman, who found $H_0$ = 71 $\pm$ 2 (rand.) $\pm$ 6 (sys.) km s$^{-1}$ Mpc$^{-1}$. Table \@ref(tab:kp-errs) shows how different components of systematic uncertainty combine in their final result. 
+
+**You are not expected to memorise these numbers**. Table \@ref(tab:kp-errs) is provided so you can see the variety of effects that contribute to $H_0$ measurements. Some are obvious; the calibration of the camera is something you would expect to see in the error budget for an observational experiment. Others are less obvious,For example, the bias in the Leavitt Law comes from the fact that the Cepheids observed may not fully sample the true distribution of the Leavitt law. This means that when we derive a distance to a galaxy using this biased sample, that distance measurement will also be biased. 
 
 Table: (\#tab:kp-errs) Overall systematic uncertainties in the Hubble constant. From @2001Freedman.
 
@@ -168,7 +175,7 @@ where $\varpi$ is the parallax angle. However, if we wish to ensure an unbiased 
 knitr::include_graphics("Images/apjaa3f0ff1_hr.jpg")
 ```
 
-This skewness must be taken into account in order to prevent systematic uncertainties being introduced into the Leavitt law calibration. Therefore, rather than use the simple parallax equation given in Eq. \@ref(eq:gaia-1), we must use a full Bayesian analysis to estimate distances. A full discussion of the application of Bayesian statistics to parallax measurements is beyond the scope of this course. However, if you are interested in the methodology, the series of papers by Astraatmadja & Bailer-Jones gives an excellent introduction to the topic [@2015BJ; @2016BJ; @2016ABJ2].
+This skewness must be taken into account in order to prevent systematic uncertainties being introduced into the Leavitt law calibration. Therefore, rather than use the simple parallax equation given in Eq. \@ref(eq:gaia-1), we must use a full Bayesian analysis to estimate distances. **A full discussion of the application of Bayesian statistics to parallax measurements is beyond the scope of this course**. However, if you are interested in the methodology, the series of papers by Astraatmadja & Bailer-Jones gives an excellent introduction to the topic [@2015BJ; @2016BJ; @2016ABJ2].
 
 
 
