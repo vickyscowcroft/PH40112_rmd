@@ -14,18 +14,6 @@
     border: solid 5px #ffe6f0;
   }
 
-  div.aside {
-   padding: 1em;
-    margin: 1em 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    min-height: 120px;
-    background-color: #ffffff;
-    border: solid 5px #9370DB;
-    }
 
 div.puzzle {
   background-image: url("Images/Your-turn.png");
