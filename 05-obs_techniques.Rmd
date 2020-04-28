@@ -100,7 +100,7 @@ knitr::include_graphics("Images/distance_ladder_pic-.png")
 
 To get an accurate measurement of $H_0$ we must use objects that are as far away as possible. If we were to use only galaxies that were nearby in our estimation then the velocities we measure would be dominated by **peculiar motions**. Peculiar motions are caused by gravitational interaction with other nearby objects. For very distant galaxies -- those deemed to be in the **Hubble flow** -- the galaxy's velocity is dominated by its **recession velocity**, and the contribution from the peculiar velocity is negligible. 
 
-Measurements of $H_0$ from the distance ladder {#sec:ho_distance_ladder}
+Measurements of $H_0$ from the distance ladder {#sec:ho-distance-ladder}
 -----------
 The distance ladder is one of the oldest and most frequently used techniques to measure $H_0$. Figure \@ref(fig:ho-distance-ladder) shows how our measurements of $H_0$ have converged over time, from the early measurements in the 1930's, to the high-precision measurements of the 2010's and 2020's. From Figure \@ref(fig:ho-distance-ladder) it looks like we may have reached a consensus on the value of $H_0$. To confirm that, we need to consider the uncertainties on our measurements. 
 

@@ -3,10 +3,6 @@ title: "Relativistic Cosmology Part 2"
 author: "Dr Vicky Scowcroft"
 date: "Semester 2, 2019/20"
 site: bookdown::bookdown_site
-#output:
-#  bookdown::tufte_html_book:
-#    toc: yes
-#    css: [mystyle.css, toc.css]
 output: 
   bookdown::gitbook:
     css: [mystyle.css]
@@ -41,31 +37,6 @@ subparagraph: yes
   cosmological experiments, in particular how these affect our ability
   to discriminate between different models of the Universe's evolution.
   
-## Topics and Schedule {-}
-
-
-
-| Topic                                      | Written notes | Slides |                                  Recording |
-|--------------------------------------------|--------------:|-------:|-------------------------------------------:|
-| Introduction to Observational Cosmology    |     Available | Moodle |                                    Panopto |
-| Equations of the Expanding Universe        |     Available | Moodle |           Moodle - supplementary recording |
-| Composition of the Universe                |     Available |     NA | Explain Everything link - see Moodle forum |
-| Observational Parameters                   |     Available | Moodle |                                            |
-| Observational Techniques - Distance Ladder |     Available | Moodle |                                            |
-| Observational Techniques - CMB             |               | Moodle |                                            |
-| The $\Lambda$CDM Model                     |               | Moodle |                                            |
-| Dark Matter                                |               | Moodle |                                            |
-| Current Research Topics                    |               |        |                                            |
-| Structures in the Universe                 |               | Moodle |                                            |
-| Inflation                                  |               | Moodle |                                            |
-
-Lectures have been front-loaded for this section of the course. Problem sheets will be released once the relevant material has been covered, but formal problems classes will not take place until week 11.
-
-The schedule was last updated on 2<sup>nd</sup> April. Changes to the planned schedule will be posted here and on the moodle page. 
-
-## Current Research Topics section {-}
-
-The discussion session originally planned for April 2nd is no longer feasible. Two journal papers on different cosmological experiments will be posted on Moodle at the end of week 9. I will provide *brief* summaries of papers, and a list of questions you should have in mind when reading the papers. This section will have strong ties with the Observational Techniques sections, so you should ensure you are familiar with the material in that section when working on this. 
 
 ## Suggested textbook {-}
   This section of the course closely follows several chapters of *An
@@ -74,15 +45,6 @@ The discussion session originally planned for April 2nd is no longer feasible. T
   Oxford companion to Cosmology* by Liddle and Loveday, which is
   available in the University library.
 
-## Lecture notes, slides, recordings {-}
-
-Written notes for lectures 1 - 10 will be made available online in html and PDF format. The html notes are available at https://vickyscowcroft.github.io/PH40112_rmd/ and will be updated throughout the course. PDF versions of the notes will be posted to the course Moodle page. The html notes have been designed so that the maths content is compatible with screen readers. 
-
-Lectures will follow the same general structure as the written notes, but will not be identical - i.e. they will not be `skeleton' notes for you to fill in the blanks. They are designed to support your learning of the lecture material, so you may find it useful to make your own notes during the session. 
-
-PDF versions of the slides for each session will be posted on Moodle before each session. If you need these in an alternative format please let me know. 
-
-Where appropriate, recordings will be made available to accompany the slides and lecture notes. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

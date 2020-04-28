@@ -62,7 +62,7 @@ knitr::include_graphics("Images/060915_CMB_Timeline150_annotated.jpg")
 ```
 
 
-The first second {#sec:first_second}
+The first second {#sec:first-second}
 -------------------------------
 
 The first second after the Big Bang was quite dramatic. Highlights of

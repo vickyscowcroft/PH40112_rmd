@@ -68,7 +68,7 @@ As $\Lambda increased the age of the Universe and the estimated ages of globular
 
 As we saw in Ch. \@ref(ch:obs-techs-cmb), observations of the CMB can provide important information about the composition of the Universe, such as the density of dark matter. Some of the earliest evidence for dark matter came from **galaxy rotation curves**. Observations of galaxy rotation curves made by Vera Rubin showed that there must be 'missing' making the outskirts of galaxies rotate faster than predicted by their visible matter alone. 
 
-Table \@ref(tab:composition) summarises our current understanding of the Universe's composition.
+Table \@ref(tab:composition) summarises our current understanding of the Universe's composition. You are **not** expected to memorise the exact numbers in this table. However, it is useful for you to have a rough idea in your head of the proportions of the different consitutents.
 
 Table: (\#tab:composition) Fractional contributions of each component to the Universe's energy density. 
 
@@ -80,11 +80,17 @@ Table: (\#tab:composition) Fractional contributions of each component to the Uni
 | Cold dark matter | CMB measurements | $\Omega_{b} = 0.27$ | 
 | Cosmological constant | Acceleration | $\Omega_{\Lambda} = 0.68$ | 
 
+Figure \@ref(fig:pie-chart) shows the fractional composition graphically. As you can see, baryons -- the type of matter that makes up the parts of the Universe that we can see -- make up only 5% of the total energy density of the Universe. Dark matter is the next largest fraction, but is still less than half the size of the contribution from dark energy.
+
+```{r echo=FALSE, pie-chart, out.width='80%', fig.show='hold', fig.cap="Fractional composition of the Universe. Dark matter and dark energy dominate the composition of the Universe, with baryons only making up around 5%. The contributions from radiation and relativistic particles are too small to be seen on this plot."}
+knitr::include_graphics("Images/compo-pie-chart.jpg")
+```
+
 ### Early history of the Universe {#sec:early-evidence}
 
 It is impossible for us to study the initial conditions of the Universe. The earliest time that it would be physically possible make measurements of is approximately $10^{-43}$ seconds after the big bang. This is known as the **Planck time**. At scales below the Planck time, the effects of quantum gravity are likely to be important. 
 
-In Sec. \@ref(sec:first_second) we looked at what happened in the first second of the Universe's evolution. Around $10^{-32}$ seconds after the big bang, we believe that the Universe underwent a period of inflation. The observational evidence for inflation comes (somewhat indirectly) from the CMB. The sizes of the fluctuations in the CMB and of features in the large scale structure of the Universe (e.g. clusters of galaxies) agree with the predictions from the theory of inflation. So while we cannot directly observe the inflationary period, we can see the evidence it left behind. 
+In Sec. \@ref(sec:first-second) we looked at what happened in the first second of the Universe's evolution. Around $10^{-32}$ seconds after the big bang, we believe that the Universe underwent a period of inflation. The observational evidence for inflation comes (somewhat indirectly) from the CMB. The sizes of the fluctuations in the CMB and of features in the large scale structure of the Universe (e.g. clusters of galaxies) agree with the predictions from the theory of inflation. So while we cannot directly observe the inflationary period, we can see the evidence it left behind. 
 
 ### Fate of the Universe {#sec:fate-evidence}
 
